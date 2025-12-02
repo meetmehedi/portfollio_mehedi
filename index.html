@@ -2,65 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Md. Mehedi Hasan — Portfolio</title>
-  <meta name="description" content="Md. Mehedi Hasan — AI/ML researcher & developer. Projects: SaveFood, SafeRoads, MeteorShield, AgroHub, SciGenie. Publications, IEEE member." />
-  <!-- Tailwind CDN -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Md. Mehedi Hasan — AI Research Portfolio</title>
+  <meta name="description" content="AI/ML Researcher focused on behavioral modeling, social engineering detection, and socio-economic ML. Publications in BIM 2025. NASA International Space Apps Champion and Honarable Mention." />
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Iconify for Icons -->
+  <!-- Iconify -->
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   <style>
-    /* Glassmorphism */
     .glass {
       background: rgba(255,255,255,0.06);
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
       border: 1px solid rgba(255,255,255,0.1);
     }
-
-    /* Smooth scroll */
     html { scroll-behavior: smooth; }
-
-    /* Fade-in animation */
     @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .animate-fade-in-up {
       animation: fadeInUp 0.6s ease-out forwards;
       opacity: 0;
     }
-    .animate-fade-in-up:nth-child(1) { animation-delay: 0.1s; }
-    .animate-fade-in-up:nth-child(2) { animation-delay: 0.2s; }
-    .animate-fade-in-up:nth-child(3) { animation-delay: 0.3s; }
-    .animate-fade-in-up:nth-child(4) { animation-delay: 0.4s; }
-    .animate-fade-in-up:nth-child(5) { animation-delay: 0.5s; }
-    .animate-fade-in-up:nth-child(6) { animation-delay: 0.6s; }
-    .animate-fade-in-up:nth-child(7) { animation-delay: 0.7s; }
-    .animate-fade-in-up:nth-child(8) { animation-delay: 0.8s; }
-    .animate-fade-in-up:nth-child(9) { animation-delay: 0.9s; }
-    .animate-fade-in-up:nth-child(10) { animation-delay: 1.0s; }
-
-    /* Hover glow for buttons */
     .btn-glow:hover {
       box-shadow: 0 0 12px rgba(99, 102, 241, 0.5);
     }
-
-    /* Skill icon hover effect */
-    .skill-icon {
-      @apply inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gray-700/50 hover:bg-gray-600 transition-all duration-300 transform hover:scale-110 hover:shadow-lg;
-    }
-    .skill-icon:hover .iconify {
-      filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.6));
-    }
-
-    /* Photo frame with subtle pulse */
     .photo-frame {
       position: relative;
       overflow: hidden;
@@ -71,289 +38,134 @@
     .photo-frame:hover {
       transform: scale(1.02);
     }
-    .photo-frame::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4));
-      pointer-events: none;
-    }
-
-    /* Team highlight */
-    .team-highlight {
-      position: relative;
-      border: 3px solid #60a5fa;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
-    }
-    .team-highlight::after {
-      content: 'You';
-      position: absolute;
-      top: -12px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #60a5fa;
-      color: white;
-      font-size: 0.75rem;
-      padding: 2px 8px;
-      border-radius: 12px;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body class="bg-gradient-to-br from-gray-900 to-black text-gray-100 antialiased leading-relaxed">
-
   <header class="max-w-5xl mx-auto p-6 flex items-center justify-between animate-fade-in-up">
     <div>
       <h1 class="text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-pink-400">Md. Mehedi Hasan</h1>
-      <p class="text-sm text-gray-400">AI/ML Researcher · IoT & Data-Driven Systems · IEEE Member</p>
+      <p class="text-sm text-gray-400">AI Researcher · Behavioral ML · Social Engineering Detection</p>
     </div>
     <nav class="space-x-4 text-sm">
-      <a href="#about" class="hover:text-indigo-300 transition">About Me</a>
+      <a href="#research" class="hover:text-indigo-300 transition">Research</a>
       <a href="#projects" class="hover:text-indigo-300 transition">Projects</a>
       <a href="#publications" class="hover:text-indigo-300 transition">Publications</a>
-      <a href="#skills" class="hover:text-indigo-300 transition">Skills</a>
       <a href="#contact" class="hover:text-indigo-300 transition">Contact</a>
     </nav>
   </header>
 
   <main class="max-w-5xl mx-auto p-6 space-y-12">
-
-    <!-- Hero Section with Photo -->
+    <!-- Hero -->
     <section class="grid md:grid-cols-2 gap-8 items-center animate-fade-in-up">
       <div>
-        <h2 class="text-4xl font-extrabold">Hello — I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">Mehedi</span></h2>
-        <p class="mt-4 text-gray-300">Passionate AI researcher and software developer focused on machine learning for socio-economic analysis, predictive analytics, and IoT-driven sustainable systems. Champion at NASA Space Apps 2025 (Barisal Division).</p>
-
+        <h2 class="text-4xl font-extrabold">AI for <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">Social Integrity</span></h2>
+        <p class="mt-4 text-gray-300">
+          I develop interpretable machine learning frameworks to detect social engineering, model behavioral risk, and predict socio-technical system failures. 
+          <strong>Champion, NASA Space Apps Challenge 2025</strong> (Barisal Division).
+        </p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#projects" class="btn-glow inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-md text-sm font-medium transition">See projects</a>
-          <a href="Md_Mehedi_Hasan_CV.pdf" download="Md_Mehedi_Hasan_CV.pdf"
-             class="inline-block px-4 py-2 border border-gray-700 hover:border-indigo-500 rounded-md text-sm transition">
-             Download Resume (PDF)
-          </a>
+          <a href="#projects" class="btn-glow inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-md text-sm font-medium transition">Research Projects</a>
+          <a href="Md_Mehedi_Hasan_CV.pdf" download="Md_Mehedi_Hasan_CV.pdf" class="inline-block px-4 py-2 border border-gray-700 hover:border-indigo-500 rounded-md text-sm transition">Full CV (PDF)</a>
         </div>
-
         <div class="mt-6 text-sm text-gray-400 space-y-1">
-          <div><strong>Email:</strong> <a href="mailto:meetmehedi1@gmail.com" class="text-indigo-300 hover:text-indigo-200 transition">meetmehedi1@gmail.com</a></div>
-          <div><strong>Phone:</strong> <a href="tel:+8801403005254" class="text-indigo-300 hover:text-indigo-200 transition">+8801403005254</a></div>
+          <div><strong>Email:</strong> <a href="mailto:meetmehedi1@gmail.com" class="text-indigo-300 hover:text-indigo-200">meetmehedi1@gmail.com</a></div>
+          <div><strong>Location:</strong> Dhaka, Bangladesh </div>
           <div class="flex gap-3 mt-3">
-            <a href="https://www.linkedin.com/in/meetmehedi" class="text-gray-300 hover:text-indigo-300 transition">LinkedIn</a>
+            <a href="https://linkedin.com/in/meetmehedi" class="text-gray-300 hover:text-indigo-300 transition">LinkedIn</a>
             <a href="https://github.com/meetmehedi" class="text-gray-300 hover:text-indigo-300 transition">GitHub</a>
           </div>
         </div>
       </div>
-
-      <!-- Award Photo -->
       <div class="photo-frame">
-        <img src="images/me.jpg" alt="Mehedi Hasan - NASA Space Apps Champion" class="w-full h-auto object-cover rounded-xl">
+        <img src="images/me.jpg" alt="Md. Mehedi Hasan — AI Researcher" class="w-full h-auto object-cover rounded-xl">
       </div>
     </section>
 
-    <!-- Team Polaris Section -->
-    <section id="team" class="bg-gray-800/60 p-6 rounded-xl glass animate-fade-in-up">
-      <h3 class="text-2xl font-semibold text-indigo-300 mb-4">Team Polaris — NASA Space Apps Challenge 2025 Champions - Global Nominee - Honarable Mention </h3>
-      <p class="mb-4 text-gray-300">I was part of Team Polaris, which won the Barisal Division championship. Our team combined expertise in ML, full-stack development, data analysis, and UI/UX design to create a winning solution.</p>
-
-      <div class="relative">
-        <img src="images/team-polaris.jpg" alt="Team Polaris - NASA International Space Apps Challenge 2025" class="w-full h-auto rounded-xl">
-        <!-- Highlight your position -->
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="team-highlight absolute bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-32 rounded-full overflow-hidden">
-            <img src="images/me.jpg" alt="Md. Mehedi Hasan" class="w-full h-full object-cover">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Award Ceremony Photo -->
-    <section class="bg-gray-800/60 p-6 rounded-xl glass animate-fade-in-up">
-      <h3 class="text-2xl font-semibold text-indigo-300 mb-4">Award Ceremony</h3>
-      <p class="mb-4 text-gray-300">Receiving the champion trophy from our esteemed judge. A proud moment for our team and our university.</p>
-      <div class="photo-frame">
-        <img src="images/award-ceremony.jpg" alt="NASA Space Apps Challenge 2025 Award Ceremony" class="w-full h-auto object-cover rounded-xl">
-      </div>
-    </section>
-
-    <!-- About Me -->
-    <section id="about" class="bg-gray-800/60 p-6 rounded-xl glass animate-fade-in-up">
-      <h3 class="text-2xl font-semibold text-indigo-300">About Me & Research Interests</h3>
-      <p class="mt-3 text-gray-300">I research at the intersection of Artificial Intelligence and Data Science, focusing on machine learning for socio-economic analysis, predictive modeling, and sustainable smart systems. I am particularly interested in developing interpretable AI frameworks that combine IoT data, behavioral analytics, and deep learning to address real-world challenges in urban development and social impact.</p>
-
-      <div class="mt-4 grid md:grid-cols-2 gap-4">
-        <div>
-          <h4 class="font-medium text-gray-200">Key Topics</h4>
-          <ul class="mt-2 text-gray-300 space-y-1">
-            <li>Machine Learning & Deep Learning</li>
-            <li>Natural Language Processing</li>
-            <li>Predictive Analytics & Socio-Economic Modeling</li>
-            <li>IoT-Based Smart Systems</li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-medium text-gray-200">Tools & Approaches</h4>
-          <ul class="mt-2 text-gray-300 space-y-1">
-            <li>Interpretable AI, AutoML, Time-series & Geospatial Analysis</li>
-            <li>Robust evaluation with F0.5 / F1 / F2 metrics (fraud/online/mobile contexts)</li>
-          </ul>
-        </div>
-      </div>
+    <!-- Research Vision -->
+    <section id="research" class="bg-gray-800/60 p-6 rounded-xl glass animate-fade-in-up">
+      <h3 class="text-2xl font-semibold text-indigo-300">Research Vision</h3>
+      <p class="mt-3 text-gray-300">
+        My work sits at the intersection of <strong>behavioral machine learning</strong> and <strong>socio-technical system resilience</strong>. I focus on:
+      </p>
+      <ul class="mt-2 list-disc list-inside text-gray-300 space-y-1">
+        <li>Detecting social engineering through behavioral anomaly modeling</li>
+        <li>Predicting system failures (e.g., programmer attrition, food spoilage, road accidents) using interpretable ML</li>
+        <li>Developing continual learning frameworks for dynamic environments</li>
+      </ul>
+      <p class="mt-2 text-gray-300">
+        I aim to build AI systems that are not only accurate but <strong>explainable, fair, and grounded in real-world behavioral data</strong>.
+      </p>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="animate-fade-in-up">
-      <h3 class="text-2xl font-semibold mb-4 text-indigo-300">Selected Projects</h3>
+      <h3 class="text-2xl font-semibold mb-4 text-indigo-300">Research Projects</h3>
       <div class="grid md:grid-cols-2 gap-6">
-        <!-- Project Cards -->
         <article class="p-5 bg-gray-800/50 rounded-xl glass border border-gray-700/50 hover:border-indigo-500/50 transition animate-fade-in-up">
-          <h4 class="font-semibold text-indigo-200">SaveFood — AI-Powered Food Tracking</h4>
-          <p class="mt-2 text-gray-300 text-sm">AI system to automatically track expiry and predict spoilage. Features a waste analytics dashboard and recipe suggestions to minimize food waste.</p>
-          <p class="mt-3 text-sm text-gray-400"><strong>Tech:</strong> Python, Scikit-learn, AutoML, Dashboarding</p>
+          <h4 class="font-semibold text-indigo-200">Programmer Attrition Prediction (BIM 2025)</h4>
+          <p class="mt-2 text-gray-300 text-sm">Socio-economic ML framework using behavioral + demographic features to predict developer retention. Achieved high interpretability via SHAP.</p>
+          <p class="mt-2 text-sm text-gray-400"><strong>Methods:</strong> XGBoost, SHAP, cross-validation</p>
         </article>
-
         <article class="p-5 bg-gray-800/50 rounded-xl glass border border-gray-700/50 hover:border-indigo-500/50 transition animate-fade-in-up">
-          <h4 class="font-semibold text-indigo-200">SafeRoads — Road Risk Prediction</h4>
-          <p class="mt-2 text-gray-300 text-sm">Machine learning models and spatial analysis to identify high-risk road segments and assist urban planners and navigation systems for risk-aware routing.</p>
-          <p class="mt-3 text-sm text-gray-400"><strong>Tech:</strong> Python, Geospatial Tools, XGBoost</p>
+          <h4 class="font-semibold text-indigo-200">Feature Fusion for Attrition Modeling (BIM 2025)</h4>
+          <p class="mt-2 text-gray-300 text-sm">Complementary approach using fused behavioral traces and organizational metadata to improve prediction stability.</p>
+          <p class="mt-2 text-sm text-gray-400"><strong>Methods:</strong> Ensemble modeling, feature selection</p>
         </article>
-
         <article class="p-5 bg-gray-800/50 rounded-xl glass border border-gray-700/50 hover:border-indigo-500/50 transition animate-fade-in-up">
-          <h4 class="font-semibold text-indigo-200">MeteorShield — Planetary Defense</h4>
-          <p class="mt-2 text-gray-300 text-sm">Planetary defense platform using NASA NEO data and a real-time 3D Orrery web app for visualization and education.</p>
-          <p class="mt-3 text-sm text-gray-400"><strong>Tech:</strong> JavaScript, WebGL/Three.js, NASA APIs</p>
+          <h4 class="font-semibold text-indigo-200">SafeRoads — Geospatial Risk Prediction</h4>
+          <p class="mt-2 text-gray-300 text-sm">ML system to identify high-risk urban road segments using traffic, weather, and accident history. Supports risk-aware navigation.</p>
+          <p class="mt-2 text-sm text-gray-400"><strong>Methods:</strong> Geospatial ML, ensemble models</p>
         </article>
-
         <article class="p-5 bg-gray-800/50 rounded-xl glass border border-gray-700/50 hover:border-indigo-500/50 transition animate-fade-in-up">
-          <h4 class="font-semibold text-indigo-200">AgroHub — IoT & AI Smart Agriculture</h4>
-          <p class="mt-2 text-gray-300 text-sm">IoT-enabled farm management with real-time monitoring and ML-driven decision support for farmers.</p>
-          <p class="mt-3 text-sm text-gray-400"><strong>Tech:</strong> IoT, Python, ML</p>
-        </article>
-
-        <article class="p-5 bg-gray-800/50 rounded-xl glass border border-gray-700/50 hover:border-indigo-500/50 transition animate-fade-in-up md:col-span-2">
-          <h4 class="font-semibold text-indigo-200">SciGenie — One-click EDA & AutoML</h4>
-          <p class="mt-2 text-gray-300 text-sm">Automates exploratory data analysis and runs AutoML experiments (Random Forest, XGBoost, Auto-Sklearn) for rapid prototyping.</p>
-          <p class="mt-3 text-sm text-gray-400"><strong>Tech:</strong> Python, Auto-Sklearn, Pandas</p>
+          <h4 class="font-semibold text-indigo-200">MeteorShield — NASA Space Apps 2025</h4>
+          <p class="mt-2 text-gray-300 text-sm">Planetary defense platform using NASA NEO data with real-time 3D visualization. <strong>Champion, Barisal Division</strong>.</p>
+          <p class="mt-2 text-sm text-gray-400"><strong>Tech:</strong> NASA APIs, Three.js, data storytelling</p>
         </article>
       </div>
     </section>
 
     <!-- Publications -->
     <section id="publications" class="bg-gray-800/60 p-6 rounded-xl glass animate-fade-in-up">
-      <h3 class="text-2xl font-semibold text-indigo-300">Publications & Papers</h3>
+      <h3 class="text-2xl font-semibold text-indigo-300">Publications</h3>
       <ol class="mt-4 list-decimal list-inside text-gray-300 space-y-2 text-sm">
-        <li><strong>Hasan, M. M.</strong>, Rakib, R., Molla, M. A., Borhan, R., Based, M. A. — A Socio-Economic Machine Learning Framework for Predicting Programmer Retention. Taylor & Francis (BIM 2025). [Accepted]</li>
-        <li><strong>Hasan, M. M.</strong>, Mahin, A. A., Chakraborty, S., Afrose, M., Mia, M. A. — A Socio-Economic Machine Learning Framework for Predicting Programmer Retention. Taylor & Francis (BIM 2025). [Accepted]</li>
-        <li>Molla, M. A., Rakib, R., <strong>Hasan, M. M.</strong>, Rion, A. M., Based, M. A. — Machine Learning based Regression and Classification of Earthquake Magnitude using USGS Seismic Records. QPAIN 2026. [Under Review]</li>
-        <li>Mahin, A. A., <strong>Hasan, M. M.</strong>, Rakib, R., Molla, M. A., Mia, M. A., Based, M. A. — A Modular Framework for Continual Reinforcement Learning in Dynamic Robotic Environments. QPAIN 2026. [Under Review]</li>
+        <li>
+          <strong>Hasan, M. M.</strong>, Rakib, R., Molla, M. A., Borhan, R., Based, M. A.  
+          — <em>A Socio-Economic Machine Learning Framework for Predicting Programmer Retention</em>.  
+          <strong>BIM 2025</strong>. [Accepted]
+        </li>
+        <li>
+          <strong>Hasan, M. M.</strong>, Mahin, A. A., Chakraborty, S., Afrose, M., Mia, M. A., Based, M. A.  
+          — <em>Behavioral and Demographic Feature Fusion for Developer Attrition Modeling</em>.  
+          <strong>BIM 2025</strong>. [Accepted]
+        </li>
+        <li>
+          Molla, M. A., Rakib, R., <strong>Hasan, M. M.</strong>, et al.  
+          — <em>Earthquake Magnitude Prediction Using USGS Seismic Records</em>.  
+          <strong>IDAA 2025</strong>. [Under Review]
+        </li>
+        <li>
+          Mahin, A. A., <strong>Hasan, M. M.</strong>, et al.  
+          — <em>A Modular Framework for Continual Reinforcement Learning</em>.  
+          <strong>IDAA 2025</strong>. [Under Review]
+        </li>
       </ol>
-    </section>
-
-    <!-- Skills & Memberships -->
-    <section id="skills" class="grid md:grid-cols-2 gap-6">
-      <!-- Technical Skills with Icons -->
-      <div class="bg-gray-800/60 p-6 rounded-xl glass animate-fade-in-up">
-        <h4 class="text-lg font-medium text-indigo-300 mb-4">Technical Skills</h4>
-
-        <!-- Languages -->
-        <div class="mb-4">
-          <h5 class="text-sm font-semibold text-gray-300">Languages</h5>
-          <div class="flex flex-wrap gap-3 mt-2">
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 0.1s;">
-              <span class="sr-only">Python</span>
-              <span class="iconify text-3xl text-[#3776ab]" data-icon="devicon:python"></span>
-            </span>
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 0.2s;">
-              <span class="sr-only">C</span>
-              <span class="iconify text-3xl text-[#A8B9CC]" data-icon="devicon:c"></span>
-            </span>
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 0.3s;">
-              <span class="sr-only">Java</span>
-              <span class="iconify text-3xl text-[#ED8B00]" data-icon="devicon:java"></span>
-            </span>
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 0.4s;">
-              <span class="sr-only">SQL</span>
-              <span class="iconify text-3xl text-[#e38c00]" data-icon="devicon:mysql"></span>
-            </span>
-          </div>
-        </div>
-
-        <!-- ML & Data -->
-        <div class="mb-4">
-          <h5 class="text-sm font-semibold text-gray-300">ML & Data</h5>
-          <div class="flex flex-wrap gap-3 mt-2">
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 0.5s;">
-              <span class="sr-only">Scikit-learn</span>
-              <span class="iconify text-3xl text-[#F7931E]" data-icon="devicon:scikitlearn"></span>
-            </span>
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 0.6s;">
-              <span class="sr-only">TensorFlow</span>
-              <span class="iconify text-3xl text-[#FF6F00]" data-icon="devicon:tensorflow"></span>
-            </span>
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 0.7s;">
-              <span class="sr-only">PyTorch</span>
-              <span class="iconify text-3xl text-[#EE4C2C]" data-icon="devicon:pytorch"></span>
-            </span>
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 0.8s;">
-              <span class="sr-only">Pandas</span>
-              <span class="iconify text-3xl text-[#150458]" data-icon="devicon:pandas"></span>
-            </span>
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 0.9s;">
-              <span class="sr-only">NumPy</span>
-              <span class="iconify text-3xl text-[#013243]" data-icon="devicon:numpy"></span>
-            </span>
-          </div>
-        </div>
-
-        <!-- Tools -->
-        <div>
-          <h5 class="text-sm font-semibold text-gray-300">Tools</h5>
-          <div class="flex flex-wrap gap-3 mt-2">
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 1.0s;">
-              <span class="sr-only">Git</span>
-              <span class="iconify text-3xl text-[#F05032]" data-icon="devicon:git"></span>
-            </span>
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 1.1s;">
-              <span class="sr-only">GitHub</span>
-              <span class="iconify text-3xl text-[#181717]" data-icon="devicon:github"></span>
-            </span>
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 1.2s;">
-              <span class="sr-only">VS Code</span>
-              <span class="iconify text-3xl text-[#007ACC]" data-icon="devicon:vscode"></span>
-            </span>
-            <span class="skill-icon animate-fade-in-up" style="animation-delay: 1.3s;">
-              <span class="sr-only">Kaggle</span>
-              <span class="iconify text-3xl text-[#20BEFF]" data-icon="simple-icons:kaggle"></span>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Professional Memberships -->
-      <div class="bg-gray-800/60 p-6 rounded-xl glass animate-fade-in-up">
-        <h4 class="text-lg font-medium text-indigo-300">Professional Memberships</h4>
-        <ul class="mt-3 text-gray-300 space-y-1 text-sm">
-          <li><strong>IEEE</strong> — Student Member (Valid through Dec 2026)</li>
-          <li><strong>IEEE Computer Society</strong> — Student Member (Valid through Dec 2026)</li>
-          <li><strong>BASIS Students' Forum (DIU Chapter)</strong> — Executive Member</li>
-        </ul>
-      </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="bg-gradient-to-r from-gray-800/70 via-gray-900/80 to-black/90 p-6 rounded-xl glass animate-fade-in-up">
-      <h3 class="text-2xl font-semibold text-indigo-300">Contact</h3>
-      <p class="mt-2 text-gray-300">I'm open to research collaborations, internships, and speaking opportunities. Reach out and let's build something impactful.</p>
-
+      <h3 class="text-2xl font-semibold text-indigo-300">Research Collaboration</h3>
+      <p class="mt-2 text-gray-300">
+        I am actively seeking <strong>research internships</strong> in AI, behavioral modeling, and social engineering detection. 
+      </p>
       <div class="mt-4 flex flex-col sm:flex-row gap-3">
-        <a class="btn-glow inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-md transition" href="mailto:meetmehedi1@gmail.com">Email Me</a>
-        <a class="inline-block px-4 py-2 border border-gray-700 hover:border-indigo-500 rounded-md transition" href="https://www.linkedin.com/in/meetmehedi">LinkedIn</a>
-        <a class="inline-block px-4 py-2 border border-gray-700 hover:border-indigo-500 rounded-md transition" href="https://github.com/meetmehedi">GitHub</a>
+        <a class="btn-glow inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-md transition" href="mailto:meetmehedi1@gmail.com">Contact for Research</a>
+        <a class="inline-block px-4 py-2 border border-gray-700 hover:border-indigo-500 rounded-md transition" href="Md_Mehedi_Hasan_CV.pdf" download>Download Full CV</a>
       </div>
     </section>
 
-    <footer class="text-center text-gray-500 text-sm py-6 animate-fade-in-up">© Md. Mehedi Hasan — Last updated: October 25, 2025</footer>
+    <footer class="text-center text-gray-500 text-sm py-6 animate-fade-in-up">
+      © Md. Mehedi Hasan — AI Research Portfolio · Updated: December 2025
+    </footer>
   </main>
 </body>
 </html>
