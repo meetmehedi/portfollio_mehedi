@@ -7,6 +7,16 @@
   <title>Md. Mehedi Hasan | AI Researcher</title>
   <meta name="description"
     content="AI/ML researcher focused on behavioral modeling, social engineering detection, and socio-economic ML. NASA International Space Apps Champion." />
+  <meta name="keywords" content="AI Researcher, Machine Learning, Behavioral Modeling, Cyber Security, Mehedi Hasan, NASA Space Apps" />
+  <meta name="author" content="Md. Mehedi Hasan" />
+  <meta property="og:title" content="Md. Mehedi Hasan | AI Researcher" />
+  <meta property="og:description" content="AI/ML researcher focused on behavioral modeling, social engineering detection, and socio-economic ML. NASA International Space Apps Champion." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mdmehedihasan.us/" />
+  <meta property="og:image" content="https://www.mdmehedihasan.us/images/mee.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Md. Mehedi Hasan | AI Researcher" />
+  <meta name="twitter:description" content="AI/ML researcher focused on behavioral modeling, social engineering detection, and socio-economic ML." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +46,7 @@
   </script>
 
   <!-- Iconify for Icons -->
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <script defer src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
   <style>
     :root {
@@ -286,11 +296,129 @@
         opacity: 0;
       }
     }
+
+    /* Image Scanner Effect */
+    .scanner-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    
+    .scanner-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--cyan);
+      box-shadow: 0 0 10px var(--cyan), 0 0 20px var(--cyan);
+      opacity: 0.8;
+      animation: scan-laser 3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      z-index: 10;
+    }
+    
+    .scanner-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 240, 255, 0) 0%, rgba(0, 240, 255, 0.15) 50%, rgba(0, 240, 255, 0) 100%);
+      background-size: 100% 200%;
+      animation: scan-laser-bg 3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      z-index: 9;
+      pointer-events: none;
+    }
+
+    @keyframes scan-laser {
+      0% { transform: translateY(-20px); }
+      50% { transform: translateY(400px); }
+      100% { transform: translateY(-20px); }
+    }
+    
+    @keyframes scan-laser-bg {
+      0% { background-position: 0 -100%; }
+      50% { background-position: 0 200%; }
+      100% { background-position: 0 -100%; }
+    }
+    /* ── Cyberpunk Outer Space Preloader ── */
+    #preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      background: #000005;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.8s ease-out, visibility 0.8s ease-out;
+    }
+    #preloader.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .cyber-loader {
+      width: 120px;
+      height: 120px;
+      position: relative;
+    }
+    .cyber-loader::before, .cyber-loader::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 2px solid transparent;
+    }
+    .cyber-loader::before {
+      border-top-color: var(--cyan);
+      border-bottom-color: var(--cyan);
+      animation: spin 1.5s linear infinite;
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+    }
+    .cyber-loader::after {
+      border-left-color: var(--violet);
+      border-right-color: var(--violet);
+      animation: spin 2s linear infinite reverse;
+      box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+      inset: 15px;
+    }
+    .cyber-loader-core {
+      position: absolute;
+      inset: 35px;
+      background: radial-gradient(circle, var(--cyan), transparent);
+      border-radius: 50%;
+      animation: pulse-loader 1s ease-in-out infinite alternate;
+    }
+    .cyber-loading-text {
+      margin-top: 30px;
+      font-family: 'Fira Code', monospace;
+      color: var(--cyan);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-shadow: 0 0 10px rgba(0, 240, 255, 0.8);
+      animation: glitch-loader 1s infinite;
+    }
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+    @keyframes pulse-loader { 100% { transform: scale(1.2); opacity: 0.8; } }
+    @keyframes glitch-loader {
+      0% { opacity: 1; }
+      90% { opacity: 1; }
+      95% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
   </style>
 
 </head>
 
 <body class="font-sans antialiased text-gray-300">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="cyber-loader">
+      <div class="cyber-loader-core"></div>
+    </div>
+    <div class="cyber-loading-text">SYSTEM INITIATING...</div>
+  </div>
 
   <!-- ⌘ Command Symbol Cursor -->
   <div id="cmd-cursor">
@@ -386,8 +514,10 @@
           <div class="orbital-dot" style="bottom:-2px;right:20%"></div>
           <div class="orbital-dot" style="top:40%;left:-2px"></div>
         </div>
-        <div class="relative w-full h-full p-2 overflow-hidden rounded-[20px] cyber-glass border-none">
-          <img src="images/mee.jpg" alt="Md. Mehedi Hasan"
+        <div class="relative w-full h-full p-2 overflow-hidden rounded-[20px] cyber-glass border-none scanner-container">
+          <div class="scanner-line"></div>
+          <div class="scanner-overlay"></div>
+          <img src="images/mee.jpg" alt="Md. Mehedi Hasan" loading="lazy"
             class="w-full h-full object-cover object-top rounded-xl opacity-90 hover:opacity-100 hover:scale-[1.05] transition-all duration-500">
         </div>
       </div>
@@ -593,7 +723,7 @@
           </div>
           <div
             class="w-full md:w-1/2 rounded-xl overflow-hidden border border-cyan/30 interactive shadow-[0_0_20px_rgba(0,240,255,0.15)] group relative">
-            <img src="images/team-polaris.jpg" alt="Team Polaris"
+            <img src="images/team-polaris.jpg" alt="Team Polaris" loading="lazy"
               class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700">
             <div class="absolute inset-0 border-2 border-cyan/0 group-hover:border-cyan/50 transition-colors z-10">
             </div>
@@ -1206,6 +1336,10 @@
             <a href="mailto:meetmehedi1@gmail.com"
               class="px-6 py-2 border border-cyan/50 text-cyan font-bold font-mono rounded hover:bg-cyan hover:text-darkbg hover:shadow-[0_0_15px_rgba(0,240,255,0.6)] transition-all interactive">Email
               Me</a>
+            <a href="mehedi-contact.vcf" download
+              class="px-6 py-2 border border-cyan/50 bg-cyan/10 text-cyan font-bold font-mono rounded hover:bg-cyan hover:text-darkbg hover:shadow-[0_0_15px_rgba(0,240,255,0.6)] transition-all interactive flex items-center gap-2">
+              <span class="iconify" data-icon="mdi:card-account-details-outline"></span> Download vCard
+            </a>
             <a href="https://www.linkedin.com/in/meetmehedi"
               class="px-6 py-2 border border-white/20 text-white font-bold font-mono rounded hover:border-violet hover:text-violet transition-all interactive">LinkedIn</a>
             <a href="https://github.com/meetmehedi"
@@ -1842,6 +1976,18 @@
 
     resize();
     animate();
+
+    // Remove preloader on load
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+          preloader.classList.add('hidden');
+          // Optionally remove it from DOM after transition
+          setTimeout(() => preloader.remove(), 800);
+        }
+      }, 500); // give it a tiny delay for effect
+    });
 
   </script>
 </body>
