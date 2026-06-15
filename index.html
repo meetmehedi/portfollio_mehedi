@@ -1497,20 +1497,31 @@
     const ctx = canvas.getContext('2d');
     let width, height;
 
+    const isMobile = window.innerWidth <= 768 || ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+
+    let resizeTimer;
     function resize() {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-      initStars();
-      buildNebula();
-      initAsteroids();
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+        initStars();
+        buildNebula();
+        initAsteroids();
+      }, 150);
     }
+    
+    // Initial setup
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
     window.addEventListener('resize', resize);
 
     // Asteroids
     let asteroids = [];
     function initAsteroids() {
       asteroids = [];
-      for (let i = 0; i < 8; i++) {
+      const asteroidCount = isMobile ? 3 : 8;
+      for (let i = 0; i < asteroidCount; i++) {
         asteroids.push({
           x: Math.random() * width,
           y: Math.random() * height,
@@ -1528,7 +1539,8 @@
     let stars = [];
     function initStars() {
       stars = [];
-      const count = Math.floor((width * height) / 900);
+      const density = isMobile ? 2500 : 900;
+      const count = Math.floor((width * height) / density);
       for (let i = 0; i < count; i++) {
         const depth = Math.random(); // 0=far, 1=near
         stars.push({
@@ -1581,18 +1593,23 @@
     // Cursor
     const cmdCursor = document.getElementById('cmd-cursor');
     let mouse = { x: -200, y: -200 };
-    window.addEventListener('mousemove', e => {
-      mouse.x = e.clientX;
-      mouse.y = e.clientY;
-      cmdCursor.style.left = e.clientX + 'px';
-      cmdCursor.style.top = e.clientY + 'px';
-    });
+    
+    if (isMobile) {
+      cmdCursor.style.display = 'none';
+    } else {
+      window.addEventListener('mousemove', e => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+        cmdCursor.style.left = e.clientX + 'px';
+        cmdCursor.style.top = e.clientY + 'px';
+      });
 
-    // Hover detection
-    document.querySelectorAll('.interactive, a, button').forEach(el => {
-      el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
-      el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
-    });
+      // Hover detection
+      document.querySelectorAll('.interactive, a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+      });
+    }
 
     // Scroll progress
     function getScrollProgress() {
