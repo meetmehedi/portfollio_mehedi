@@ -1,1439 +1,2466 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Md. Mehedi Hasan | AI Researcher</title>
-  <meta name="description"
-    content="AI/ML researcher focused on behavioral modeling, social engineering detection, and socio-economic ML. NASA International Space Apps Champion." />
-  <meta name="keywords" content="AI Researcher, Machine Learning, Behavioral Modeling, Cyber Security, Mehedi Hasan, NASA Space Apps" />
+
+  <!-- ── Primary SEO ── -->
+  <title>Md. Mehedi Hasan — AI &amp; ML Researcher | NASA Space Apps Champion 2025</title>
+  <meta name="description" content="Md. Mehedi Hasan is an AI &amp; ML Researcher at Dhaka International University, specialising in behavioral modeling, social engineering detection, and interpretable machine learning. NASA International Space Apps Champion 2025, IEEE Member, and author of 7+ accepted papers." />
+  <meta name="keywords" content="Md Mehedi Hasan, AI Researcher, ML Researcher, Machine Learning, Behavioral Modeling, Social Engineering Detection, Interpretable AI, NASA Space Apps Champion, IEEE Member, Dhaka International University, Python, TensorFlow, PyTorch, NLP, Computer Vision" />
   <meta name="author" content="Md. Mehedi Hasan" />
-  <meta property="og:title" content="Md. Mehedi Hasan | AI Researcher" />
-  <meta property="og:description" content="AI/ML researcher focused on behavioral modeling, social engineering detection, and socio-economic ML. NASA International Space Apps Champion." />
-  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="canonical" href="https://www.mdmehedihasan.us/" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:site_name" content="Md. Mehedi Hasan" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Md. Mehedi Hasan — AI &amp; ML Researcher | NASA Space Apps Champion 2025" />
+  <meta property="og:description" content="AI &amp; ML Researcher specialising in behavioral modeling, social engineering detection &amp; interpretable ML. NASA International Space Apps Champion 2025 · IEEE Member · 7+ accepted papers." />
   <meta property="og:url" content="https://www.mdmehedihasan.us/" />
   <meta property="og:image" content="https://www.mdmehedihasan.us/images/mee.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Md. Mehedi Hasan | AI Researcher" />
-  <meta name="twitter:description" content="AI/ML researcher focused on behavioral modeling, social engineering detection, and socio-economic ML." />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Md. Mehedi Hasan — AI Researcher" />
+  <meta property="profile:first_name" content="Md. Mehedi" />
+  <meta property="profile:last_name" content="Hasan" />
 
-  <!-- Fonts -->
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@meetmehedi" />
+  <meta name="twitter:creator" content="@meetmehedi" />
+  <meta name="twitter:title" content="Md. Mehedi Hasan — AI &amp; ML Researcher" />
+  <meta name="twitter:description" content="AI &amp; ML Researcher · NASA International Space Apps Champion 2025 · IEEE Member · 7+ accepted papers. Building interpretable ML systems at the frontier of behavioral modeling." />
+  <meta name="twitter:image" content="https://www.mdmehedihasan.us/images/mee.jpg" />
+  <meta name="twitter:image:alt" content="Md. Mehedi Hasan — AI Researcher" />
+
+  <!-- ── JSON-LD Structured Data ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Md. Mehedi Hasan",
+    "url": "https://www.mdmehedihasan.us/",
+    "image": "https://www.mdmehedihasan.us/images/mee.jpg",
+    "jobTitle": "AI & ML Researcher",
+    "description": "AI & ML Researcher specialising in behavioral modeling, social engineering detection, and interpretable machine learning. NASA International Space Apps Champion 2025.",
+    "email": "meetmehedi1@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/meetmehedi",
+      "https://github.com/meetmehedi",
+      "https://orcid.org/0009-0006-1427-8769",
+      "https://www.facebook.com/meetmehedi1/"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Dhaka International University"
+    },
+    "memberOf": [
+      { "@type": "Organization", "name": "IEEE" },
+      { "@type": "Organization", "name": "IEEE Computer Society" }
+    ],
+    "award": "NASA International Space Apps Challenge 2025 — Global Nominee & Honorable Mention, Barisal Division Champion",
+    "knowsAbout": [
+      "Machine Learning", "Behavioral Modeling", "Social Engineering Detection",
+      "Interpretable AI", "Continual Learning", "Computer Vision",
+      "Natural Language Processing", "Geospatial Risk Modeling", "LLMs"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Space Grotesk', 'sans-serif'],
-            mono: ['Fira Code', 'monospace'],
-          },
-          colors: {
-            cyan: '#00f0ff',
-            violet: '#8a2be2',
-            darkbg: '#050510',
-          }
-        }
-      }
-    }
-  </script>
-
-  <!-- Iconify for Icons -->
-  <script defer src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-
   <style>
+    /* ══════════════════════════════════════════
+       DESIGN TOKENS — Steve Jobs × AI Researcher
+    ══════════════════════════════════════════ */
     :root {
-      --cyan: #00f0ff;
-      --violet: #8a2be2;
+      --bg: #000000;
+      --surface: #0a0a0a;
+      --surface-2: #111111;
+      --surface-3: #161616;
+      --border: rgba(255, 255, 255, 0.07);
+      --border-hover: rgba(255, 255, 255, 0.18);
+      --text-1: #ffffff;
+      --text-2: #999999;
+      --text-3: #555555;
+      --accent: #6366f1;
+      --accent-light: #818cf8;
+      --accent-glow: rgba(99, 102, 241, 0.18);
+      --green: #22c55e;
+      --yellow: #eab308;
+      --font: 'Inter', system-ui, -apple-system, sans-serif;
+      --mono: 'JetBrains Mono', 'Fira Code', monospace;
+      --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
-      background-color: #000005;
-      color: #e2e8f0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text-1);
       overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
       cursor: none;
     }
 
-    /* ── Space Targeting Reticle Cursor ── */
-    /* ── macOS ⌘ Command Symbol Cursor ── */
-    #cmd-cursor {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 36px;
-      height: 36px;
-      pointer-events: none;
-      z-index: 9999;
-      transform: translate(-50%, -50%);
-      filter: drop-shadow(0 0 6px rgba(0, 240, 255, 0.8)) drop-shadow(0 0 12px rgba(0, 240, 255, 0.4));
-      transition: filter 0.2s;
-    }
-
-    #cmd-cursor svg path {
-      stroke: var(--cyan);
-      fill: none;
-      stroke-width: 2.2;
-      transition: stroke 0.2s;
-    }
-
-    body.cursor-hover #cmd-cursor {
-      filter: drop-shadow(0 0 8px rgba(138, 43, 226, 0.9)) drop-shadow(0 0 16px rgba(138, 43, 226, 0.5));
-    }
-
-    body.cursor-hover #cmd-cursor svg path {
-      stroke: var(--violet);
-    }
-
-    @keyframes cmd-pulse {
-
-      0%,
-      100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0.6;
-      }
-    }
-
-    #cmd-cursor {
-      animation: cmd-pulse 2.5s ease-in-out infinite;
-    }
-
-    /* Interactive Canvas Background */
-    #networkCanvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      pointer-events: none;
-    }
-
-    /* Glassmorphism Cyber-UI */
-    .cyber-glass {
-      background: rgba(10, 10, 25, 0.6);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(0, 240, 255, 0.15);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cyber-glass::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.1), transparent);
-      transition: 0.5s;
-    }
-
-    .cyber-glass:hover::before {
-      left: 100%;
-    }
-
-    .cyber-glass-hover:hover {
-      border-color: rgba(0, 240, 255, 0.5);
-      box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
-      transform: translateY(-5px);
-    }
-
-    .cyber-glass-hover.violet-glow:hover {
-      border-color: rgba(138, 43, 226, 0.6);
-      box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
-    }
-
-    .cyber-glass-hover.yellow-glow:hover {
-      border-color: rgba(234, 179, 8, 0.6);
-      box-shadow: 0 0 20px rgba(234, 179, 8, 0.3);
-    }
-
-    .cyber-glass-hover.blue-glow:hover {
-      border-color: rgba(59, 130, 246, 0.6);
-      box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
-    }
-
-    /* Holographic Profile Ring */
-    /* Profile Orbital Frame */
-    .orbital-frame {
-      position: absolute;
-      inset: -12px;
-      border-radius: 26px;
-      border: 1px solid rgba(0, 240, 255, 0.12);
-      z-index: -1;
-    }
-
-    .orbital-frame::before {
-      content: '';
-      position: absolute;
-      inset: -1px;
-      border-radius: 26px;
-      border: 1px solid rgba(138, 43, 226, 0.08);
-      animation: orbitSpin 12s linear infinite;
-    }
-
-    .orbital-dot {
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      background: var(--cyan);
-      border-radius: 50%;
-      box-shadow: 0 0 6px var(--cyan);
-      animation: orbitSpin 8s linear infinite;
-    }
-
-    .orbital-dot:nth-child(2) {
-      background: var(--violet);
-      box-shadow: 0 0 6px var(--violet);
-      animation-duration: 12s;
-      animation-direction: reverse;
-      width: 3px;
-      height: 3px;
-    }
-
-    .orbital-dot:nth-child(3) {
-      background: #fff;
-      box-shadow: 0 0 4px #fff;
-      animation-duration: 16s;
-      width: 2px;
-      height: 2px;
-    }
-
-    @keyframes orbitSpin {
-      from {
-        transform: rotate(0deg) translateX(calc(50% + 8px)) rotate(0deg);
-      }
-
-      to {
-        transform: rotate(360deg) translateX(calc(50% + 8px)) rotate(-360deg);
-      }
-    }
-
-    /* Scroll Animations */
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-    }
-
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Typewriter Cursor */
-    .type-cursor {
-      display: inline-block;
-      width: 10px;
-      height: 1.2em;
-      background-color: var(--cyan);
-      vertical-align: middle;
-      animation: blink 1s step-end infinite;
-    }
-
-    @keyframes blink {
-
-      0%,
-      100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0;
-      }
-    }
-
-    /* Glow Text */
-    .text-glow-cyan {
-      text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
-    }
-
-    .text-glow-violet {
-      text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
-    }
-
-    /* Scrollbar */
+    /* ── Scrollbar ── */
     ::-webkit-scrollbar {
-      width: 8px;
+      width: 3px;
     }
 
     ::-webkit-scrollbar-track {
-      background: #050510;
+      background: var(--bg);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: rgba(0, 240, 255, 0.3);
-      border-radius: 4px;
+      background: var(--accent);
+      border-radius: 2px;
     }
 
-    ::-webkit-scrollbar-thumb:hover {
-      background: var(--cyan);
-    }
-
-    @keyframes scan {
-      0% {
-        transform: translateY(0);
-        opacity: 0;
-      }
-
-      50% {
-        opacity: 1;
-      }
-
-      100% {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-    }
-
-    /* Image Scanner Effect */
-    .scanner-container {
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-    }
-    
-    .scanner-line {
-      position: absolute;
+    /* ── Scroll Progress Bar ── */
+    #progress-bar {
+      position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 4px;
-      background: var(--cyan);
-      box-shadow: 0 0 10px var(--cyan), 0 0 20px var(--cyan);
-      opacity: 0.8;
-      animation: scan-laser 3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-      z-index: 10;
+      height: 2px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      z-index: 9999;
+      transition: width 0.1s linear;
     }
-    
-    .scanner-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to bottom, rgba(0, 240, 255, 0) 0%, rgba(0, 240, 255, 0.15) 50%, rgba(0, 240, 255, 0) 100%);
-      background-size: 100% 200%;
-      animation: scan-laser-bg 3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-      z-index: 9;
+
+    /* ── Custom Magnetic Cursor ── */
+    #cursor-dot {
+      position: fixed;
+      width: 5px;
+      height: 5px;
+      background: #fff;
+      border-radius: 50%;
       pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%, -50%);
+      transition: width 0.2s, height 0.2s, background 0.2s;
     }
 
-    @keyframes scan-laser {
-      0% { transform: translateY(-20px); }
-      50% { transform: translateY(400px); }
-      100% { transform: translateY(-20px); }
+    #cursor-ring {
+      position: fixed;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9997;
+      transform: translate(-50%, -50%);
+      transition: transform 0.12s var(--ease-out), width 0.3s, height 0.3s, border-color 0.3s, background 0.3s;
     }
-    
-    @keyframes scan-laser-bg {
-      0% { background-position: 0 -100%; }
-      50% { background-position: 0 200%; }
-      100% { background-position: 0 -100%; }
+
+    body.cursor-active #cursor-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
     }
-    /* ── Cyberpunk Outer Space Preloader ── */
-    #preloader {
+
+    body.cursor-active #cursor-ring {
+      width: 48px;
+      height: 48px;
+      border-color: var(--accent);
+      background: var(--accent-glow);
+    }
+
+    /* ── Particle Canvas ── */
+    #particle-canvas {
       position: fixed;
       inset: 0;
-      z-index: 10000;
-      background: #000005;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.6;
+    }
+
+    /* ══════════════════════════════════════════
+       LAYOUT
+    ══════════════════════════════════════════ */
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ══════════════════════════════════════════
+       NAVIGATION — Floating Pill
+    ══════════════════════════════════════════ */
+    #nav {
+      position: fixed;
+      top: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      opacity: 0;
+      transition: opacity 0.5s var(--ease-out), top 0.4s var(--ease-out);
+    }
+
+    #nav.visible {
+      opacity: 1;
+    }
+
+    #nav.hide {
+      top: -80px;
+      opacity: 0;
+    }
+
+    .nav-pill {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 8px;
+      background: rgba(12, 12, 12, 0.85);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+    }
+
+    .nav-pill a {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-2);
+      text-decoration: none;
+      padding: 6px 16px;
+      border-radius: 100px;
+      transition: color 0.2s, background 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-pill a:hover,
+    .nav-pill a.active {
+      color: var(--text-1);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Mobile nav toggle */
+    .nav-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-1);
+      cursor: none;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* ══════════════════════════════════════════
+       HERO SECTION
+    ══════════════════════════════════════════ */
+    #hero {
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      transition: opacity 0.8s ease-out, visibility 0.8s ease-out;
+      text-align: center;
+      padding: 120px 24px 80px;
     }
-    #preloader.hidden {
-      opacity: 0;
-      visibility: hidden;
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-2);
+      margin-bottom: 48px;
+      background: var(--surface);
+      letter-spacing: 0.02em;
+      animation: fadeUp 0.8s var(--ease-out) both;
     }
-    .cyber-loader {
+
+    .hero-badge .dot {
+      width: 6px;
+      height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+      }
+    }
+
+    .hero-name {
+      font-size: clamp(52px, 10vw, 108px);
+      font-weight: 200;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      color: var(--text-1);
+      margin-bottom: 20px;
+      animation: fadeUp 0.8s 0.1s var(--ease-out) both;
+    }
+
+    .hero-name span {
+      background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.6) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: clamp(15px, 2.5vw, 20px);
+      font-weight: 400;
+      color: var(--text-2);
+      margin-bottom: 12px;
+      letter-spacing: 0.01em;
+      animation: fadeUp 0.8s 0.2s var(--ease-out) both;
+    }
+
+    .hero-tagline {
+      font-size: clamp(13px, 2vw, 15px);
+      color: var(--text-3);
+      max-width: 520px;
+      margin: 0 auto 48px;
+      line-height: 1.7;
+      animation: fadeUp 0.8s 0.3s var(--ease-out) both;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeUp 0.8s 0.4s var(--ease-out) both;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 100px;
+      text-decoration: none;
+      border: none;
+      cursor: none;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-light);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 32px var(--accent-glow);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      background: transparent;
+      color: var(--text-1);
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      text-decoration: none;
+      cursor: none;
+      transition: border-color 0.2s, background 0.2s, transform 0.2s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--border-hover);
+      background: rgba(255, 255, 255, 0.04);
+      transform: translateY(-1px);
+    }
+
+    /* Hero profile photo */
+    .hero-photo-wrap {
+      margin-top: 64px;
+      position: relative;
+      display: inline-block;
+      animation: fadeUp 0.8s 0.5s var(--ease-out) both;
+    }
+
+    .hero-photo {
       width: 120px;
       height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-photo-glow {
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      background: var(--accent-glow);
+      filter: blur(16px);
+      z-index: 0;
+      animation: glow-pulse 3s ease-in-out infinite;
+    }
+
+    @keyframes glow-pulse {
+
+      0%,
+      100% {
+        opacity: 0.5;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.08);
+      }
+    }
+
+    /* ══════════════════════════════════════════
+       IMPACT BAR
+    ══════════════════════════════════════════ */
+    #impact {
+      padding: 80px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+
+    .impact-item {
+      text-align: center;
+      padding: 32px 24px;
       position: relative;
     }
-    .cyber-loader::before, .cyber-loader::after {
+
+    .impact-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 20%;
+      bottom: 20%;
+      width: 1px;
+      background: var(--border);
+    }
+
+    .impact-number {
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 200;
+      letter-spacing: -0.04em;
+      color: var(--text-1);
+      display: block;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .impact-number.accent {
+      color: var(--accent-light);
+    }
+
+    .impact-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* ══════════════════════════════════════════
+       SECTION HEADERS
+    ══════════════════════════════════════════ */
+    .section-header {
+      margin-bottom: 64px;
+    }
+
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent-light);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 200;
+      letter-spacing: -0.03em;
+      color: var(--text-1);
+      line-height: 1.1;
+    }
+
+    .section-desc {
+      font-size: 15px;
+      color: var(--text-2);
+      margin-top: 16px;
+      max-width: 520px;
+      line-height: 1.7;
+    }
+
+    /* ══════════════════════════════════════════
+       ABOUT SECTION
+    ══════════════════════════════════════════ */
+    #about {
+      padding: 120px 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .about-quote {
+      font-size: clamp(22px, 3.5vw, 32px);
+      font-weight: 200;
+      line-height: 1.45;
+      letter-spacing: -0.02em;
+      color: var(--text-1);
+      margin-bottom: 32px;
+    }
+
+    .about-quote em {
+      font-style: normal;
+      color: var(--accent-light);
+    }
+
+    .about-body {
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    .about-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 28px;
+    }
+
+    .tag {
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 14px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      color: var(--text-2);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .tag:hover {
+      border-color: var(--accent);
+      color: var(--accent-light);
+    }
+
+    .tag.accent-tag {
+      border-color: rgba(99, 102, 241, 0.3);
+      color: var(--accent-light);
+    }
+
+    .about-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      position: sticky;
+      top: 100px;
+    }
+
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
+    }
+
+    .about-card-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .stat-mini {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .stat-mini-num {
+      font-size: 24px;
+      font-weight: 200;
+      color: var(--text-1);
+      letter-spacing: -0.03em;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .stat-mini-label {
+      font-size: 11px;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* Education */
+    .edu-item {
+      display: flex;
+      gap: 16px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .edu-item:last-child {
+      border-bottom: none;
+    }
+
+    .edu-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    .edu-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-1);
+      margin-bottom: 4px;
+    }
+
+    .edu-sub {
+      font-size: 13px;
+      color: var(--text-2);
+      margin-bottom: 4px;
+    }
+
+    .edu-date {
+      font-size: 12px;
+      color: var(--text-3);
+      font-family: var(--mono);
+    }
+
+    /* ══════════════════════════════════════════
+       PUBLICATIONS
+    ══════════════════════════════════════════ */
+    #publications {
+      padding: 120px 0;
+    }
+
+    .pub-tabs {
+      display: flex;
+      gap: 4px;
+      padding: 4px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      width: fit-content;
+      margin-bottom: 48px;
+    }
+
+    .pub-tab {
+      padding: 8px 20px;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 100px;
+      border: none;
+      background: none;
+      color: var(--text-2);
+      cursor: none;
+      transition: all 0.2s;
+    }
+
+    .pub-tab.active {
+      background: var(--surface-3);
+      color: var(--text-1);
+      border: 1px solid var(--border);
+    }
+
+    .pub-list {
+      display: none;
+    }
+
+    .pub-list.active {
+      display: block;
+    }
+
+    .pub-card {
+      display: flex;
+      gap: 24px;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+      transition: all 0.2s;
+    }
+
+    .pub-card:last-child {
+      border-bottom: none;
+    }
+
+    .pub-card:hover .pub-title {
+      color: var(--text-1);
+    }
+
+    .pub-index {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-3);
+      flex-shrink: 0;
+      padding-top: 3px;
+      min-width: 28px;
+    }
+
+    .pub-content {
+      flex: 1;
+    }
+
+    .pub-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .pub-badge {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+
+    .pub-badge.accepted {
+      background: rgba(34, 197, 94, 0.1);
+      color: var(--green);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+    }
+
+    .pub-badge.review {
+      background: rgba(234, 179, 8, 0.1);
+      color: var(--yellow);
+      border: 1px solid rgba(234, 179, 8, 0.2);
+    }
+
+    .pub-badge.ongoing {
+      background: rgba(99, 102, 241, 0.1);
+      color: var(--accent-light);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+
+    .pub-venue {
+      font-size: 12px;
+      color: var(--text-3);
+      font-family: var(--mono);
+    }
+
+    .pub-title {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-2);
+      line-height: 1.5;
+      margin-bottom: 8px;
+      transition: color 0.2s;
+    }
+
+    .pub-authors {
+      font-size: 12px;
+      color: var(--text-3);
+      font-family: var(--mono);
+      margin-bottom: 10px;
+    }
+
+    .pub-authors .me {
+      color: var(--text-2);
+    }
+
+    .pub-cite-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-3);
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 4px 12px;
+      cursor: none;
+      transition: color 0.2s, border-color 0.2s;
+      font-family: var(--mono);
+    }
+
+    .pub-cite-btn:hover {
+      color: var(--accent-light);
+      border-color: rgba(99, 102, 241, 0.4);
+    }
+
+    /* ══════════════════════════════════════════
+       PROJECTS — BENTO GRID
+    ══════════════════════════════════════════ */
+    #projects {
+      padding: 120px 0;
+    }
+
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 16px;
+    }
+
+    .bento-cell {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bento-cell::before {
       content: '';
       position: absolute;
       inset: 0;
-      border-radius: 50%;
-      border: 2px solid transparent;
+      border-radius: inherit;
+      background: linear-gradient(135deg, var(--accent-glow) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s;
     }
-    .cyber-loader::before {
-      border-top-color: var(--cyan);
-      border-bottom-color: var(--cyan);
-      animation: spin 1.5s linear infinite;
-      box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+
+    .bento-cell:hover {
+      border-color: rgba(99, 102, 241, 0.35);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
     }
-    .cyber-loader::after {
-      border-left-color: var(--violet);
-      border-right-color: var(--violet);
-      animation: spin 2s linear infinite reverse;
-      box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
-      inset: 15px;
+
+    .bento-cell:hover::before {
+      opacity: 1;
     }
-    .cyber-loader-core {
-      position: absolute;
-      inset: 35px;
-      background: radial-gradient(circle, var(--cyan), transparent);
-      border-radius: 50%;
-      animation: pulse-loader 1s ease-in-out infinite alternate;
+
+    .bento-cell.featured {
+      grid-column: span 2;
     }
-    .cyber-loading-text {
-      margin-top: 30px;
-      font-family: 'Fira Code', monospace;
-      color: var(--cyan);
-      font-size: 14px;
+
+    .bento-cell.tall {
+      grid-row: span 2;
+    }
+
+    .bento-icon {
+      font-size: 28px;
+      margin-bottom: 20px;
+      width: 52px;
+      height: 52px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface-2);
+    }
+
+    .bento-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 10px;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 4px;
-      text-shadow: 0 0 10px rgba(0, 240, 255, 0.8);
-      animation: glitch-loader 1s infinite;
+      letter-spacing: 0.1em;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-bottom: 12px;
+      width: fit-content;
     }
-    @keyframes spin { 100% { transform: rotate(360deg); } }
-    @keyframes pulse-loader { 100% { transform: scale(1.2); opacity: 0.8; } }
-    @keyframes glitch-loader {
-      0% { opacity: 1; }
-      90% { opacity: 1; }
-      95% { opacity: 0.3; }
-      100% { opacity: 1; }
+
+    .bento-badge.nasa {
+      background: rgba(234, 179, 8, 0.1);
+      color: var(--yellow);
+      border: 1px solid rgba(234, 179, 8, 0.25);
+    }
+
+    .bento-badge.research {
+      background: var(--accent-glow);
+      color: var(--accent-light);
+      border: 1px solid rgba(99, 102, 241, 0.25);
+    }
+
+    .bento-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text-1);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .bento-cell.featured .bento-title {
+      font-size: 26px;
+    }
+
+    .bento-desc {
+      font-size: 13px;
+      color: var(--text-2);
+      line-height: 1.7;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+
+    .bento-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .bento-tag {
+      font-size: 11px;
+      color: var(--text-3);
+      font-family: var(--mono);
+      border: 1px solid var(--border);
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+
+    .bento-arrow {
+      position: absolute;
+      top: 28px;
+      right: 28px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: var(--text-3);
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+    }
+
+    .bento-cell:hover .bento-arrow {
+      background: var(--accent);
+      color: #fff;
+      transform: rotate(45deg);
+    }
+
+    /* Featured handbook card */
+    .bento-cell.handbook {
+      background: linear-gradient(135deg, #0d0d0d, #111122);
+      border-color: rgba(99, 102, 241, 0.2);
+      grid-column: span 3;
+    }
+
+    .bento-cell.handbook .bento-title {
+      font-size: 22px;
+    }
+
+    /* ══════════════════════════════════════════
+       SKILLS MARQUEE
+    ══════════════════════════════════════════ */
+    #skills {
+      padding: 80px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .skills-eyebrow {
+      text-align: center;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 40px;
+    }
+
+    .marquee-track {
+      display: flex;
+      gap: 12px;
+      width: max-content;
+      animation: marquee-left 28s linear infinite;
+      margin-bottom: 12px;
+    }
+
+    .marquee-track.reverse {
+      animation: marquee-right 32s linear infinite;
+    }
+
+    @keyframes marquee-left {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes marquee-right {
+      0% {
+        transform: translateX(-50%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .skill-pill {
+      flex-shrink: 0;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-2);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 7px 18px;
+      background: var(--surface);
+      white-space: nowrap;
+      font-family: var(--mono);
+    }
+
+    .skill-pill.hl {
+      border-color: rgba(99, 102, 241, 0.3);
+      color: var(--accent-light);
+    }
+
+    /* ══════════════════════════════════════════
+       LEADERSHIP & AWARDS
+    ══════════════════════════════════════════ */
+    #leadership {
+      padding: 120px 0;
+    }
+
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .leader-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      transition: border-color 0.2s;
+    }
+
+    .leader-card:hover {
+      border-color: var(--border-hover);
+    }
+
+    .leader-card.featured {
+      grid-column: span 2;
+      background: linear-gradient(135deg, #0a0a14 0%, #0d0d0d 100%);
+      border-color: rgba(99, 102, 241, 0.2);
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .award-icon {
+      font-size: 48px;
+      flex-shrink: 0;
+    }
+
+    .award-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--yellow);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 8px;
+    }
+
+    .award-title {
+      font-size: 22px;
+      font-weight: 300;
+      color: var(--text-1);
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .award-desc {
+      font-size: 14px;
+      color: var(--text-2);
+      line-height: 1.7;
+    }
+
+    .leader-list {
+      list-style: none;
+    }
+
+    .leader-list li {
+      display: flex;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .leader-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .leader-role {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-1);
+    }
+
+    .leader-org {
+      font-size: 12px;
+      color: var(--text-3);
+      margin-top: 2px;
+      font-family: var(--mono);
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--green);
+      margin-top: 20px;
+    }
+
+    .status-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    .nasa-img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      height: 200px;
+      border: 1px solid var(--border);
+    }
+
+    /* ══════════════════════════════════════════
+       CONTACT
+    ══════════════════════════════════════════ */
+    #contact {
+      padding: 120px 0;
+    }
+
+    .contact-wrap {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-headline {
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 200;
+      letter-spacing: -0.04em;
+      color: var(--text-1);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .contact-sub {
+      font-size: 16px;
+      color: var(--text-2);
+      line-height: 1.7;
+      margin-bottom: 48px;
+    }
+
+    .contact-email {
+      display: block;
+      font-family: var(--mono);
+      font-size: clamp(16px, 3vw, 22px);
+      color: var(--text-1);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 48px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .contact-email:hover {
+      border-color: var(--accent);
+      color: var(--accent-light);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-2);
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+    }
+
+    .social-link:hover {
+      border-color: var(--border-hover);
+      color: var(--text-1);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    /* ── Toast ── */
+    .toast {
+      position: fixed;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      padding: 12px 24px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 13px;
+      color: var(--text-1);
+      font-family: var(--mono);
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 0.3s, transform 0.3s;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* ── Footer ── */
+    footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-text {
+      font-size: 12px;
+      color: var(--text-3);
+      font-family: var(--mono);
+    }
+
+    /* ── Back to top ── */
+    #back-top {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      width: 44px;
+      height: 44px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-2);
+      text-decoration: none;
+      font-size: 18px;
+      z-index: 50;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s, border-color 0.2s, color 0.2s;
+    }
+
+    #back-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #back-top:hover {
+      border-color: var(--border-hover);
+      color: var(--text-1);
+    }
+
+    /* ══════════════════════════════════════════
+       ANIMATIONS
+    ══════════════════════════════════════════ */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 {
+      transition-delay: 0.08s;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 0.16s;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 0.24s;
+    }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE — 768px (Tablet)
+    ══════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      /* Nav */
+      .nav-pill .desktop-links { display: none; }
+      .nav-menu-btn { display: block; }
+
+      /* Hero */
+      #hero { padding: 100px 20px 60px; }
+
+      /* Impact bar */
+      .impact-grid { grid-template-columns: 1fr; }
+      .impact-item:not(:last-child)::after { display: none; }
+      .impact-item { padding: 24px 16px; }
+
+      /* About */
+      .about-grid { grid-template-columns: 1fr; gap: 48px; }
+      .about-card { position: static; }
+      .about-photo { aspect-ratio: 3/2; }
+
+      /* Sections */
+      #about, #publications, #projects, #leadership, #contact { padding: 80px 0; }
+      .section-header { margin-bottom: 40px; }
+
+      /* Publications */
+      .pub-tabs { width: 100%; justify-content: center; flex-wrap: wrap; border-radius: 16px; }
+      .pub-card { gap: 16px; }
+
+      /* Projects bento */
+      .bento-grid { grid-template-columns: 1fr; }
+      .bento-cell.featured, .bento-cell.handbook { grid-column: span 1; }
+      .bento-cell { padding: 24px; }
+
+      /* Leadership */
+      .leadership-grid { grid-template-columns: 1fr; }
+      .leader-card.featured { grid-column: span 1; flex-direction: column; gap: 24px; }
+
+      /* Contact */
+      .contact-sub { font-size: 15px; }
+      .social-links { gap: 8px; }
+
+      /* Cursor — disable on touch */
+      #cursor-dot, #cursor-ring { display: none; }
+      body { cursor: auto; }
+      .btn-primary, .btn-secondary { cursor: pointer; }
+      .pub-tab, .pub-cite-btn, #back-top, a { cursor: pointer; }
+
+      /* Back-to-top */
+      #back-top { bottom: 20px; right: 20px; width: 40px; height: 40px; font-size: 16px; }
+    }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE — 640px (Large Mobile)
+    ══════════════════════════════════════════ */
+    @media (max-width: 640px) {
+      /* Hero */
+      #hero { padding: 88px 16px 56px; }
+      .hero-buttons { flex-direction: column; align-items: center; gap: 10px; }
+      .btn-primary, .btn-secondary { width: 100%; max-width: 280px; justify-content: center; }
+      .hero-photo { width: 100px; height: 100px; }
+      .hero-photo-wrap { margin-top: 48px; }
+
+      /* Publications tabs */
+      .pub-tabs { padding: 4px; }
+      .pub-tab { padding: 8px 14px; font-size: 12px; }
+      .pub-card { flex-direction: column; gap: 8px; }
+      .pub-index { min-width: unset; }
+
+      /* Bento */
+      .bento-cell { padding: 20px; }
+      .bento-cell.featured .bento-title { font-size: 20px; }
+
+      /* About card stats */
+      .about-card-stats { grid-template-columns: 1fr 1fr; }
+
+      /* Section padding */
+      #about, #publications, #projects, #leadership, #contact { padding: 64px 0; }
+      #impact { padding: 56px 0; }
+      #skills { padding: 56px 0; }
+
+      /* Contact */
+      .social-links { flex-direction: column; align-items: center; }
+      .social-link { width: 100%; max-width: 280px; justify-content: center; }
+    }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE — 480px (Mobile)
+    ══════════════════════════════════════════ */
+    @media (max-width: 480px) {
+      /* Container */
+      .container { padding: 0 16px; }
+
+      /* Nav */
+      #nav { top: 16px; }
+
+      /* Hero */
+      #hero { padding: 80px 16px 48px; }
+      .hero-tagline { margin-bottom: 32px; }
+
+      /* Impact bar */
+      .impact-grid { grid-template-columns: 1fr 1fr; gap: 0; }
+      .impact-item:nth-child(3) { grid-column: span 2; border-top: 1px solid var(--border); }
+      .impact-item:nth-child(1)::after { content: ''; position: absolute; right: 0; top: 15%; bottom: 15%; width: 1px; background: var(--border); display: block; }
+
+      /* Section headers */
+      .section-header { margin-bottom: 32px; }
+
+      /* Publications */
+      .pub-tabs { border-radius: 12px; }
+      .pub-card { padding: 20px 0; }
+      .pub-title { font-size: 14px; }
+
+      /* Leadership */
+      .leader-card { padding: 24px; }
+      .leader-card.featured { padding: 24px; }
+      .award-title { font-size: 18px; }
+
+      /* Contact */
+      #contact { padding: 56px 0; }
+      .contact-sub { font-size: 14px; }
+
+      /* Footer */
+      footer { padding: 28px 0; }
+
+      /* Back-to-top */
+      #back-top { bottom: 16px; right: 16px; }
     }
   </style>
-
 </head>
 
-<body class="font-sans antialiased text-gray-300">
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="cyber-loader">
-      <div class="cyber-loader-core"></div>
+<body>
+  <!-- Progress Bar -->
+  <div id="progress-bar" role="progressbar" aria-label="Scroll progress"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Particle Background -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav id="nav" aria-label="Main navigation">
+    <div class="nav-pill">
+      <span class="desktop-links" style="display:flex;gap:4px;align-items:center;">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#publications" class="nav-link">Research</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#leadership" class="nav-link">Awards</a>
+        <a href="#contact" class="nav-link" style="color:var(--accent-light);">Contact</a>
+      </span>
+      <button class="nav-menu-btn" id="menuToggle" aria-label="Toggle navigation">☰ Menu</button>
     </div>
-    <div class="cyber-loading-text">SYSTEM INITIATING...</div>
-  </div>
+  </nav>
 
-  <!-- ⌘ Command Symbol Cursor -->
-  <div id="cmd-cursor">
-    <svg viewBox="0 0 36 36" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
-      <path d="
-        M 13 13 L 23 13 L 23 23 L 13 23 Z
-        M 13 13 L 13 9 A 4 4 0 1 0 9 13 L 13 13
-        M 23 13 L 27 13 A 4 4 0 1 1 23 9 L 23 13
-        M 13 23 L 9 23 A 4 4 0 1 0 13 27 L 13 23
-        M 23 23 L 23 27 A 4 4 0 1 1 27 23 L 23 23
-      " stroke-linejoin="round" stroke-linecap="round" />
-    </svg>
-  </div>
+  <!-- ══ HERO ══ -->
+  <section id="hero">
 
-  <!-- Interactive Background -->
-  <canvas id="networkCanvas"></canvas>
+    <h1 class="hero-name"><span>Md. Mehedi Hasan</span></h1>
 
-  <header class="fixed top-0 left-0 right-0 z-50 cyber-glass border-b border-cyan/20">
-    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-      <a href="#" class="group interactive">
-        <h1
-          class="text-2xl font-black font-mono tracking-tighter text-white cursor-pointer group-hover:text-cyan transition-colors">
-          ~Hasan, Md. Mehedi.,
-        </h1>
-        <p
-          class="text-[10px] font-mono text-cyan/70 uppercase tracking-[0.2em] group-hover:text-cyan transition-colors">
-          Command Center
-        </p>
-      </a>
+    <p class="hero-sub">AI &amp; ML Researcher · NASA International Space Apps Champion 2025 · IEEE Member</p>
+    <p class="hero-tagline">
+      Building interpretable machine learning systems at the intersection of behavioral modeling, social engineering
+      detection, and socio-technical resilience.
+    </p>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-mono font-medium">
-        <a href="#about" class="text-gray-400 hover:text-cyan transition-colors interactive">/about</a>
-        <a href="#publications" class="text-gray-400 hover:text-cyan transition-colors interactive">/research</a>
-        <a href="#projects" class="text-gray-400 hover:text-cyan transition-colors interactive">/projects</a>
-        <a href="#skills" class="text-gray-400 hover:text-cyan transition-colors interactive">/skills</a>
-        <a href="#contact"
-          class="px-4 py-2 cyber-glass text-cyan border border-cyan/30 rounded hover:bg-cyan/10 transition-all interactive">
-          [ Initialize Contact ]
-        </a>
-      </nav>
+    <div class="hero-buttons">
+      <a href="#publications" class="btn-primary" id="hero-research-btn">View Research ↗</a>
+      <a href="Md_Mehedi_Hasan_CV.pdf" download class="btn-secondary" id="hero-cv-btn">↓ Download CV</a>
+      <a href="https://orcid.org/0009-0006-1427-8769" target="_blank" rel="noopener" class="btn-secondary"
+        id="hero-orcid-btn" aria-label="ORCID profile">ORCID ↗</a>
     </div>
-  </header>
 
-  <main class="max-w-5xl mx-auto p-6 space-y-24 mt-20">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-glow" aria-hidden="true"></div>
+      <img src="images/mee.jpg" alt="Md. Mehedi Hasan — AI Researcher" class="hero-photo" loading="eager" />
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="pt-20 pb-12 flex flex-col md:flex-row items-center gap-16 reveal active">
-      <div class="flex-1 text-center md:text-left z-10">
-        <div
-          class="inline-flex items-center gap-2 px-3 py-1 mb-6 border border-cyan/30 bg-cyan/10 rounded font-mono text-[10px] text-cyan uppercase tracking-widest shadow-[0_0_10px_rgba(0,240,255,0.2)]">
-          <span class="w-2 h-2 rounded-full bg-cyan animate-pulse"></span>
-          System Status: Online
+  <!-- ══ IMPACT BAR ══ -->
+  <section id="impact" aria-label="Key achievements">
+    <div class="container">
+      <div class="impact-grid">
+        <div class="impact-item reveal">
+          <span class="impact-number accent" data-count="3.76" data-decimal>3.76</span>
+          <span class="impact-label">CGPA / 4.00</span>
         </div>
-
-        <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white">
-          Pioneering <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-cyan to-violet text-glow-cyan">Social
-            Integrity</span><br />
-          via Behavioral AI
-        </h2>
-
-        <div class="font-mono text-lg text-cyan mb-8 h-8 flex items-center justify-center md:justify-start">
-          <span class="text-gray-500 mr-2">></span>
-          <span id="typewriterText"></span><span class="type-cursor"></span>
+        <div class="impact-item reveal reveal-delay-1">
+          <span class="impact-number" data-count="7">7+</span>
+          <span class="impact-label">Accepted Papers</span>
         </div>
-
-        <p class="text-base text-gray-400 max-w-2xl mb-8 leading-relaxed">
-          I develop interpretable machine learning frameworks to detect social engineering, model behavioral risk, and
-          predict socio-technical system failures. Integrating AI with human realities.
-        </p>
-
-        <div class="flex flex-wrap justify-center md:justify-start gap-4">
-          <a href="#publications"
-            class="px-8 py-3 bg-cyan/20 text-cyan border border-cyan/50 rounded font-mono hover:bg-cyan hover:text-darkbg hover:shadow-[0_0_20px_rgba(0,240,255,0.6)] transition-all interactive">
-            > Access_Research
-          </a>
-          <a href="Md_Mehedi_Hasan_CV.pdf" download
-            class="px-8 py-3 cyber-glass text-white rounded border border-white/10 hover:border-violet/50 hover:text-violet transition-all flex items-center gap-2 interactive font-mono">
-            <span class="iconify" data-icon="mdi:download"></span>
-            Download_CV
-          </a>
-          <a href="https://orcid.org/0009-0006-1427-8769" target="_blank"
-            class="px-4 py-3 cyber-glass text-green-400 border border-green-500/20 rounded hover:bg-green-500/10 transition-all flex items-center gap-2 interactive">
-            <span class="iconify w-5 h-5" data-icon="simple-icons:orcid"></span>
-          </a>
+        <div class="impact-item reveal reveal-delay-2">
+          <span class="impact-number" style="font-size:clamp(32px,5vw,48px)">🏆 NASA</span>
+          <span class="impact-label">Int'l Champion 2025</span>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="relative w-64 h-64 md:w-80 md:h-80 shrink-0 z-10 interactive">
-        <div class="orbital-frame">
-          <div class="orbital-dot" style="top:-2px;left:50%"></div>
-          <div class="orbital-dot" style="bottom:-2px;right:20%"></div>
-          <div class="orbital-dot" style="top:40%;left:-2px"></div>
-        </div>
-        <div class="relative w-full h-full p-2 overflow-hidden rounded-[20px] cyber-glass border-none scanner-container">
-          <div class="scanner-line"></div>
-          <div class="scanner-overlay"></div>
-          <img src="images/mee.jpg" alt="Md. Mehedi Hasan" loading="lazy"
-            class="w-full h-full object-cover object-top rounded-xl opacity-90 hover:opacity-100 hover:scale-[1.05] transition-all duration-500">
-        </div>
-      </div>
-    </section>
-
-    <!-- NASA Impact Matrix -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
-      <div class="cyber-glass cyber-glass-hover p-6 rounded-xl flex items-start gap-4 group">
-        <div
-          class="w-12 h-12 shrink-0 bg-yellow-500/10 border border-yellow-500/30 rounded flex items-center justify-center text-yellow-500 group-hover:shadow-[0_0_15px_rgba(234,179,8,0.4)] transition-all">
-          <span class="iconify w-6 h-6" data-icon="mdi:trophy-outline"></span>
-        </div>
+  <!-- ══ ABOUT ══ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left: text -->
         <div>
-          <h4 class="font-bold text-white font-mono text-sm mb-1 uppercase tracking-wider text-glow-cyan">NASA Champion
-          </h4>
-          <p class="text-xs text-gray-400 leading-relaxed">International Space Apps 2025 Honorable Mention, Global
-            Nominee & Regional Winner (Barisal).</p>
-        </div>
-      </div>
-      <div class="cyber-glass cyber-glass-hover violet-glow p-6 rounded-xl flex items-start gap-4 group">
-        <div
-          class="w-12 h-12 shrink-0 bg-violet/10 border border-violet/30 rounded flex items-center justify-center text-violet group-hover:shadow-[0_0_15px_rgba(138,43,226,0.4)] transition-all">
-          <span class="iconify w-6 h-6" data-icon="mdi:file-document-multiple-outline"></span>
-        </div>
-        <div>
-          <h4 class="font-bold text-white font-mono text-sm mb-1 uppercase tracking-wider">Publications</h4>
-          <p class="text-xs text-gray-400 leading-relaxed">Multiple accepted papers in top conferences covering ML, AI,
-            & Socio-Economics (Taylor & Francis, Springer).</p>
-        </div>
-      </div>
-      <div class="cyber-glass cyber-glass-hover p-6 rounded-xl flex items-start gap-4 group">
-        <div
-          class="w-12 h-12 shrink-0 bg-cyan/10 border border-cyan/30 rounded flex items-center justify-center text-cyan group-hover:shadow-[0_0_15px_rgba(0,240,255,0.4)] transition-all">
-          <span class="iconify w-6 h-6" data-icon="mdi:lan-connect"></span>
-        </div>
-        <div>
-          <h4 class="font-bold text-white font-mono text-sm mb-1 uppercase tracking-wider">IEEE Member</h4>
-          <p class="text-xs text-gray-400 leading-relaxed">Active IEEE & IEEE Computer Society Member. Strong network of
-            collaborative research.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Who Am I Section -->
-    <section id="about" class="reveal">
-      <div class="cyber-glass rounded-xl border-t-2 border-t-cyan overflow-hidden">
-        <div class="grid md:grid-cols-2 gap-0">
-
-          <!-- Left: Bio -->
-          <div class="p-8 border-b md:border-b-0 md:border-r border-white/10">
-            <h3 class="text-2xl font-bold font-mono text-white mb-1 uppercase text-glow-cyan">&gt; Who Am I</h3>
-            <p class="text-[10px] font-mono text-cyan/60 uppercase tracking-widest mb-6">// Identity_Module Initialized
-            </p>
-
-            <p class="text-sm text-gray-300 leading-relaxed mb-4">
-              I'm <span class="text-cyan font-bold">Md. Mehedi Hasan</span> — a <span
-                class="text-white font-semibold">BSc Computer Science & Engineering</span> student at <span
-                class="text-white font-semibold">Dhaka International University</span> (CGPA: 3.76 / 4.00), graduating
-              December 2027.
-            </p>
-            <h4 class="text-white font-bold font-mono text-sm uppercase tracking-wider mt-6 mb-2 text-glow-cyan">Research Vision</h4>
-            <p class="text-sm text-gray-300 leading-relaxed mb-4">
-              I work at the intersection of <span class="text-cyan">Artificial Intelligence, behavioral modeling, and socio-technical system resilience</span>. My research focuses on developing systems that are not only accurate but explainable, fair, and grounded in real human behavior.
-            </p>
-            <ul class="space-y-3 mb-6 text-sm text-gray-300">
-              <li class="flex items-start gap-3">
-                <span class="text-cyan mt-0.5"><span class="iconify" data-icon="mdi:shield-search"></span></span>
-                <span>Detecting social engineering through interpretable behavioral anomaly modeling.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-cyan mt-0.5"><span class="iconify" data-icon="mdi:chart-timeline-variant-shimmer"></span></span>
-                <span>Predicting system failures using socio-economic and IoT data integration.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-cyan mt-0.5"><span class="iconify" data-icon="mdi:brain"></span></span>
-                <span>Building continual learning frameworks for dynamic, evolving environments.</span>
-              </li>
-            </ul>
-            <p class="text-sm text-gray-300 leading-relaxed">
-              As <span class="text-violet font-semibold">President of DIU Computer Programming Club</span> and an active
-              <span class="text-white font-semibold">IEEE & IEEE Computer Society Member</span>, I combine research
-              depth with community leadership — championed by a <span class="text-yellow-400 font-bold">NASA Space Apps
-                2025</span> victory with Team Polaris.
-            </p>
-
-            <!-- Quick Facts -->
-            <div class="mt-6 grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
-              <div class="text-center">
-                <div class="text-2xl font-black font-mono text-cyan text-glow-cyan">3.76</div>
-                <div class="text-[10px] text-gray-500 font-mono uppercase mt-1">CGPA / 4.00</div>
-              </div>
-              <div class="text-center border-x border-white/10">
-                <div class="text-2xl font-black font-mono text-violet">7+</div>
-                <div class="text-[10px] text-gray-500 font-mono uppercase mt-1">Publications</div>
-              </div>
-              <div class="text-center">
-                <div class="text-2xl font-black font-mono text-yellow-400">🏆</div>
-                <div class="text-[10px] text-gray-500 font-mono uppercase mt-1">NASA Winner</div>
-              </div>
-            </div>
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Who I Am</span>
+            <h2 class="section-title">Turning Behavior<br>Into Intelligence</h2>
           </div>
 
-          <!-- Right: Education & Research Interests -->
-          <div class="p-8 space-y-8">
+          <p class="about-quote reveal reveal-delay-1">
+            I work at the intersection of <em>AI, behavioral modeling,</em> and socio-technical resilience building
+            systems that are not only accurate but <em>explainable</em> and grounded in human reality.
+          </p>
 
-            <!-- Education -->
-            <div>
-              <h5
-                class="text-[10px] font-bold text-gray-500 font-mono uppercase tracking-widest border-b border-white/10 pb-2 mb-4">
-                Education</h5>
-              <div class="space-y-5">
-                <div class="flex gap-4">
-                  <div
-                    class="w-10 h-10 shrink-0 bg-cyan/10 border border-cyan/30 rounded flex items-center justify-center text-cyan mt-1">
-                    <span class="iconify w-5 h-5" data-icon="mdi:school-outline"></span>
-                  </div>
-                  <div>
-                    <p class="text-sm font-bold text-white font-mono">Dhaka International University</p>
-                    <p class="text-xs text-gray-400">B.Sc. in Computer Science & Engineering</p>
-                    <p class="text-[10px] text-cyan/70 font-mono">Sep 2023 – Dec 2027 · CGPA 3.76 / 4.00</p>
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <div
-                    class="w-10 h-10 shrink-0 bg-violet/10 border border-violet/30 rounded flex items-center justify-center text-violet mt-1">
-                    <span class="iconify w-5 h-5" data-icon="mdi:book-education-outline"></span>
-                  </div>
-                  <div>
-                    <p class="text-sm font-bold text-white font-mono">BAF Shaheen College Jashore</p>
-                    <p class="text-xs text-gray-400">Higher Secondary Certificate (HSC)</p>
-                    <p class="text-[10px] text-violet/70 font-mono">Sep 2020 – Dec 2022 · GPA 4.75 / 5.00</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <p class="about-body reveal reveal-delay-2">
+            I'm a BSc Computer Science &amp; Engineering student at <strong style="color:var(--text-1)">Dhaka
+              International University</strong> (CGPA 3.76 / 4.00), graduating December 2027. My research focuses on
+            detecting social engineering through interpretable behavioral anomaly modeling, predicting system failures
+            using socio-economic and IoT data, and building continual learning frameworks for dynamic environments.
+          </p>
+          <p class="about-body reveal reveal-delay-2">
+            As <strong style="color:var(--text-1)">President of DIU Computer Programming Club</strong> and an active
+            IEEE &amp; IEEE Computer Society Member, I combine research depth with community leadership championed by
+            a NASA Space Apps 2025 victory with Team Polaris.
+          </p>
 
-            <!-- Research Interests -->
-            <div>
-              <h5
-                class="text-[10px] font-bold text-gray-500 font-mono uppercase tracking-widest border-b border-white/10 pb-2 mb-4">
-                Research Interests</h5>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-cyan/10 border border-cyan/20 text-cyan text-[10px] font-mono rounded-full">Behavioral
-                  ML</span>
-                <span
-                  class="px-3 py-1 bg-cyan/10 border border-cyan/20 text-cyan text-[10px] font-mono rounded-full">Social
-                  Engineering Detection</span>
-                <span
-                  class="px-3 py-1 bg-violet/10 border border-violet/20 text-violet text-[10px] font-mono rounded-full">Interpretable
-                  AI</span>
-                <span
-                  class="px-3 py-1 bg-violet/10 border border-violet/20 text-violet text-[10px] font-mono rounded-full">Socio-Economic
-                  Modeling</span>
-                <span
-                  class="px-3 py-1 bg-cyan/10 border border-cyan/20 text-cyan text-[10px] font-mono rounded-full">Continual
-                  Learning</span>
-                <span
-                  class="px-3 py-1 bg-violet/10 border border-violet/20 text-violet text-[10px] font-mono rounded-full">Geospatial
-                  Risk Prediction</span>
-                <span
-                  class="px-3 py-1 bg-cyan/10 border border-cyan/20 text-cyan text-[10px] font-mono rounded-full">Computer
-                  Vision</span>
-                <span
-                  class="px-3 py-1 bg-violet/10 border border-violet/20 text-violet text-[10px] font-mono rounded-full">LLMs
-                  & GenAI</span>
-              </div>
-            </div>
+          <div class="about-tags reveal reveal-delay-3">
+            <span class="tag accent-tag">Behavioral ML</span>
+            <span class="tag accent-tag">Social Engineering Detection</span>
+            <span class="tag accent-tag">Interpretable AI</span>
+            <span class="tag">Socio-Economic Modeling</span>
+            <span class="tag">Continual Learning</span>
+            <span class="tag">Geospatial Risk</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">LLMs &amp; GenAI</span>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- Team Polaris Section -->
-
-    <section id="vision" class="reveal relative p-1 rounded-2xl bg-gradient-to-r from-cyan/20 to-violet/20">
-      <div class="cyber-glass p-8 rounded-[14px] w-full h-full relative overflow-hidden">
-        <div class="absolute -right-20 -top-20 w-64 h-64 bg-cyan/10 blur-[80px] rounded-full"></div>
-        <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-violet/10 blur-[80px] rounded-full"></div>
-
-        <div class="relative z-10 flex flex-col md:flex-row gap-8 items-center">
-          <div class="flex-1">
-            <h3 class="text-2xl font-bold text-white mb-2 flex items-center gap-2 font-mono uppercase">
-              <span class="iconify text-yellow-500" data-icon="mdi:star-four-points"></span>
-              Operation: Team Polaris
-            </h3>
-            <p class="text-cyan font-mono text-[11px] mb-4 uppercase tracking-[0.15em]">> Team Polaris — NASA International Space Apps Challenge 2025 Champions, Global Nominee & Honorable Mention</p>
-            <p class="text-sm text-gray-400 leading-relaxed mb-6">
-              I had the honor of Being a part of <strong>Team Polaris</strong> to victory at the Barisal Division
-              championship.
-              Our unit combined expertise in Machine Learning, full-stack development, data analysis, and UI/UX design
-              to engineer a winning solution for planetary defense.
-            </p>
-            <div class="flex gap-2">
-              <span class="px-2 py-1 bg-darkbg border border-cyan/20 rounded text-[10px] font-mono text-cyan">Data
-                Analysis</span>
-              <span class="px-2 py-1 bg-darkbg border border-cyan/20 rounded text-[10px] font-mono text-cyan">Machine
-                Learning</span>
-              <span class="px-2 py-1 bg-darkbg border border-violet/20 rounded text-[10px] font-mono text-violet">3D
-                Vis</span>
-            </div>
-          </div>
-          <div
-            class="w-full md:w-1/2 rounded-xl overflow-hidden border border-cyan/30 interactive shadow-[0_0_20px_rgba(0,240,255,0.15)] group relative">
-            <img src="images/team-polaris.jpg" alt="Team Polaris" loading="lazy"
-              class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700">
-            <div class="absolute inset-0 border-2 border-cyan/0 group-hover:border-cyan/50 transition-colors z-10">
-            </div>
-            <!-- Scanner line effect -->
+          <!-- Education -->
+          <div style="margin-top:48px;" class="reveal">
             <div
-              class="absolute top-0 left-0 w-full h-1 bg-cyan/50 shadow-[0_0_10px_#00f0ff] opacity-0 group-hover:opacity-100 group-hover:animate-[scan_2s_ease-in-out_infinite] z-20">
+              style="font-size:11px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:16px;">
+              Education</div>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div>
+                <div class="edu-title">Dhaka International University</div>
+                <div class="edu-sub">B.Sc. Computer Science &amp; Engineering</div>
+                <div class="edu-date">Sep 2023 – Dec 2027 · CGPA 3.76 / 4.00</div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-dot" style="background:var(--text-3)"></div>
+              <div>
+                <div class="edu-title">BAF Shaheen College Jashore</div>
+                <div class="edu-sub">Higher Secondary Certificate (HSC)</div>
+                <div class="edu-date">Sep 2020 – Dec 2022 · GPA 4.75 / 5.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: photo card -->
+        <div class="reveal reveal-delay-1">
+          <div class="about-card">
+            <img src="images/mee.jpg" alt="Md. Mehedi Hasan" class="about-photo" loading="lazy" />
+            <div class="about-card-stats">
+              <div class="stat-mini">
+                <span class="stat-mini-num" style="color:var(--accent-light)">3.76</span>
+                <span class="stat-mini-label">CGPA</span>
+              </div>
+              <div class="stat-mini">
+                <span class="stat-mini-num">7+</span>
+                <span class="stat-mini-label">Papers</span>
+              </div>
+              <div class="stat-mini" style="grid-column:span 2;">
+                <span class="stat-mini-num" style="font-size:18px">Dhaka International<br>University</span>
+                <span class="stat-mini-label">Current Institution</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Publications -->
-    <section id="publications" class="reveal pt-10">
-      <div class="mb-8 border-l-4 border-cyan pl-4">
-        <h3 class="text-3xl font-bold text-white uppercase tracking-wider text-glow-cyan">Research Logs</h3>
-        <p class="text-mono text-xs text-gray-500 mt-1 uppercase">> Querying Socio-Economic ML & Behavioral Analysis
-          database...</p>
+  <!-- ══ PUBLICATIONS ══ -->
+  <section id="publications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Research Output</span>
+        <h2 class="section-title">Publications</h2>
+        <p class="section-desc">Accepted, under review, and ongoing research across ML, AI, socio-economics, and
+          computer vision.</p>
       </div>
 
-      <div class="space-y-4">
+      <div class="pub-tabs reveal">
+        <button class="pub-tab active" id="tab-accepted" aria-controls="list-accepted">Accepted <span
+            style="color:var(--green);margin-left:4px">●</span></button>
+        <button class="pub-tab" id="tab-review" aria-controls="list-review">Under Review</button>
+        <button class="pub-tab" id="tab-ongoing" aria-controls="list-ongoing">Ongoing</button>
+      </div>
 
+      <!-- Accepted -->
+      <div class="pub-list active" id="list-accepted">
         <!-- Pub 1 -->
-        <article class="cyber-glass cyber-glass-hover p-5 rounded border-l-2 border-l-cyan group transition-all">
-          <div class="flex justify-between items-start mb-2">
-            <span
-              class="px-2 py-0.5 bg-green-500/10 border border-green-500/30 text-green-400 font-mono text-[9px] uppercase tracking-widest">Accepted</span>
-            <span class="text-xs font-mono text-gray-500">BIM 2025 | Taylor & Francis</span>
+        <article class="pub-card reveal">
+          <div class="pub-index">01</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-badge accepted">Accepted</span>
+              <span class="pub-venue">BIM 2025 · Taylor &amp; Francis</span>
+            </div>
+            <h3 class="pub-title">A Socio-Economic Machine Learning Framework for Predicting Programmer Retention</h3>
+            <p class="pub-authors"><span class="me">Hasan, M. M.</span>, Rakib, R., Molla, M. A., Borhan, R., Based, M.
+              A.</p>
+            <button class="pub-cite-btn" onclick="copyBib('hasan2025socio')" aria-label="Copy BibTeX citation">⧉ Cite
+              (BibTeX)</button>
           </div>
-          <h4 class="text-base font-bold text-gray-200 group-hover:text-cyan transition-colors mb-2">A Socio-Economic
-            Machine Learning Framework for Predicting Programmer Retention</h4>
-          <p class="text-xs text-gray-400 font-mono"><span class="text-white">Hasan, M. M.</span>, Rakib, R., Molla, M.
-            A., Borhan, R., Based, M. A.</p>
-          <button onclick="copyBib('hasan2025socio')"
-            class="mt-2 text-[10px] text-cyan hover:text-white transition-colors flex items-center gap-1 font-mono interactive">
-            <span class="iconify" data-icon="heroicons:clipboard"></span> Cite (BibTeX)
-          </button>
         </article>
-
         <!-- Pub 2 -->
-        <article class="cyber-glass cyber-glass-hover p-5 rounded border-l-2 border-l-cyan group transition-all">
-          <div class="flex justify-between items-start mb-2">
-            <span
-              class="px-2 py-0.5 bg-green-500/10 border border-green-500/30 text-green-400 font-mono text-[9px] uppercase tracking-widest">Accepted</span>
-            <span class="text-xs font-mono text-gray-500">BIM 2025 | Taylor & Francis</span>
+        <article class="pub-card reveal reveal-delay-1">
+          <div class="pub-index">02</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-badge accepted">Accepted</span>
+              <span class="pub-venue">BIM 2025 · Taylor &amp; Francis</span>
+            </div>
+            <h3 class="pub-title">Fraud Detection with DistilBERT: A Transformer-Based Approach to Behavioral Banking
+              Sequences</h3>
+            <p class="pub-authors"><span class="me">Hasan, M. M.</span>, Mahin, A. A., Chakraborty, S., Afrose, M., Mia,
+              M. A., Based, M. A.</p>
+            <button class="pub-cite-btn" onclick="copyBib('hasan2025fraud')" aria-label="Copy BibTeX citation">⧉ Cite
+              (BibTeX)</button>
           </div>
-          <h4 class="text-base font-bold text-gray-200 group-hover:text-cyan transition-colors mb-2">Fraud Detection
-            with DistilBERT A Transformer-Based Approach to Behavioral Banking Sequences</h4>
-          <p class="text-xs text-gray-400 font-mono"><span class="text-white">Hasan, M. M.</span>, Mahin, A. A.,
-            Chakraborty, S., Afrose, M., Mia, M. A., Based, M. A.</p>
-          <button onclick="copyBib('hasan2025fraud')"
-            class="mt-2 text-[10px] text-cyan hover:text-white transition-colors flex items-center gap-1 font-mono interactive">
-            <span class="iconify" data-icon="heroicons:clipboard"></span> Cite (BibTeX)
-          </button>
         </article>
-
         <!-- Pub 3 -->
-        <article class="cyber-glass cyber-glass-hover p-5 rounded border-l-2 border-l-cyan group transition-all">
-          <div class="flex justify-between items-start mb-2">
-            <span
-              class="px-2 py-0.5 bg-green-500/10 border border-green-500/30 text-green-400 font-mono text-[9px] uppercase tracking-widest">Accepted</span>
-            <span class="text-xs font-mono text-gray-500">ECCT 2026 | Taylor & Francis</span>
+        <article class="pub-card reveal reveal-delay-2">
+          <div class="pub-index">03</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-badge accepted">Accepted</span>
+              <span class="pub-venue">ECCT 2026 · Taylor &amp; Francis</span>
+            </div>
+            <h3 class="pub-title">MEWC-RL++: A Modular and Adaptive Continual Reinforcement Learning Framework for
+              Automation Systems</h3>
+            <p class="pub-authors"><span class="me">Hasan, M. M.</span>, Mahin, A. A., Afrose, M., Based, M. A.</p>
+            <button class="pub-cite-btn" onclick="copyBib('hasan2026mewc')" aria-label="Copy BibTeX citation">⧉ Cite
+              (BibTeX)</button>
           </div>
-          <h4 class="text-base font-bold text-gray-200 group-hover:text-cyan transition-colors mb-2">MEWC-RL++: A
-            Modular and Adaptive Continual Reinforcement Learning Framework for Automation Systems</h4>
-          <p class="text-xs text-gray-400 font-mono"><span class="text-white">Hasan, M. M.</span>, Mahin, A. A., Afrose,
-            M., Based, M. A.</p>
-          <button onclick="copyBib('hasan2026mewc')"
-            class="mt-2 text-[10px] text-cyan hover:text-white transition-colors flex items-center gap-1 font-mono interactive">
-            <span class="iconify" data-icon="heroicons:clipboard"></span> Cite (BibTeX)
-          </button>
         </article>
-
         <!-- Pub 4 -->
-        <article class="cyber-glass cyber-glass-hover p-5 rounded border-l-2 border-l-cyan group transition-all">
-          <div class="flex justify-between items-start mb-2">
-            <span
-              class="px-2 py-0.5 bg-green-500/10 border border-green-500/30 text-green-400 font-mono text-[9px] uppercase tracking-widest">Accepted</span>
-            <span class="text-xs font-mono text-gray-500">ECCT 2026 | Taylor & Francis</span>
+        <article class="pub-card reveal">
+          <div class="pub-index">04</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-badge accepted">Accepted</span>
+              <span class="pub-venue">ECCT 2026 · Taylor &amp; Francis</span>
+            </div>
+            <h3 class="pub-title">Impact of Social Media Usage on Academic Performance: A Hybrid Machine Learning and
+              SEM Approach</h3>
+            <p class="pub-authors">Mrida, M. A. R., <span class="me">Hasan, M. M.</span>, Ausaf, S. M. N., Ray, P. C.,
+              Based, M. A.</p>
+            <button class="pub-cite-btn" onclick="copyBib('mrida2026impact')" aria-label="Copy BibTeX citation">⧉ Cite
+              (BibTeX)</button>
           </div>
-          <h4 class="text-base font-bold text-gray-200 group-hover:text-cyan transition-colors mb-2">Impact of Social
-            Media Usage on Academic Performance: A Hybrid Machine Learning and SEM Approach</h4>
-          <p class="text-xs text-gray-400 font-mono">Mrida, M. A. R., <span class="text-white">Hasan, M. M.</span>,
-            Ausaf, S. M. N., Ray, P. C., Based, M. A.</p>
-          <button onclick="copyBib('mrida2026impact')"
-            class="mt-2 text-[10px] text-cyan hover:text-white transition-colors flex items-center gap-1 font-mono interactive">
-            <span class="iconify" data-icon="heroicons:clipboard"></span> Cite (BibTeX)
-          </button>
         </article>
-
         <!-- Pub 5 -->
-        <article class="cyber-glass cyber-glass-hover p-5 rounded border-l-2 border-l-cyan group transition-all">
-          <div class="flex justify-between items-start mb-2">
-            <span
-              class="px-2 py-0.5 bg-green-500/10 border border-green-500/30 text-green-400 font-mono text-[9px] uppercase tracking-widest">Accepted</span>
-            <span class="text-xs font-mono text-gray-500">ECCT 2026 | ACSR, Springer Nature</span>
+        <article class="pub-card reveal reveal-delay-1">
+          <div class="pub-index">05</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-badge accepted">Accepted</span>
+              <span class="pub-venue">ECCT 2026 · ACSR, Springer Nature</span>
+            </div>
+            <h3 class="pub-title">Lightweight Deep Learning for Urban Traffic Intelligence: A MobileNetV2-YOLOv8
+              Pipeline with Adaptive Resolution Processing</h3>
+            <p class="pub-authors">Biswas, S., <span class="me">Hasan, M. M.</span>, Rakib, R., Mahin, A. A., Afrose,
+              M., Based, M. A.</p>
+            <button class="pub-cite-btn" onclick="copyBib('biswas2026lightweight')" aria-label="Copy BibTeX citation">⧉
+              Cite (BibTeX)</button>
           </div>
-          <h4 class="text-base font-bold text-gray-200 group-hover:text-cyan transition-colors mb-2">Lightweight Deep
-            Learning for Urban Traffic Intelligence: A MobileNetV2-YOLOv8 Pipeline with Adaptive Resolution Processing
-          </h4>
-          <p class="text-xs text-gray-400 font-mono">Biswas, S., <span class="text-white">Hasan, M. M.</span>, Rakib,
-            R., Mahin, A. A., Afrose, M., Based, M. A.</p>
-          <button onclick="copyBib('biswas2026lightweight')"
-            class="mt-2 text-[10px] text-cyan hover:text-white transition-colors flex items-center gap-1 font-mono interactive">
-            <span class="iconify" data-icon="heroicons:clipboard"></span> Cite (BibTeX)
-          </button>
         </article>
-
         <!-- Pub 6 -->
-        <article class="cyber-glass cyber-glass-hover p-5 rounded border-l-2 border-l-cyan group transition-all">
-          <div class="flex justify-between items-start mb-2">
-            <span
-              class="px-2 py-0.5 bg-green-500/10 border border-green-500/30 text-green-400 font-mono text-[9px] uppercase tracking-widest">Accepted</span>
-            <span class="text-xs font-mono text-gray-500">ECCT 2026 | Taylor & Francis</span>
+        <article class="pub-card reveal reveal-delay-2">
+          <div class="pub-index">06</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-badge accepted">Accepted</span>
+              <span class="pub-venue">ECCT 2026 · Taylor &amp; Francis</span>
+            </div>
+            <h3 class="pub-title">Federated and Explainable Machine Learning Framework for Cyber Attack Detection in
+              Smart Grids</h3>
+            <p class="pub-authors">Asif, M., <span class="me">Hasan, M. M.</span>, Based, M. A.</p>
+            <button class="pub-cite-btn" onclick="copyBib('asif2026federated')" aria-label="Copy BibTeX citation">⧉ Cite
+              (BibTeX)</button>
           </div>
-          <h4 class="text-base font-bold text-gray-200 group-hover:text-cyan transition-colors mb-2">Federated and
-            Explainable Machine Learning Framework for Cyber Attack Detection in Smart Grids</h4>
-          <p class="text-xs text-gray-400 font-mono">Asif, M., <span class="text-white">Hasan, M. M.</span>, Based, M.
-            A.</p>
-          <button onclick="copyBib('asif2026federated')"
-            class="mt-2 text-[10px] text-cyan hover:text-white transition-colors flex items-center gap-1 font-mono interactive">
-            <span class="iconify" data-icon="heroicons:clipboard"></span> Cite (BibTeX)
-          </button>
         </article>
-
         <!-- Pub 7 -->
-        <article class="cyber-glass cyber-glass-hover p-5 rounded border-l-2 border-l-cyan group transition-all">
-          <div class="flex justify-between items-start mb-2">
-            <span
-              class="px-2 py-0.5 bg-green-500/10 border border-green-500/30 text-green-400 font-mono text-[9px] uppercase tracking-widest">Accepted</span>
-            <span class="text-xs font-mono text-gray-500">EFAST 2026</span>
+        <article class="pub-card reveal">
+          <div class="pub-index">07</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-badge accepted">Accepted</span>
+              <span class="pub-venue">EFAST 2026</span>
+            </div>
+            <h3 class="pub-title">Student-YOLOv8: A YOLO-Based Deep Learning Approach for Real-Time Student Detection
+              and Face Recognition in Classroom Attendance Monitoring Systems</h3>
+            <p class="pub-authors"><span class="me">Hasan, M. M.</span>, Hossain, M. A., Mahin, A. A., Khatun, F.</p>
+            <button class="pub-cite-btn" onclick="copyBib('hasan2026student')" aria-label="Copy BibTeX citation">⧉ Cite
+              (BibTeX)</button>
           </div>
-          <h4 class="text-base font-bold text-gray-200 group-hover:text-cyan transition-colors mb-2">Student-YOLOv8: A
-            YOLO-Based Deep Learning Approach for Real-Time Student Detection and Face Recognition in Classroom
-            Attendance Monitoring Systems</h4>
-          <p class="text-xs text-gray-400 font-mono"><span class="text-white">Hasan, M. M.</span>, Hossain, M. A.,
-            Mahin, A. A., Khatun, F.</p>
-          <button onclick="copyBib('hasan2026student')"
-            class="mt-2 text-[10px] text-cyan hover:text-white transition-colors flex items-center gap-1 font-mono interactive">
-            <span class="iconify" data-icon="heroicons:clipboard"></span> Cite (BibTeX)
-          </button>
         </article>
+      </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-          <!-- Under Review Items -->
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review (Journal)</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">Digital Transformation for Sustainable Universities:
-              Modeling the Convergence of MIS, IoT, and Governance</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Hasan, M. M., Pallob, M. M. I., Based, M. A.</p>
+      <!-- Under Review -->
+      <div class="pub-list" id="list-review">
+        <article class="pub-card reveal">
+          <div class="pub-index">R1</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span><span
+                class="pub-venue">Journal</span></div>
+            <h3 class="pub-title">Digital Transformation for Sustainable Universities: Modeling the Convergence of MIS,
+              IoT, and Governance</h3>
+            <p class="pub-authors"><span class="me">Hasan, M. M.</span>, Pallob, M. M. I., Based, M. A.</p>
           </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review (Journal)</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">War, Media Bias, and Socio-Economic Consequences: A
-              Centennial Analysis of the Narrative-Reality Index (1914–2026)</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Hasan, M. M., Mahin, A. A., Afrose, M., Based, M. A.</p>
+        </article>
+        <article class="pub-card reveal reveal-delay-1">
+          <div class="pub-index">R2</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span><span
+                class="pub-venue">Journal</span></div>
+            <h3 class="pub-title">War, Media Bias, and Socio-Economic Consequences: A Centennial Analysis of the
+              Narrative-Reality Index (1914–2026)</h3>
+            <p class="pub-authors"><span class="me">Hasan, M. M.</span>, Mahin, A. A., Afrose, M., Based, M. A.</p>
           </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">A Hybrid Explainable Machine Learning Framework for
-              Customer Lifetime Value Prediction and Its Socio-Economic Implications</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Hasan, M. M., Rahman, M. M., Mrida, M. A. R., Based, M.
+        </article>
+        <article class="pub-card reveal reveal-delay-2">
+          <div class="pub-index">R3</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span></div>
+            <h3 class="pub-title">A Hybrid Explainable Machine Learning Framework for Customer Lifetime Value Prediction
+              and Its Socio-Economic Implications</h3>
+            <p class="pub-authors"><span class="me">Hasan, M. M.</span>, Rahman, M. M., Mrida, M. A. R., Based, M. A.
+            </p>
+          </div>
+        </article>
+        <article class="pub-card reveal">
+          <div class="pub-index">R4</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span></div>
+            <h3 class="pub-title">A Relational Database-Driven Real-Time Cryptocurrency Portfolio Management System with
+              Automated ETL Integration</h3>
+            <p class="pub-authors">Rakib, R., <span class="me">Hasan, M. M.</span>, Molla, M. A., Based, M. A.</p>
+          </div>
+        </article>
+        <article class="pub-card reveal reveal-delay-1">
+          <div class="pub-index">R5</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span></div>
+            <h3 class="pub-title">SafeRoads: AI-Driven Proactive Risk Synthesis and Data-Centric Infrastructure Audits
+              for Road Safety</h3>
+            <p class="pub-authors">Rahman, M. M., <span class="me">Hasan, M. M.</span>, Based, M. A.</p>
+          </div>
+        </article>
+        <article class="pub-card reveal reveal-delay-2">
+          <div class="pub-index">R6</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span></div>
+            <h3 class="pub-title">Machine Learning based Regression and Classification of Earthquake Magnitude using
+              USGS Seismic Records</h3>
+            <p class="pub-authors">Molla, M. A., Rakib, R., <span class="me">Hasan, M. M.</span>, Rion, A. M., Based, M.
               A.</p>
           </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">A Relational Database-Driven Real-Time Cryptocurrency
-              Portfolio Management System with Automated ETL Integration</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Rakib, R., Hasan, M. M., Molla, M. A., Based, M. A.</p>
+        </article>
+        <article class="pub-card reveal">
+          <div class="pub-index">R7</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span></div>
+            <h3 class="pub-title">Urban–Rural Inequality in Tech Career Intention: A Machine Learning Perspective</h3>
+            <p class="pub-authors">Molla, M. A., <span class="me">Hasan, M. M.</span>, Rakib, R., Borhan, R., Based, M.
+              A.</p>
           </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">SafeRoads: AI-Driven Proactive Risk Synthesis and
-              Data-Centric Infrastructure Audits for Road Safety</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Rahman, M. M., Hasan, M. M., Based, M. A.</p>
+        </article>
+        <article class="pub-card reveal reveal-delay-1">
+          <div class="pub-index">R8</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span></div>
+            <h3 class="pub-title">Socio-Economic Determinants of Programming Skill Development in Undergraduate CS
+              Students</h3>
+            <p class="pub-authors"><span class="me">Hasan, M. M.</span>, Molla, M. A., Rakib, R., Borhan, R., Based, M.
+              A.</p>
           </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">Machine Learning based Regression and Classification of
-              Earthquake Magnitude using USGS Seismic Records</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Molla, M. A., Rakib, R., Hasan, M. M., Rion, A. M.,
-              Based, M. A.</p>
+        </article>
+        <article class="pub-card reveal reveal-delay-2">
+          <div class="pub-index">R9</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span></div>
+            <h3 class="pub-title">Explainable AI for Understanding Motivation in Choosing Computer Science Careers</h3>
+            <p class="pub-authors">Rakib, R., Molla, M. A., <span class="me">Hasan, M. M.</span>, Borhan, R., Based, M.
+              A.</p>
           </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">Urban–Rural Inequality in Tech Career Intention: A Machine
-              Learning Perspective</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Molla, M. A., Hasan, M. M., Rakib, R., Borhan, R.,
-              Based, M. A.</p>
+        </article>
+        <article class="pub-card reveal">
+          <div class="pub-index">R10</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span></div>
+            <h3 class="pub-title">Fairness-Aware HIV Risk Prediction in Bangladesh Using Behavioral and Explainable AI
+            </h3>
+            <p class="pub-authors">Afrose, M., <span class="me">Hasan, M. M.</span>, Mahin, A. A., Based, M. A.</p>
           </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">Socio-Economic Determinants of Programming Skill
-              Development in Undergraduate CS Students</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Hasan, M. M., Molla, M. A., Rakib, R., Borhan, R.,
-              Based, M. A.</p>
+        </article>
+        <article class="pub-card reveal reveal-delay-1">
+          <div class="pub-index">R11</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span></div>
+            <h3 class="pub-title">A Modular Framework for Continual Reinforcement Learning in Dynamic Robotic
+              Environments</h3>
+            <p class="pub-authors">Mahin, A. A., <span class="me">Hasan, M. M.</span>, Rakib, R., Molla, M. A., Based,
+              M. A.</p>
           </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">Explainable AI for Understanding Motivation in Choosing
-              Computer Science Careers</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Rakib, R., Molla, M. A., Hasan, M. M., Borhan, R.,
-              Based, M. A.</p>
+        </article>
+        <article class="pub-card reveal reveal-delay-2">
+          <div class="pub-index">R12</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span></div>
+            <h3 class="pub-title">Interpretable Machine Learning for Depression Risk Classification Among Bangladeshi
+              University Students</h3>
+            <p class="pub-authors">Mahin, A. A., <span class="me">Hasan, M. M.</span>, Afrose, M., Mia, M. A., Based, M.
+              A.</p>
           </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">Fairness-Aware HIV Risk Prediction in Bangladesh Using
-              Behavioral and Explainable AI</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Afrose, M., Hasan, M. M., Mahin, A. A., Based, M. A.</p>
+        </article>
+        <article class="pub-card reveal">
+          <div class="pub-index">R13</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge review">Under Review</span></div>
+            <h3 class="pub-title">Cross-Cultural Early Detection of Suicidal Ideation in Adolescents: An Ensemble
+              Machine Learning Approach Using GSHS Data</h3>
+            <p class="pub-authors">Rion, A. M., Pallob, M. M. I., Rakib, R., Molla, M. A., <span class="me">Hasan, M.
+                M.</span></p>
           </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">A Modular Framework for Continual Reinforcement Learning in
-              Dynamic Robotic Environments</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Mahin, A. A., Hasan, M. M., Rakib, R., Molla, M. A.,
-              Based, M. A.</p>
-          </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">Interpretable Machine Learning for Depression Risk
-              Classification Among Bangladeshi University Students</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Mahin, A. A., Hasan, M. M., Afrose, M., Mia, M. A.,
-              Based, M. A.</p>
-          </div>
-          <div
-            class="cyber-glass yellow-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-yellow-500 uppercase">> Under_Review</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">Cross-Cultural Early Detection of Suicidal Ideation in
-              Adolescents: An Ensemble Machine Learning Approach Using GSHS Data</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Rion, A. M., Pallob, M. M. I., Rakib, R., Molla, M. A.,
-              Hasan, M. M.</p>
-          </div>
-
-          <!-- Ongoing -->
-          <div
-            class="cyber-glass blue-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-blue-400 uppercase">> Ongoing_Research</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">Women’s Psychology and Its Socioeconomic Impact on Male
-              Partners and Relationships</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Hasan, M. M., Rakib, R., Molla, M. A., Based, M. A.</p>
-          </div>
-          <div
-            class="cyber-glass blue-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-blue-400 uppercase">> Ongoing_Research</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">THE DUAL PARADOX: AI Investment and Workforce Displacement
-              in Global Corporations</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Hasan, M. M., Molla, M. A., Rakib, R., Based, M. A.</p>
-          </div>
-          <div
-            class="cyber-glass blue-glow p-4 rounded border border-white/5 opacity-70 hover:opacity-100 transition-all cursor-default">
-            <span class="text-[9px] font-mono text-blue-400 uppercase">> Ongoing_Research</span>
-            <h5 class="text-xs font-bold text-gray-300 mt-2">MEWC-LLM: Memory-Efficient Weight Consolidation for Large
-              Language Models</h5>
-            <p class="text-[10px] text-gray-500 font-mono mt-2">Afrose, M., Hasan, M. M., Based, M. A.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Grid -->
-    <section id="projects" class="reveal pt-10">
-      <div class="mb-8 border-l-4 border-violet pl-4">
-        <h3 class="text-3xl font-bold text-white uppercase tracking-wider text-glow-violet">System Architectures</h3>
-        <p class="text-mono text-xs text-gray-500 mt-1 uppercase">> Active repositories & deployed models</p>
+        </article>
       </div>
 
-      <!-- Featured: Handbook -->
-      <a href="https://www.researchgate.net/publication/407049194_The_AI_Researcher's_Handbook" target="_blank"
-        class="block mb-8 group interactive">
-        <div
-          class="cyber-glass border-l-4 border-l-cyan rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 hover:shadow-[0_0_25px_rgba(0,240,255,0.12)] hover:border-cyan/40 transition-all duration-300">
-          <!-- Icon -->
-          <div
-            class="w-16 h-16 shrink-0 bg-cyan/10 border border-cyan/20 rounded-xl flex items-center justify-center text-cyan group-hover:bg-cyan/20 group-hover:shadow-[0_0_20px_rgba(0,240,255,0.2)] transition-all">
-            <span class="iconify w-8 h-8" data-icon="mdi:book-open-page-variant"></span>
+      <!-- Ongoing -->
+      <div class="pub-list" id="list-ongoing">
+        <article class="pub-card reveal">
+          <div class="pub-index">O1</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge ongoing">Ongoing</span></div>
+            <h3 class="pub-title">Women's Psychology and Its Socioeconomic Impact on Male Partners and Relationships
+            </h3>
+            <p class="pub-authors"><span class="me">Hasan, M. M.</span>, Rakib, R., Molla, M. A., Based, M. A.</p>
           </div>
-          <!-- Text -->
-          <div class="flex-1 text-center md:text-left">
-            <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 mb-2">
-              <span
-                class="px-2 py-0.5 bg-cyan/10 border border-cyan/20 text-cyan font-mono text-[9px] uppercase tracking-widest">📖
-                Handbook</span>
-              <span
-                class="px-2 py-0.5 bg-white/5 border border-white/10 text-gray-400 font-mono text-[9px] uppercase">ResearchGate</span>
-            </div>
-            <h4 class="text-xl font-bold text-white font-mono group-hover:text-cyan transition-colors mb-1">The AI
-              Researcher's Handbook</h4>
-            <p class="text-sm text-gray-500 leading-relaxed">A comprehensive guide for AI/ML researchers — covering
-              research methodology, paper writing, experimentation design, and navigating the academic publication
-              process.</p>
+        </article>
+        <article class="pub-card reveal reveal-delay-1">
+          <div class="pub-index">O2</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge ongoing">Ongoing</span></div>
+            <h3 class="pub-title">THE DUAL PARADOX: AI Investment and Workforce Displacement in Global Corporations</h3>
+            <p class="pub-authors"><span class="me">Hasan, M. M.</span>, Molla, M. A., Rakib, R., Based, M. A.</p>
           </div>
-          <!-- Arrow -->
-          <div class="shrink-0 text-gray-600 group-hover:text-cyan group-hover:translate-x-1 transition-all">
-            <span class="iconify w-5 h-5" data-icon="mdi:arrow-right"></span>
+        </article>
+        <article class="pub-card reveal reveal-delay-2">
+          <div class="pub-index">O3</div>
+          <div class="pub-content">
+            <div class="pub-meta"><span class="pub-badge ongoing">Ongoing</span></div>
+            <h3 class="pub-title">MEWC-LLM: Memory-Efficient Weight Consolidation for Large Language Models</h3>
+            <p class="pub-authors">Afrose, M., <span class="me">Hasan, M. M.</span>, Based, M. A.</p>
           </div>
-        </div>
-      </a>
+        </article>
+      </div>
+    </div>
+  </section>
 
+  <!-- ══ PROJECTS ══ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Built &amp; Deployed</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Research prototypes and engineering systems spanning ML, CV, and full-stack development.
+        </p>
+      </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Project Card -->
-        <a href="https://github.com/meetmehedi/meteor-madness" target="_blank"
-          class="cyber-glass cyber-glass-hover violet-glow p-6 rounded-xl block group interactive">
-          <div class="flex justify-between items-start mb-4">
-            <span class="text-3xl text-violet group-hover:text-cyan transition-colors"><span class="iconify"
-                data-icon="mdi:earth"></span></span>
-            <span
-              class="px-2 py-0.5 bg-yellow-500/20 text-yellow-400 font-mono text-[9px] border border-yellow-500/30 uppercase">NASA
-              Winner</span>
-          </div>
-          <h4 class="text-xl font-bold text-white mb-2">MeteorShield</h4>
-          <p class="text-sm text-gray-400 mb-6 font-sans">NASA NEO data platform with real-time 3D visualization.
-            Champion, NASA International Space Apps Challenge 2025.</p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">NASA
-              API</span>
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">Three.js</span>
+      <div class="bento-grid">
+        <!-- Handbook (top, full width) -->
+        <a href="https://www.researchgate.net/publication/407049194_The_AI_Researcher%27s_Handbook" target="_blank"
+          rel="noopener" class="bento-cell handbook reveal" id="handbook-link">
+          <div class="bento-arrow" aria-hidden="true">↗</div>
+          <div class="bento-badge research">📖 Handbook</div>
+          <h3 class="bento-title">The AI Researcher's Handbook</h3>
+          <p class="bento-desc">A comprehensive guide for AI/ML researchers — covering research methodology, paper
+            writing, experimentation design, and navigating the academic publication process. Available on ResearchGate.
+          </p>
+          <div class="bento-tags">
+            <span class="bento-tag">ResearchGate</span>
+            <span class="bento-tag">Open Access</span>
+            <span class="bento-tag">Methodology</span>
           </div>
         </a>
 
-        <!-- Project Card -->
-        <a href="https://github.com/meetmehedi/For-final-deploy-bot-version-2.0" target="_blank"
-          class="cyber-glass cyber-glass-hover p-6 rounded-xl block group interactive">
-          <div class="flex justify-between items-start mb-4">
-            <span class="text-3xl text-cyan group-hover:text-violet transition-colors"><span class="iconify"
-                data-icon="mdi:shield-bug-outline"></span></span>
-          </div>
-          <h4 class="text-xl font-bold text-white mb-2">SocialAI</h4>
-          <p class="text-sm text-gray-400 mb-6 font-sans">Engineered a distributed, scalable platform integrating LLM
-            agents and resilient proxy routing for automated content generation.</p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">LLMs</span>
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">Python</span>
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">Automation</span>
+        <!-- MeteorShield - featured (2 cols) -->
+        <a href="https://github.com/meetmehedi/meteor-madness" target="_blank" rel="noopener"
+          class="bento-cell featured reveal" id="meteorshield-link">
+          <div class="bento-arrow" aria-hidden="true">↗</div>
+          <div class="bento-badge nasa">🏆 NASA Winner</div>
+          <div class="bento-icon" aria-hidden="true">🌍</div>
+          <h3 class="bento-title">MeteorShield</h3>
+          <p class="bento-desc">NASA NEO data platform with real-time 3D visualization. Champion, NASA International
+            Space Apps Challenge 2025 — Barisal Division &amp; Global Honorable Mention with Team Polaris.</p>
+          <div class="bento-tags">
+            <span class="bento-tag">NASA API</span>
+            <span class="bento-tag">Three.js</span>
+            <span class="bento-tag">Machine Learning</span>
+            <span class="bento-tag">3D Visualization</span>
           </div>
         </a>
 
-        <!-- Project Card -->
-        <a href="https://github.com/meetmehedi/SaveFood" target="_blank"
-          class="cyber-glass cyber-glass-hover p-6 rounded-xl block group interactive">
-          <div class="flex justify-between items-start mb-4">
-            <span class="text-3xl text-cyan group-hover:text-violet transition-colors"><span class="iconify"
-                data-icon="mdi:leaf"></span></span>
-          </div>
-          <h4 class="text-xl font-bold text-white mb-2">SaveFood</h4>
-          <p class="text-sm text-gray-400 mb-6 font-sans">Trained XGBoost on IoT time-series data to predict spoilage
-            (F1: 0.89). Dashboard visualizes waste reduction impact.</p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">XGBoost</span>
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">IoT</span>
+        <!-- SocialAI -->
+        <a href="https://github.com/meetmehedi/For-final-deploy-bot-version-2.0" target="_blank" rel="noopener"
+          class="bento-cell reveal reveal-delay-1" id="socialai-link">
+          <div class="bento-arrow" aria-hidden="true">↗</div>
+          <div class="bento-icon" aria-hidden="true">🤖</div>
+          <h3 class="bento-title">SocialAI</h3>
+          <p class="bento-desc">Distributed, scalable platform integrating LLM agents and resilient proxy routing for
+            automated content generation.</p>
+          <div class="bento-tags">
+            <span class="bento-tag">LLMs</span>
+            <span class="bento-tag">Python</span>
+            <span class="bento-tag">Automation</span>
           </div>
         </a>
 
-        <!-- Project Card -->
-        <a href="https://github.com/meetmehedi/DevBurn" target="_blank"
-          class="cyber-glass cyber-glass-hover violet-glow p-6 rounded-xl block group interactive">
-          <div class="flex justify-between items-start mb-4">
-            <span class="text-3xl text-violet group-hover:text-cyan transition-colors"><span class="iconify"
-                data-icon="mdi:code-braces"></span></span>
-            <span
-              class="px-2 py-0.5 bg-gray-500/20 text-gray-400 font-mono text-[9px] border border-gray-500/30 uppercase">Source
-              Available</span>
-          </div>
-          <h4 class="text-xl font-bold text-white mb-2">DevBurn</h4>
-          <p class="text-sm text-gray-400 mb-6 font-sans">A robust TypeScript-based full-stack engine designed to
-            analyze developer workflows, integrating GitHub services with burnout tracking algorithms.</p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">TypeScript</span>
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">Analytics</span>
+        <!-- SaveFood -->
+        <a href="https://github.com/meetmehedi/SaveFood" target="_blank" rel="noopener" class="bento-cell reveal"
+          id="savefood-link">
+          <div class="bento-arrow" aria-hidden="true">↗</div>
+          <div class="bento-icon" aria-hidden="true">🍃</div>
+          <h3 class="bento-title">SaveFood</h3>
+          <p class="bento-desc">XGBoost model trained on IoT time-series data to predict food spoilage (F1: 0.89).
+            Dashboard visualizes waste reduction impact.</p>
+          <div class="bento-tags">
+            <span class="bento-tag">XGBoost</span>
+            <span class="bento-tag">IoT</span>
           </div>
         </a>
 
-        <!-- Project Card -->
-        <a href="https://github.com/meetmehedi/SafeRoads" target="_blank"
-          class="cyber-glass cyber-glass-hover p-6 rounded-xl block group interactive">
-          <div class="flex justify-between items-start mb-4">
-            <span class="text-3xl text-cyan group-hover:text-violet transition-colors"><span class="iconify"
-                data-icon="mdi:chart-line"></span></span>
-          </div>
-          <h4 class="text-xl font-bold text-white mb-2">SafeRoads</h4>
-          <p class="text-sm text-gray-400 mb-6 font-sans">ML model to identify high-risk urban segments using traffic
-            patterns and accident history data (Precision: 84%).</p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">Geospatial
-              ML</span>
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">Ensemble</span>
+        <!-- DevBurn -->
+        <a href="https://github.com/meetmehedi/DevBurn" target="_blank" rel="noopener"
+          class="bento-cell reveal reveal-delay-1" id="devburn-link">
+          <div class="bento-arrow" aria-hidden="true">↗</div>
+          <div class="bento-icon" aria-hidden="true">⚡</div>
+          <h3 class="bento-title">DevBurn</h3>
+          <p class="bento-desc">TypeScript full-stack engine analyzing developer workflows, integrating GitHub services
+            with burnout tracking algorithms.</p>
+          <div class="bento-tags">
+            <span class="bento-tag">TypeScript</span>
+            <span class="bento-tag">Analytics</span>
           </div>
         </a>
 
-        <!-- Project Card -->
+        <!-- SafeRoads -->
+        <a href="https://github.com/meetmehedi/SafeRoads" target="_blank" rel="noopener"
+          class="bento-cell reveal reveal-delay-2" id="saferoads-link">
+          <div class="bento-arrow" aria-hidden="true">↗</div>
+          <div class="bento-icon" aria-hidden="true">🛣️</div>
+          <h3 class="bento-title">SafeRoads</h3>
+          <p class="bento-desc">ML model identifying high-risk urban segments using traffic patterns and accident
+            history (Precision: 84%).</p>
+          <div class="bento-tags">
+            <span class="bento-tag">Geospatial ML</span>
+            <span class="bento-tag">Ensemble</span>
+          </div>
+        </a>
+
+        <!-- STSPF -->
         <a href="https://github.com/meetmehedi/STSPF-Hierarchical-Temporal-Spatial-Pattern-Fusion" target="_blank"
-          class="cyber-glass cyber-glass-hover p-6 rounded-xl block group interactive">
-          <div class="flex justify-between items-start mb-4">
-            <span class="text-3xl text-cyan group-hover:text-violet transition-colors"><span class="iconify"
-                data-icon="mdi:vector-polyline"></span></span>
-          </div>
-          <h4 class="text-xl font-bold text-white mb-2">STSPF</h4>
-          <p class="text-sm text-gray-400 mb-6 font-sans">Hierarchical Temporal-Spatial Pattern Fusion model for
-            advanced data analysis and forecasting.</p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">Deep
-              Learning</span>
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">Spatial-Temporal</span>
+          rel="noopener" class="bento-cell reveal" id="stspf-link">
+          <div class="bento-arrow" aria-hidden="true">↗</div>
+          <div class="bento-icon" aria-hidden="true">📡</div>
+          <h3 class="bento-title">STSPF</h3>
+          <p class="bento-desc">Hierarchical Temporal-Spatial Pattern Fusion model for advanced data analysis and
+            forecasting in dynamic environments.</p>
+          <div class="bento-tags">
+            <span class="bento-tag">Deep Learning</span>
+            <span class="bento-tag">Spatial-Temporal</span>
           </div>
         </a>
 
-        <!-- Project Card -->
+        <!-- AI Learning Platform -->
         <a href="https://github.com/meetmehedi/AI-Powered-Supplementary-Learning-Platform-for-University-Courses"
-          target="_blank" class="cyber-glass cyber-glass-hover p-6 rounded-xl block group interactive">
-          <div class="flex justify-between items-start mb-4">
-            <span class="text-3xl text-cyan group-hover:text-violet transition-colors"><span class="iconify"
-                data-icon="mdi:brain"></span></span>
-          </div>
-          <h4 class="text-xl font-bold text-white mb-2">AI Learning Platform</h4>
-          <p class="text-sm text-gray-400 mb-6 font-sans">An AI-powered supplementary educational platform built to
-            enhance university coursework with intelligent assistance and interactive tracking.</p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">TypeScript</span>
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">EdTech</span>
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">AI</span>
+          target="_blank" rel="noopener" class="bento-cell reveal reveal-delay-1" id="aiplatform-link">
+          <div class="bento-arrow" aria-hidden="true">↗</div>
+          <div class="bento-icon" aria-hidden="true">🧠</div>
+          <h3 class="bento-title">AI Learning Platform</h3>
+          <p class="bento-desc">AI-powered supplementary educational platform enhancing university coursework with
+            intelligent assistance and interactive tracking.</p>
+          <div class="bento-tags">
+            <span class="bento-tag">TypeScript</span>
+            <span class="bento-tag">EdTech</span>
+            <span class="bento-tag">AI</span>
           </div>
         </a>
 
-        <!-- Project Card -->
-        <a href="https://github.com/meetmehedi/CryptoTracker" target="_blank"
-          class="cyber-glass cyber-glass-hover p-6 rounded-xl block group interactive">
-          <div class="flex justify-between items-start mb-4">
-            <span class="text-3xl text-cyan group-hover:text-violet transition-colors"><span class="iconify"
-                data-icon="mdi:bitcoin"></span></span>
-            <span
-              class="px-2 py-0.5 bg-gray-500/20 text-gray-400 font-mono text-[9px] border border-gray-500/30 uppercase">CS
-              Course Project</span>
-          </div>
-          <h4 class="text-xl font-bold text-white mb-2">CryptoTracker</h4>
-          <p class="text-sm text-gray-400 mb-6 font-sans">A real-time cryptocurrency portfolio management application
-            for tracking live market data and analyzing asset performance.</p>
-          <div class="flex flex-wrap gap-2 mt-auto">
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">Web</span>
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">API</span>
-            <span
-              class="px-2 py-1 bg-darkbg border border-white/10 text-gray-300 text-[10px] font-mono rounded">Finance</span>
+        <!-- CryptoTracker -->
+        <a href="https://github.com/meetmehedi/CryptoTracker" target="_blank" rel="noopener"
+          class="bento-cell reveal reveal-delay-2" id="crypto-link">
+          <div class="bento-arrow" aria-hidden="true">↗</div>
+          <div class="bento-icon" aria-hidden="true">₿</div>
+          <h3 class="bento-title">CryptoTracker</h3>
+          <p class="bento-desc">Real-time cryptocurrency portfolio management application for tracking live market data
+            and analyzing asset performance.</p>
+          <div class="bento-tags">
+            <span class="bento-tag">Web</span>
+            <span class="bento-tag">API</span>
+            <span class="bento-tag">Finance</span>
           </div>
         </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills & Memberships -->
-    <section id="skills" class="reveal pt-10">
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="md:col-span-2 cyber-glass p-8 rounded-xl border-t-2 border-t-cyan">
-          <h3 class="text-2xl font-bold font-mono text-white mb-6 uppercase text-glow-cyan">> Technical Arsenal</h3>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-8">
-            <!-- Column 1 -->
-            <div class="space-y-8">
-              <div class="space-y-4">
-                <h5
-                  class="text-[10px] font-bold text-gray-500 font-mono uppercase tracking-widest border-b border-white/10 pb-2">
-                  Languages</h5>
-                <div class="flex flex-col gap-3 font-mono">
-                  <div class="flex items-center gap-2 text-sm text-gray-300"><span class="iconify text-cyan"
-                      data-icon="devicon:python"></span> Python</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300"><span class="iconify text-cyan"
-                      data-icon="devicon:c"></span> C</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300"><span class="iconify text-cyan"
-                      data-icon="devicon:java"></span> Java</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300"><span class="iconify text-cyan"
-                      data-icon="mdi:database"></span> SQL</div>
-                </div>
-              </div>
-              <div class="space-y-4">
-                <h5
-                  class="text-[10px] font-bold text-gray-500 font-mono uppercase tracking-widest border-b border-white/10 pb-2">
-                  Data</h5>
-                <div class="flex flex-col gap-3 font-mono">
-                  <div class="flex items-center gap-2 text-sm text-gray-300">Pandas</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300">NumPy</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300">Matplotlib</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300">Seaborn</div>
-                </div>
-              </div>
-            </div>
+  <!-- ══ SKILLS MARQUEE ══ -->
+  <section id="skills" aria-label="Technical skills">
+    <p class="skills-eyebrow">Technical Stack</p>
+    <div style="overflow:hidden;">
+      <div class="marquee-track">
+        <span class="skill-pill hl">Python</span>
+        <span class="skill-pill">TensorFlow</span>
+        <span class="skill-pill hl">PyTorch</span>
+        <span class="skill-pill">Scikit-learn</span>
+        <span class="skill-pill hl">XGBoost</span>
+        <span class="skill-pill">Pandas</span>
+        <span class="skill-pill">NumPy</span>
+        <span class="skill-pill hl">Computer Vision</span>
+        <span class="skill-pill">YOLOv8</span>
+        <span class="skill-pill">OpenCV</span>
+        <span class="skill-pill hl">LLMs / GenAI</span>
+        <span class="skill-pill">Auto-sklearn</span>
+        <!-- duplicate for seamless loop -->
+        <span class="skill-pill hl">Python</span>
+        <span class="skill-pill">TensorFlow</span>
+        <span class="skill-pill hl">PyTorch</span>
+        <span class="skill-pill">Scikit-learn</span>
+        <span class="skill-pill hl">XGBoost</span>
+        <span class="skill-pill">Pandas</span>
+        <span class="skill-pill">NumPy</span>
+        <span class="skill-pill hl">Computer Vision</span>
+        <span class="skill-pill">YOLOv8</span>
+        <span class="skill-pill">OpenCV</span>
+        <span class="skill-pill hl">LLMs / GenAI</span>
+        <span class="skill-pill">Auto-sklearn</span>
+      </div>
+      <div class="marquee-track reverse">
+        <span class="skill-pill">Matplotlib</span>
+        <span class="skill-pill hl">Behavioral ML</span>
+        <span class="skill-pill">Seaborn</span>
+        <span class="skill-pill hl">Interpretable AI</span>
+        <span class="skill-pill">Java</span>
+        <span class="skill-pill">C</span>
+        <span class="skill-pill hl">SQL</span>
+        <span class="skill-pill">Git &amp; GitHub</span>
+        <span class="skill-pill hl">Selenium</span>
+        <span class="skill-pill">TypeScript</span>
+        <span class="skill-pill hl">Geospatial ML</span>
+        <span class="skill-pill">Proxy Engineering</span>
+        <!-- duplicate -->
+        <span class="skill-pill">Matplotlib</span>
+        <span class="skill-pill hl">Behavioral ML</span>
+        <span class="skill-pill">Seaborn</span>
+        <span class="skill-pill hl">Interpretable AI</span>
+        <span class="skill-pill">Java</span>
+        <span class="skill-pill">C</span>
+        <span class="skill-pill hl">SQL</span>
+        <span class="skill-pill">Git &amp; GitHub</span>
+        <span class="skill-pill hl">Selenium</span>
+        <span class="skill-pill">TypeScript</span>
+        <span class="skill-pill hl">Geospatial ML</span>
+        <span class="skill-pill">Proxy Engineering</span>
+      </div>
+    </div>
+  </section>
 
-            <!-- Column 2 -->
-            <div class="space-y-8">
-              <div class="space-y-4">
-                <h5
-                  class="text-[10px] font-bold text-gray-500 font-mono uppercase tracking-widest border-b border-white/10 pb-2">
-                  ML/AI</h5>
-                <div class="flex flex-col gap-3 font-mono">
-                  <div class="flex items-center gap-2 text-sm text-gray-300">Scikit-learn</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300">TensorFlow & PyTorch</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300">Auto-sklearn</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300">LLMs / GenAI</div>
-                </div>
-              </div>
-              <div class="space-y-4">
-                <h5
-                  class="text-[10px] font-bold text-gray-500 font-mono uppercase tracking-widest border-b border-white/10 pb-2">
-                  Vision</h5>
-                <div class="flex flex-col gap-3 font-mono">
-                  <div class="flex items-center gap-2 text-sm text-gray-300">Computer Vision</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300">YOLO</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300">OpenCV</div>
-                </div>
-              </div>
-            </div>
+  <!-- ══ LEADERSHIP & AWARDS ══ -->
+  <section id="leadership">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Recognition &amp; Service</span>
+        <h2 class="section-title">Awards &amp; Leadership</h2>
+      </div>
 
-            <!-- Column 3 -->
-            <div class="space-y-8">
-              <div class="space-y-4">
-                <h5
-                  class="text-[10px] font-bold text-gray-500 font-mono uppercase tracking-widest border-b border-white/10 pb-2">
-                  Dev & Auto</h5>
-                <div class="flex flex-col gap-3 font-mono">
-                  <div class="flex items-center gap-2 text-sm text-gray-300">Git & GitHub</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300">Web Auto. (Selenium)</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300">Task Automation</div>
-                  <div class="flex items-center gap-2 text-sm text-gray-300">Proxy Engineering</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cyber-glass p-8 rounded-xl border-t-2 border-t-violet flex flex-col justify-between">
+      <div class="leadership-grid">
+        <!-- NASA Featured -->
+        <div class="leader-card featured reveal" id="nasa-card">
+          <div class="award-icon" aria-hidden="true">🏆</div>
           <div>
-            <h3 class="text-xl font-bold font-mono text-white mb-6 uppercase text-glow-violet">> Leadership</h3>
-            <ul class="space-y-4 font-mono">
-              <li class="flex items-start gap-3">
-                <span class="text-violet mt-1"><span class="iconify" data-icon="mdi:chevron-right"></span></span>
-                <div>
-                  <p class="text-sm font-bold text-white leading-tight">President</p>
-                  <p class="text-[10px] text-gray-400 mt-0.5">DIU Computer Programming Club (2026-27)</p>
-                </div>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-violet mt-1"><span class="iconify" data-icon="mdi:chevron-right"></span></span>
-                <div>
-                  <p class="text-sm font-bold text-white leading-tight">General Secretary</p>
-                  <p class="text-[10px] text-gray-400 mt-0.5">DIU CSE Speakers Club (2025-26)</p>
-                </div>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-violet mt-1"><span class="iconify" data-icon="mdi:chevron-right"></span></span>
-                <div>
-                  <p class="text-sm font-bold text-white leading-tight">Executive Member</p>
-                  <p class="text-[10px] text-gray-400 mt-0.5">BASIS Students' Forum (DIU)</p>
-                </div>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-violet mt-1"><span class="iconify" data-icon="mdi:chevron-right"></span></span>
-                <div>
-                  <p class="text-sm font-bold text-white leading-tight">Student Member</p>
-                  <p class="text-[10px] text-gray-400 mt-0.5">IEEE & IEEE Computer Society</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="mt-8 pt-6 border-t border-white/5 font-mono">
-            <p class="text-[10px] text-gray-500 uppercase tracking-widest mb-1">Status</p>
-            <p class="text-xs text-green-400 font-bold flex items-center gap-2">
-              <span class="relative flex h-2 w-2">
-                <span
-                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-              </span>
-              Open for Collaborations
-            </p>
+            <div class="award-eyebrow">NASA International Space Apps Challenge 2025</div>
+            <h3 class="award-title">Global Nominee &amp; Honorable Mention · Barisal Champion</h3>
+            <p class="award-desc">Led Team Polaris to victory at the Barisal Division championship. Combined expertise
+              in Machine Learning, full-stack development, data analysis, and UI/UX to engineer a winning planetary
+              defense solution — MeteorShield.</p>
+            <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;">
+              <span class="tag accent-tag">Machine Learning</span>
+              <span class="tag">3D Visualization</span>
+              <span class="tag">NASA API</span>
+              <span class="tag">Team Polaris</span>
+            </div>
           </div>
         </div>
+
+        <!-- Leadership -->
+        <div class="leader-card reveal" id="leadership-card">
+          <div
+            style="font-size:11px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:24px;">
+            Leadership Roles</div>
+          <ul class="leader-list">
+            <li>
+              <div
+                style="width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:4px;flex-shrink:0;">
+              </div>
+              <div>
+                <div class="leader-role">President</div>
+                <div class="leader-org">DIU Computer Programming Club · 2026–27</div>
+              </div>
+            </li>
+            <li>
+              <div
+                style="width:8px;height:8px;border-radius:50%;background:var(--text-3);margin-top:4px;flex-shrink:0;">
+              </div>
+              <div>
+                <div class="leader-role">General Secretary</div>
+                <div class="leader-org">DIU CSE Speakers Club · 2025–26</div>
+              </div>
+            </li>
+            <li>
+              <div
+                style="width:8px;height:8px;border-radius:50%;background:var(--text-3);margin-top:4px;flex-shrink:0;">
+              </div>
+              <div>
+                <div class="leader-role">Executive Member</div>
+                <div class="leader-org">BASIS Students' Forum (DIU)</div>
+              </div>
+            </li>
+            <li>
+              <div
+                style="width:8px;height:8px;border-radius:50%;background:var(--text-3);margin-top:4px;flex-shrink:0;">
+              </div>
+              <div>
+                <div class="leader-role">Student Member</div>
+                <div class="leader-org">IEEE &amp; IEEE Computer Society</div>
+              </div>
+            </li>
+          </ul>
+          <div class="status-badge">Open for Collaborations</div>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer id="contact" class="pt-20 pb-10 text-center reveal">
-      <div class="inline-block p-[1px] rounded-lg bg-gradient-to-r from-cyan to-violet mb-8">
-        <div class="bg-darkbg px-8 py-8 rounded-lg cyber-glass">
-          <h3 class="text-3xl font-bold text-white mb-4 font-mono text-glow-cyan">> Initialize_Connection</h3>
-          <p class="text-sm text-gray-400 mb-8 max-w-lg mx-auto">Open for research collaborations, engineering
-            challenges, or just a friendly chat about AI.</p>
-
-          <div class="flex flex-wrap justify-center gap-4">
-            <a href="mailto:meetmehedi1@gmail.com"
-              class="px-6 py-2 border border-cyan/50 text-cyan font-bold font-mono rounded hover:bg-cyan hover:text-darkbg hover:shadow-[0_0_15px_rgba(0,240,255,0.6)] transition-all interactive">Email
-              Me</a>
-            <a href="mehedi-contact.vcf" download
-              class="px-6 py-2 border border-cyan/50 bg-cyan/10 text-cyan font-bold font-mono rounded hover:bg-cyan hover:text-darkbg hover:shadow-[0_0_15px_rgba(0,240,255,0.6)] transition-all interactive flex items-center gap-2">
-              <span class="iconify" data-icon="mdi:card-account-details-outline"></span> Download vCard
-            </a>
-            <a href="https://www.linkedin.com/in/meetmehedi"
-              class="px-6 py-2 border border-white/20 text-white font-bold font-mono rounded hover:border-violet hover:text-violet transition-all interactive">LinkedIn</a>
-            <a href="https://github.com/meetmehedi"
-              class="px-6 py-2 border border-white/20 text-white font-bold font-mono rounded hover:border-violet hover:text-violet transition-all interactive">GitHub</a>
-            <a href="https://orcid.org/0009-0006-1427-8769" target="_blank"
-              class="px-6 py-2 border border-green-500/30 text-green-400 font-bold font-mono rounded hover:bg-green-500/10 transition-all interactive">ORCID</a>
-            <a href="https://www.facebook.com/meetmehedi1/"
-              class="px-6 py-2 border border-white/20 text-white font-bold font-mono rounded hover:border-violet hover:text-violet transition-all interactive">Facebook</a>
-          </div>
+  <!-- ══ CONTACT ══ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="section-header reveal" style="margin-bottom:32px;">
+          <span class="section-eyebrow">Get in Touch</span>
+        </div>
+        <div class="hero-badge reveal" style="margin: 0 auto 32px;">
+          <span class="dot" aria-hidden="true"></span>
+          Open for Research Collaborations
+        </div>
+        <h2 class="contact-headline reveal">Let's Shape<br>the Future</h2>
+        <p class="contact-sub reveal reveal-delay-1">
+          Open for research collaborations, engineering challenges, or just a friendly conversation about AI and its
+          impact on humanity.
+        </p>
+        <a href="mailto:meetmehedi1@gmail.com" class="contact-email reveal reveal-delay-2"
+          id="email-link">meetmehedi1@gmail.com</a>
+        <div class="social-links reveal reveal-delay-3">
+          <a href="https://www.linkedin.com/in/meetmehedi" target="_blank" rel="noopener" class="social-link"
+            id="linkedin-link">LinkedIn ↗</a>
+          <a href="https://github.com/meetmehedi" target="_blank" rel="noopener" class="social-link"
+            id="github-link">GitHub ↗</a>
+          <a href="https://orcid.org/0009-0006-1427-8769" target="_blank" rel="noopener" class="social-link"
+            id="orcid-link">ORCID ↗</a>
+          <a href="https://www.facebook.com/meetmehedi1/" target="_blank" rel="noopener" class="social-link"
+            id="facebook-link">Facebook ↗</a>
+          <a href="mehedi-contact.vcf" download class="social-link" id="vcard-link">↓ vCard</a>
         </div>
       </div>
-      <p class="text-xs text-gray-600 font-mono">~Hasan, Md. Mehedi., © 2026. Neural Space Command Center Active.</p>
-    </footer>
+    </div>
+  </section>
 
-  </main>
+  <!-- Footer -->
+  <footer>
+    <p class="footer-text">Md. Mehedi Hasan · © 2026 · AI Researcher · <a href="https://www.mdmehedihasan.us/"
+        style="color:inherit;text-decoration:none;" id="site-url">mdmehedihasan.us</a></p>
+  </footer>
 
-  <!-- Back to Top -->
-  <a href="#"
-    class="fixed bottom-8 right-8 w-12 h-12 cyber-glass rounded flex items-center justify-center text-cyan border-cyan/20 hover:bg-cyan hover:text-darkbg hover:shadow-[0_0_15px_rgba(0,240,255,0.6)] transition-all z-40 group interactive">
-    <span class="iconify w-6 h-6 group-hover:-translate-y-1 transition-transform"
-      data-icon="heroicons:arrow-up-20-solid"></span>
-  </a>
+  <!-- Toast -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
 
+  <!-- Back to top -->
+  <a href="#" id="back-top" aria-label="Back to top">↑</a>
+
+  <!-- ══════════════════════════════════════════
+       JAVASCRIPT
+  ══════════════════════════════════════════ -->
   <script>
-    // Custom Cursor Logic
-    const cursorDot = document.getElementById('cursorDot');
-    const cursorRing = document.getElementById('cursorRing');
-    const interactives = document.querySelectorAll('.interactive, a, button');
-
-    document.addEventListener('mousemove', (e) => {
-      cursorDot.style.left = e.clientX + 'px';
-      cursorDot.style.top = e.clientY + 'px';
-
-      // Delay for ring
-      setTimeout(() => {
-        cursorRing.style.left = e.clientX + 'px';
-        cursorRing.style.top = e.clientY + 'px';
-      }, 50);
-    });
-
-    interactives.forEach(el => {
-      el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
-      el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
-    });
-
-    // Typewriter Effect
-    const roles = ["AI Researcher", "Systems Architect", "NASA Space Apps Champion", "Behavioral Modeler"];
-    let roleIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    const typeTextElement = document.getElementById('typewriterText');
-    const typeSpeed = 100;
-    const deleteSpeed = 50;
-    const delayBetween = 2000;
-
-    function typeWriter() {
-      const currentRole = roles[roleIndex];
-
-      if (isDeleting) {
-        typeTextElement.textContent = currentRole.substring(0, charIndex - 1);
-        charIndex--;
-      } else {
-        typeTextElement.textContent = currentRole.substring(0, charIndex + 1);
-        charIndex++;
-      }
-
-      let timeoutSpeed = isDeleting ? deleteSpeed : typeSpeed;
-
-      if (!isDeleting && charIndex === currentRole.length) {
-        timeoutSpeed = delayBetween;
-        isDeleting = true;
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        roleIndex = (roleIndex + 1) % roles.length;
-        timeoutSpeed = 500;
-      }
-
-      setTimeout(typeWriter, timeoutSpeed);
+    // ── Scroll Progress ──
+    const progressBar = document.getElementById('progress-bar');
+    function updateProgress() {
+      const st = window.scrollY;
+      const dh = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (dh > 0 ? (st / dh) * 100 : 0) + '%';
     }
-    setTimeout(typeWriter, 1000);
 
-    // Scroll Reveal Animation
-    const revealElements = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
+    // ── Nav visibility ──
+    const nav = document.getElementById('nav');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section[id]');
+    let lastScrollY = 0;
+    let navVisible = false;
+
+    function updateNav() {
+      const sy = window.scrollY;
+      if (sy > 120 && !navVisible) { nav.classList.add('visible'); navVisible = true; }
+      else if (sy <= 120 && navVisible) { nav.classList.remove('visible'); navVisible = false; }
+      if (sy > lastScrollY + 5 && sy > 300) { nav.classList.add('hide'); }
+      else if (sy < lastScrollY - 5) { nav.classList.remove('hide'); }
+      lastScrollY = sy;
+
+      // Active section
+      let current = '';
+      sections.forEach(s => {
+        const top = s.getBoundingClientRect().top;
+        if (top < 200) current = s.id;
+      });
+      navLinks.forEach(l => {
+        l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+      });
+    }
+
+    // ── Back to top ──
+    const backTop = document.getElementById('back-top');
+    function updateBackTop() {
+      backTop.classList.toggle('visible', window.scrollY > 600);
+    }
+
+    window.addEventListener('scroll', () => {
+      updateProgress();
+      updateNav();
+      updateBackTop();
+    }, { passive: true });
+
+    // ── Magnetic Cursor ──
+    const dot = document.getElementById('cursor-dot');
+    const ring = document.getElementById('cursor-ring');
+    let mx = -200, my = -200;
+    let rx = -200, ry = -200;
+
+    if (window.innerWidth > 768) {
+      window.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        dot.style.left = mx + 'px';
+        dot.style.top = my + 'px';
+      });
+      function animCursor() {
+        rx += (mx - rx) * 0.12;
+        ry += (my - ry) * 0.12;
+        ring.style.left = rx + 'px';
+        ring.style.top = ry + 'px';
+        requestAnimationFrame(animCursor);
+      }
+      animCursor();
+
+      document.querySelectorAll('a, button, .bento-cell, .pub-cite-btn, .pub-tab').forEach(el => {
+        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-active'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-active'));
+      });
+    }
+
+    // ── Particle System ──
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+    let W = canvas.width = window.innerWidth;
+    let H = canvas.height = window.innerHeight;
+
+    const PARTICLE_COUNT = Math.min(90, Math.floor(W * H / 14000));
+    const particles = Array.from({ length: PARTICLE_COUNT }, () => ({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      r: Math.random() * 1.2 + 0.3,
+      vx: (Math.random() - 0.5) * 0.18,
+      vy: (Math.random() - 0.5) * 0.18,
+      a: Math.random(),
+      da: (Math.random() - 0.5) * 0.003
+    }));
+
+    function drawParticles() {
+      ctx.clearRect(0, 0, W, H);
+      particles.forEach(p => {
+        p.x += p.vx; p.y += p.vy;
+        p.a = Math.max(0.05, Math.min(0.85, p.a + p.da));
+        if (p.a <= 0.05 || p.a >= 0.85) p.da *= -1;
+        if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+        if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255,255,255,${p.a})`;
+        ctx.fill();
+      });
+      // Draw subtle connecting lines between close particles
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const d = Math.sqrt(dx * dx + dy * dy);
+          if (d < 100) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = `rgba(99,102,241,${(1 - d / 100) * 0.06})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+    window.addEventListener('resize', () => {
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    });
+
+    // ── Scroll Reveal ──
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    // ── Count-up animation ──
+    function countUp(el) {
+      const target = parseFloat(el.dataset.count);
+      const decimal = el.dataset.decimal !== undefined;
+      const dur = 1200;
+      const start = performance.now();
+      function frame(now) {
+        const p = Math.min((now - start) / dur, 1);
+        const v = target * p;
+        el.textContent = decimal ? v.toFixed(2) : Math.round(v) + '+';
+        if (p < 1) requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    }
+    const impactObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && e.target.dataset.count) {
+          countUp(e.target);
+          impactObs.unobserve(e.target);
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-count]').forEach(el => impactObs.observe(el));
 
-    revealElements.forEach(el => revealObserver.observe(el));
+    // ── Publication Tabs ──
+    const tabs = document.querySelectorAll('.pub-tab');
+    const lists = document.querySelectorAll('.pub-list');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        lists.forEach(l => l.classList.remove('active'));
+        tab.classList.add('active');
+        const listId = tab.id.replace('tab-', 'list-');
+        document.getElementById(listId).classList.add('active');
+      });
+    });
 
-    // ── BibTeX Citation Copy ──
+    // ── BibTeX Copy ──
     const bibEntries = {
       hasan2025socio: `@inproceedings{hasan2025socio,
   title={A Socio-Economic Machine Learning Framework for Predicting Programmer Retention},
@@ -1448,7 +2475,7 @@
   year={2025}
 }`,
       hasan2026mewc: `@inproceedings{hasan2026mewc,
-  title={MEWC-RL++: A Modular and Adaptive Continual Reinforcement Learning Framework for Automation Systems in Structured but Evolving Environments},
+  title={MEWC-RL++: A Modular and Adaptive Continual Reinforcement Learning Framework for Automation Systems},
   author={Hasan, M. M. and Mahin, A. A. and Afrose, M. and Based, M. A.},
   booktitle={International Conference on Electrical, Computer and Communication Technologies (ECCT 2026)},
   year={2026}
@@ -1474,7 +2501,7 @@
       hasan2026student: `@inproceedings{hasan2026student,
   title={Student-YOLOv8: A YOLO-Based Deep Learning Approach for Real-Time Student Detection and Face Recognition in Classroom Attendance Monitoring Systems},
   author={Hasan, M. M. and Hossain, M. A. and Mahin, A. A. and Khatun, F.},
-  booktitle={International Conference on Emerging Frontiers in Advanced Sciences and Technologies 2026 (EFAST 2026)},
+  booktitle={International Conference on Emerging Frontiers in Advanced Sciences and Technologies (EFAST 2026)},
   year={2026}
 }`
     };
@@ -1482,530 +2509,31 @@
     function copyBib(key) {
       const bib = bibEntries[key];
       if (!bib) return;
-      navigator.clipboard.writeText(bib).then(() => {
-        // Show toast
-        const toast = document.createElement('div');
-        toast.textContent = '✓ BibTeX copied to clipboard';
-        toast.style.cssText = 'position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);padding:0.75rem 1.5rem;background:rgba(0,240,255,0.15);border:1px solid rgba(0,240,255,0.3);color:#00f0ff;border-radius:8px;font-size:12px;font-family:monospace;z-index:10000;backdrop-filter:blur(8px);animation:fadeIn 0.3s ease';
-        document.body.appendChild(toast);
-        setTimeout(() => toast.remove(), 2500);
-      });
+      navigator.clipboard.writeText(bib).then(() => showToast('✓ BibTeX copied to clipboard'));
     }
 
-    // ── Outer Space Scroll Journey ──
-    const canvas = document.getElementById('networkCanvas');
-    const ctx = canvas.getContext('2d');
-    let width, height;
-
-    const isMobile = window.innerWidth <= 768 || ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
-
-    let resizeTimer;
-    function resize() {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => {
-        width = canvas.width = window.innerWidth;
-        height = canvas.height = window.innerHeight;
-        initStars();
-        buildNebula();
-        initAsteroids();
-      }, 150);
-    }
-    
-    // Initial setup
-    width = canvas.width = window.innerWidth;
-    height = canvas.height = window.innerHeight;
-    window.addEventListener('resize', resize);
-
-    // Asteroids
-    let asteroids = [];
-    function initAsteroids() {
-      asteroids = [];
-      const asteroidCount = isMobile ? 3 : 8;
-      for (let i = 0; i < asteroidCount; i++) {
-        asteroids.push({
-          x: Math.random() * width,
-          y: Math.random() * height,
-          r: Math.random() * 12 + 6,
-          vx: (Math.random() - 0.5) * 0.8,
-          vy: (Math.random() - 0.5) * 0.8,
-          rot: Math.random() * Math.PI * 2,
-          vrot: (Math.random() - 0.5) * 0.04,
-          pts: Array.from({ length: 8 }, () => Math.random() * 0.4 + 0.7)
-        });
-      }
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2800);
     }
 
-    // Stars with depth layers for parallax
-    let stars = [];
-    function initStars() {
-      stars = [];
-      const density = isMobile ? 2500 : 900;
-      const count = Math.floor((width * height) / density);
-      for (let i = 0; i < count; i++) {
-        const depth = Math.random(); // 0=far, 1=near
-        stars.push({
-          x: Math.random() * width,
-          baseY: Math.random() * height,
-          r: depth * 1.3 + 0.2,
-          alpha: Math.random(),
-          dalpha: (Math.random() - 0.5) * 0.008,
-          depth: depth,
-          color: Math.random() < 0.06 ? '#a78bfa' : Math.random() < 0.04 ? '#67e8f9' : '#ffffff'
-        });
-      }
-    }
-
-    // Nebula (offscreen)
-    let nebula = null;
-    function buildNebula() {
-      const off = document.createElement('canvas');
-      off.width = width; off.height = height;
-      const oc = off.getContext('2d');
-      const blobs = [
-        { x: width * 0.12, y: height * 0.25, r: width * 0.25, c: 'rgba(60,0,120,0.06)' },
-        { x: width * 0.82, y: height * 0.55, r: width * 0.2, c: 'rgba(0,60,140,0.05)' },
-        { x: width * 0.5, y: height * 0.1, r: width * 0.15, c: 'rgba(15,0,60,0.04)' },
-      ];
-      blobs.forEach(b => {
-        const g = oc.createRadialGradient(b.x, b.y, 0, b.x, b.y, b.r);
-        g.addColorStop(0, b.c);
-        g.addColorStop(1, 'transparent');
-        oc.fillStyle = g;
-        oc.fillRect(0, 0, width, height);
-      });
-      nebula = off;
-    }
-
-    // Shooting stars
-    let shooters = [];
-    function spawnShooter() {
-      if (Math.random() < 0.003) {
-        shooters.push({
-          x: Math.random() * width,
-          y: Math.random() * height * 0.4,
-          len: Math.random() * 100 + 50,
-          speed: Math.random() * 5 + 3,
-          alpha: 1
-        });
-      }
-    }
-
-    // Cursor
-    const cmdCursor = document.getElementById('cmd-cursor');
-    let mouse = { x: -200, y: -200 };
-    
-    if (isMobile) {
-      cmdCursor.style.display = 'none';
-    } else {
-      window.addEventListener('mousemove', e => {
-        mouse.x = e.clientX;
-        mouse.y = e.clientY;
-        cmdCursor.style.left = e.clientX + 'px';
-        cmdCursor.style.top = e.clientY + 'px';
-      });
-
-      // Hover detection
-      document.querySelectorAll('.interactive, a, button').forEach(el => {
-        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
-        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
-      });
-    }
-
-    // Scroll progress
-    function getScrollProgress() {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      return docHeight > 0 ? scrollTop / docHeight : 0;
-    }
-
-    // Draw celestial body
-    function drawSphere(cx, cy, radius, color1, color2, glowColor, glowSize) {
-      // Glow
-      const glow = ctx.createRadialGradient(cx, cy, radius * 0.3, cx, cy, radius + glowSize);
-      glow.addColorStop(0, glowColor);
-      glow.addColorStop(1, 'transparent');
-      ctx.fillStyle = glow;
-      ctx.beginPath();
-      ctx.arc(cx, cy, radius + glowSize, 0, Math.PI * 2);
-      ctx.fill();
-      // Body
-      const bodyGrad = ctx.createRadialGradient(cx - radius * 0.3, cy - radius * 0.3, 0, cx, cy, radius);
-      bodyGrad.addColorStop(0, color1);
-      bodyGrad.addColorStop(1, color2);
-      ctx.fillStyle = bodyGrad;
-      ctx.beginPath();
-      ctx.arc(cx, cy, radius, 0, Math.PI * 2);
-      ctx.fill();
-    }
-
-    // Draw Earth with continents feel
-    function drawEarth(cx, cy, r, time) {
-      drawSphere(cx, cy, r, '#4fa8d4', '#1a3a5c', 'rgba(50,140,220,0.15)', r * 0.6);
-      // Continent-like patches
-      ctx.save();
-      ctx.globalAlpha = 0.35;
-      const patches = [
-        { a: time * 0.2, d: r * 0.4, s: r * 0.28 },
-        { a: time * 0.2 + 2, d: r * 0.3, s: r * 0.22 },
-        { a: time * 0.2 + 4.2, d: r * 0.5, s: r * 0.18 },
-      ];
-      patches.forEach(p => {
-        const px = cx + Math.cos(p.a) * p.d;
-        const py = cy + Math.sin(p.a) * p.d * 0.6;
-        ctx.fillStyle = '#3a8c5c';
-        ctx.beginPath();
-        ctx.arc(px, py, p.s, 0, Math.PI * 2);
-        ctx.fill();
-      });
-      // Atmosphere rim
-      ctx.globalAlpha = 0.15;
-      ctx.strokeStyle = '#6dd5fa';
-      ctx.lineWidth = 2;
-      ctx.beginPath();
-      ctx.arc(cx, cy, r + 2, 0, Math.PI * 2);
-      ctx.stroke();
-      ctx.restore();
-    }
-
-    // Draw Moon
-    function drawMoon(cx, cy, r) {
-      drawSphere(cx, cy, r, '#d4d4d4', '#888888', 'rgba(200,200,200,0.08)', r * 0.4);
-      // Craters
-      ctx.save();
-      ctx.globalAlpha = 0.2;
-      ctx.fillStyle = '#999';
-      [[-0.2, -0.3, 0.15], [0.3, 0.1, 0.1], [-0.1, 0.3, 0.08]].forEach(c => {
-        ctx.beginPath();
-        ctx.arc(cx + c[0] * r, cy + c[1] * r, c[2] * r, 0, Math.PI * 2);
-        ctx.fill();
-      });
-      ctx.restore();
-    }
-
-    // Draw Mars
-    function drawMars(cx, cy, r) {
-      drawSphere(cx, cy, r, '#c1440e', '#e77d11', 'rgba(193,68,14,0.15)', r * 0.4);
-      // Surface details
-      ctx.save();
-      ctx.globalAlpha = 0.2;
-      ctx.fillStyle = '#8c3109';
-      [[-0.2, -0.1, 0.3], [0.1, 0.2, 0.25], [0.3, -0.2, 0.15]].forEach(c => {
-        ctx.beginPath();
-        ctx.ellipse(cx + c[0] * r, cy + c[1] * r, c[2] * r, c[2] * r * 0.6, Math.PI / 4, 0, Math.PI * 2);
-        ctx.fill();
-      });
-      ctx.restore();
-    }
-
-    // Draw Saturn with Rings
-    function drawSaturn(cx, cy, r) {
-      // Back half of rings
-      ctx.save();
-      ctx.translate(cx, cy);
-      ctx.rotate(-Math.PI / 6);
-      ctx.beginPath();
-      ctx.ellipse(0, 0, r * 2.2, r * 0.5, 0, Math.PI, Math.PI * 2);
-      ctx.strokeStyle = 'rgba(210,180,140,0.4)';
-      ctx.lineWidth = r * 0.4;
-      ctx.stroke();
-      ctx.restore();
-
-      drawSphere(cx, cy, r, '#e3cb98', '#b59b67', 'rgba(227,203,152,0.1)', r * 0.5);
-
-      // Front half of rings
-      ctx.save();
-      ctx.translate(cx, cy);
-      ctx.rotate(-Math.PI / 6);
-      ctx.beginPath();
-      ctx.ellipse(0, 0, r * 2.2, r * 0.5, 0, 0, Math.PI);
-      ctx.strokeStyle = 'rgba(210,180,140,0.8)';
-      ctx.lineWidth = r * 0.4;
-      ctx.stroke();
-
-      // Inner ring gap
-      ctx.beginPath();
-      ctx.ellipse(0, 0, r * 1.8, r * 0.35, 0, 0, Math.PI);
-      ctx.strokeStyle = 'rgba(255,255,255,0.2)';
-      ctx.lineWidth = r * 0.05;
-      ctx.stroke();
-      ctx.restore();
-    }
-
-    // Draw Sun
-    function drawSun(cx, cy, r, time) {
-      // Corona rays
-      ctx.save();
-      for (let i = 0; i < 12; i++) {
-        const angle = (i / 12) * Math.PI * 2 + time * 0.3;
-        const rayLen = r * 1.8 + Math.sin(time * 2 + i) * r * 0.4;
-        ctx.beginPath();
-        ctx.moveTo(cx + Math.cos(angle) * r * 0.9, cy + Math.sin(angle) * r * 0.9);
-        ctx.lineTo(cx + Math.cos(angle) * rayLen, cy + Math.sin(angle) * rayLen);
-        ctx.strokeStyle = `rgba(255,200,50,${0.08 + Math.sin(time + i) * 0.04})`;
-        ctx.lineWidth = r * 0.15;
-        ctx.lineCap = 'round';
-        ctx.stroke();
-      }
-      ctx.restore();
-      drawSphere(cx, cy, r, '#fff4a3', '#e8a020', 'rgba(255,220,80,0.2)', r * 1.2);
-    }
-
-    // Draw Sunflower
-    function drawSunflower(cx, cy, size, time) {
-      ctx.save();
-      // Stem
-      ctx.strokeStyle = '#3a7a2a';
-      ctx.lineWidth = size * 0.08;
-      ctx.beginPath();
-      ctx.moveTo(cx, cy + size * 0.5);
-      ctx.lineTo(cx, cy + size * 2.5);
-      ctx.stroke();
-      // Leaves
-      ctx.fillStyle = '#4a9a3a';
-      ctx.beginPath();
-      ctx.ellipse(cx - size * 0.4, cy + size * 1.5, size * 0.3, size * 0.1, -0.4, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.beginPath();
-      ctx.ellipse(cx + size * 0.4, cy + size * 1.8, size * 0.3, size * 0.1, 0.4, 0, Math.PI * 2);
-      ctx.fill();
-      // Petals
-      const petalCount = 14;
-      for (let i = 0; i < petalCount; i++) {
-        const angle = (i / petalCount) * Math.PI * 2 + Math.sin(time * 0.5) * 0.05;
-        ctx.fillStyle = i % 2 === 0 ? '#ffc107' : '#ffb300';
-        ctx.save();
-        ctx.translate(cx, cy);
-        ctx.rotate(angle);
-        ctx.beginPath();
-        ctx.ellipse(0, -size * 0.45, size * 0.12, size * 0.3, 0, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.restore();
-      }
-      // Center
-      const cg = ctx.createRadialGradient(cx, cy, 0, cx, cy, size * 0.22);
-      cg.addColorStop(0, '#5c3a0a');
-      cg.addColorStop(1, '#3a2506');
-      ctx.fillStyle = cg;
-      ctx.beginPath();
-      ctx.arc(cx, cy, size * 0.22, 0, Math.PI * 2);
-      ctx.fill();
-      // Seeds pattern
-      ctx.fillStyle = 'rgba(80,50,10,0.5)';
-      for (let i = 0; i < 20; i++) {
-        const a = (i / 20) * Math.PI * 2;
-        const d = size * 0.12 * (0.3 + (i % 3) * 0.25);
-        ctx.beginPath();
-        ctx.arc(cx + Math.cos(a) * d, cy + Math.sin(a) * d, size * 0.015, 0, Math.PI * 2);
-        ctx.fill();
-      }
-      ctx.restore();
-    }
-
-    let animTime = 0;
-    function animate() {
-      ctx.clearRect(0, 0, width, height);
-      animTime += 0.016;
-      const scrollP = getScrollProgress(); // 0 at top, 1 at bottom
-
-      // Nebula
-      if (nebula) ctx.drawImage(nebula, 0, 0);
-
-      // Parallax-scrolling stars
-      stars.forEach(s => {
-        s.alpha += s.dalpha;
-        if (s.alpha <= 0 || s.alpha >= 1) s.dalpha *= -1;
-        s.alpha = Math.max(0.05, Math.min(1, s.alpha));
-        // Deeper stars scroll slower
-        const parallax = scrollP * height * 0.8 * (0.2 + s.depth * 0.8);
-        let drawY = ((s.baseY - parallax) % height + height) % height;
-        ctx.beginPath();
-        ctx.arc(s.x, drawY, s.r, 0, Math.PI * 2);
-        ctx.fillStyle = hexAlpha(s.color, s.alpha);
-        ctx.fill();
-        if (s.r > 1.0 && s.alpha > 0.7) {
-          ctx.beginPath();
-          ctx.arc(s.x, drawY, s.r * 2.5, 0, Math.PI * 2);
-          const g = ctx.createRadialGradient(s.x, drawY, 0, s.x, drawY, s.r * 2.5);
-          g.addColorStop(0, hexAlpha(s.color, s.alpha * 0.25));
-          g.addColorStop(1, 'transparent');
-          ctx.fillStyle = g;
-          ctx.fill();
-        }
-      });
-
-      // Shooting stars
-      spawnShooter();
-      shooters = shooters.filter(sh => sh.alpha > 0.02);
-      shooters.forEach(sh => {
-        ctx.beginPath();
-        ctx.moveTo(sh.x, sh.y);
-        ctx.lineTo(sh.x - sh.len, sh.y - sh.len * 0.4);
-        const g = ctx.createLinearGradient(sh.x, sh.y, sh.x - sh.len, sh.y - sh.len * 0.4);
-        g.addColorStop(0, `rgba(180,220,255,${sh.alpha})`);
-        g.addColorStop(1, 'transparent');
-        ctx.strokeStyle = g;
-        ctx.lineWidth = 1.5;
-        ctx.stroke();
-        sh.x += sh.speed;
-        sh.y += sh.speed * 0.4;
-        sh.alpha -= 0.016;
-      });
-
-      // Asteroids
-      ctx.save();
-      asteroids.forEach(a => {
-        a.x += a.vx;
-        a.y += a.vy;
-        a.rot += a.vrot;
-        if (a.x < -50) a.x = width + 50;
-        if (a.x > width + 50) a.x = -50;
-        if (a.y < -50) a.y = height + 50;
-        if (a.y > height + 50) a.y = -50;
-
-        ctx.save();
-        ctx.translate(a.x, a.y);
-        ctx.rotate(a.rot);
-        ctx.beginPath();
-        for (let i = 0; i < 8; i++) {
-          const angle = (i / 8) * Math.PI * 2;
-          const rad = a.r * a.pts[i];
-          if (i === 0) ctx.moveTo(Math.cos(angle) * rad, Math.sin(angle) * rad);
-          else ctx.lineTo(Math.cos(angle) * rad, Math.sin(angle) * rad);
-        }
-        ctx.closePath();
-        ctx.fillStyle = 'rgba(100,100,100,0.5)';
-        ctx.fill();
-        ctx.strokeStyle = 'rgba(60,60,60,0.6)';
-        ctx.lineWidth = 1;
-        ctx.stroke();
-
-        // crater
-        ctx.beginPath();
-        ctx.arc(a.r * 0.2, -a.r * 0.2, a.r * 0.25, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(80,80,80,0.6)';
-        ctx.fill();
-        ctx.restore();
-      });
-      ctx.restore();
-
-      // ── Celestial bodies appear as you scroll past 65% ──
-      const celestialStart = 0.65;
-      if (scrollP > celestialStart) {
-        const t = (scrollP - celestialStart) / (1 - celestialStart); // 0→1 in last 35%
-
-        // Mars (appears early)
-        if (t > 0.05) {
-          const mt = (t - 0.05) / 0.95;
-          ctx.save();
-          ctx.globalAlpha = Math.min(1, mt * 2);
-          const marsR = Math.min(width, height) * 0.025;
-          const marsX = width * 0.2;
-          const marsY = height * 0.3 + (1 - mt) * 50;
-          drawMars(marsX, marsY, marsR);
-          ctx.restore();
-        }
-
-        // Saturn (appears mid)
-        if (t > 0.15) {
-          const st = (t - 0.15) / 0.85;
-          ctx.save();
-          ctx.globalAlpha = Math.min(1, st * 2);
-          const saturnR = Math.min(width, height) * 0.045;
-          const saturnX = width * 0.85;
-          const saturnY = height * 0.7 + (1 - st) * 70;
-          drawSaturn(saturnX, saturnY, saturnR);
-          ctx.restore();
-        }
-
-        // Sun (appears first, upper right, small)
-        const sunAlpha = Math.min(1, t * 2);
-        ctx.save();
-        ctx.globalAlpha = sunAlpha;
-        const sunR = Math.min(width, height) * 0.035;
-        const sunX = width * 0.78;
-        const sunY = height * 0.18 + (1 - t) * 40;
-        drawSun(sunX, sunY, sunR, animTime);
-        ctx.restore();
-
-        // Earth (center, appears at ~40% of range)
-        if (t > 0.25) {
-          const et = (t - 0.25) / 0.75;
-          ctx.save();
-          ctx.globalAlpha = Math.min(1, et * 1.8);
-          const earthR = Math.min(width, height) * 0.07;
-          const earthX = width * 0.5;
-          const earthY = height * 0.5 + (1 - et) * 60;
-          drawEarth(earthX, earthY, earthR, animTime);
-
-          // Moon orbits Earth
-          if (et > 0.3) {
-            const mt = (et - 0.3) / 0.7;
-            ctx.globalAlpha = Math.min(1, mt * 2);
-            const moonR = earthR * 0.28;
-            const moonOrbit = earthR * 2.5;
-            const moonAngle = animTime * 0.4;
-            const moonX = earthX + Math.cos(moonAngle) * moonOrbit;
-            const moonY = earthY + Math.sin(moonAngle) * moonOrbit * 0.35;
-            drawMoon(moonX, moonY, moonR);
-          }
-          ctx.restore();
-        }
-
-        // Sunflower (far away, tiny, bottom corner, appears last)
-        if (t > 0.7) {
-          const ft = (t - 0.7) / 0.3;
-          ctx.save();
-          ctx.globalAlpha = Math.min(1, ft * 2);
-          const flowerSize = Math.min(width, height) * 0.018;
-          const flowerX = width * 0.15;
-          const flowerY = height * 0.88 - ft * 10;
-          drawSunflower(flowerX, flowerY, flowerSize, animTime);
-          ctx.restore();
-        }
-      }
-
-      // Mouse proximity glow
-      stars.forEach(s => {
-        const parallax = scrollP * height * 0.8 * (0.2 + s.depth * 0.8);
-        let drawY = ((s.baseY - parallax) % height + height) % height;
-        const dx = s.x - mouse.x, dy = drawY - mouse.y;
-        const d = Math.sqrt(dx * dx + dy * dy);
-        if (d < 100) {
-          const op = (1 - d / 100) * 0.2;
-          ctx.beginPath();
-          ctx.moveTo(s.x, drawY);
-          ctx.lineTo(mouse.x, mouse.y);
-          ctx.strokeStyle = `rgba(0,240,255,${op})`;
-          ctx.lineWidth = 0.3;
-          ctx.stroke();
-        }
-      });
-
-      requestAnimationFrame(animate);
-    }
-
-    function hexAlpha(hex, a) {
-      const r = parseInt(hex.slice(1, 3), 16);
-      const g = parseInt(hex.slice(3, 5), 16);
-      const b = parseInt(hex.slice(5, 7), 16);
-      return `rgba(${r},${g},${b},${a})`;
-    }
-
-    resize();
-    animate();
-
-    // Remove preloader on load
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        const preloader = document.getElementById('preloader');
-        if (preloader) {
-          preloader.classList.add('hidden');
-          // Optionally remove it from DOM after transition
-          setTimeout(() => preloader.remove(), 800);
-        }
-      }, 500); // give it a tiny delay for effect
+    // ── Mobile menu ──
+    const menuToggle = document.getElementById('menuToggle');
+    const desktopLinks = document.querySelector('.desktop-links');
+    menuToggle.addEventListener('click', () => {
+      const open = desktopLinks.style.display === 'flex';
+      desktopLinks.style.display = open ? 'none' : 'flex';
+      desktopLinks.style.flexDirection = 'column';
+      desktopLinks.style.gap = '4px';
+      desktopLinks.style.padding = '8px 0';
     });
-
+    document.querySelectorAll('.nav-link').forEach(l => {
+      l.addEventListener('click', () => {
+        if (window.innerWidth <= 768) desktopLinks.style.display = 'none';
+      });
+    });
   </script>
 </body>
 
