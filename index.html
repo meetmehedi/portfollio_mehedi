@@ -8,7 +8,7 @@
   <!-- ── Primary SEO ── -->
   <title>Md. Mehedi Hasan — AI &amp; ML Researcher | NASA Space Apps Champion 2025</title>
   <meta name="description"
-    content="Md. Mehedi Hasan is an AI &amp; ML Researcher at Dhaka International University, specialising in behavioral modeling, social engineering detection, and interpretable machine learning. NASA International Space Apps Champion 2025, IEEE Member, and author of 8+ accepted papers." />
+    content="Md. Mehedi Hasan is an AI &amp; ML Researcher at Dhaka International University, specialising in behavioral modeling, social engineering detection, and interpretable machine learning. NASA International Space Apps Champion 2025, IEEE Member, and author of 10+ accepted papers." />
   <meta name="keywords"
     content="Md Mehedi Hasan, AI Researcher, ML Researcher, Machine Learning, Behavioral Modeling, Social Engineering Detection, Interpretable AI, NASA Space Apps Champion, IEEE Member, Dhaka International University, Python, TensorFlow, PyTorch, NLP, Computer Vision" />
   <meta name="author" content="Md. Mehedi Hasan" />
@@ -27,7 +27,7 @@
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Md. Mehedi Hasan — AI &amp; ML Researcher | NASA Space Apps Champion 2025" />
   <meta property="og:description"
-    content="AI &amp; ML Researcher specialising in behavioral modeling, social engineering detection &amp; interpretable ML. NASA International Space Apps Champion 2025 · IEEE Member · 8+ accepted papers." />
+    content="AI &amp; ML Researcher specialising in behavioral modeling, social engineering detection &amp; interpretable ML. NASA International Space Apps Champion 2025 · IEEE Member · 10+ accepted papers." />
   <meta property="og:url" content="https://www.mdmehedihasan.us/" />
   <meta property="og:image" content="https://www.mdmehedihasan.us/images/mee.jpg" />
   <meta property="og:image:width" content="1200" />
@@ -42,7 +42,7 @@
   <meta name="twitter:creator" content="@meetmehedi" />
   <meta name="twitter:title" content="Md. Mehedi Hasan — AI &amp; ML Researcher" />
   <meta name="twitter:description"
-    content="AI &amp; ML Researcher · NASA International Space Apps Champion 2025 · IEEE Member · 8+ accepted papers. Building interpretable ML systems at the frontier of behavioral modeling." />
+    content="AI &amp; ML Researcher · NASA International Space Apps Champion 2025 · IEEE Member · 10+ accepted papers. Building interpretable ML systems at the frontier of behavioral modeling." />
   <meta name="twitter:image" content="https://www.mdmehedihasan.us/images/mee.jpg" />
   <meta name="twitter:image:alt" content="Md. Mehedi Hasan — AI Researcher" />
 
@@ -1347,6 +1347,54 @@
       color: var(--text-1);
     }
 
+    /* ── Chalkboard / Blueprint SVGs (Responsive styles) ── */
+    .figure-wrap {
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      padding: 18px 12px;
+      margin-top: 18px;
+      background: var(--surface-2);
+      width: 100%;
+    }
+    .figure-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .figure-svg-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .figure-svg {
+      max-width: 100%;
+      height: auto;
+    }
+    .svg-box {
+      fill: none;
+      stroke: var(--text-2);
+      stroke-width: 1.2;
+    }
+    .svg-line {
+      stroke: var(--text-3);
+      stroke-width: 1.2;
+      stroke-dasharray: 3,4;
+      fill: none;
+    }
+    .svg-text {
+      fill: var(--text-1);
+      font-family: var(--mono);
+      font-size: 10px;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+    .svg-accent {
+      fill: var(--accent);
+    }
+
     /* ══════════════════════════════════════════
        ANIMATIONS
     ══════════════════════════════════════════ */
@@ -1391,12 +1439,34 @@
     @media (max-width: 768px) {
 
       /* Nav */
+      .nav-pill {
+        flex-direction: column;
+        align-items: stretch;
+        width: 90%;
+        max-width: 320px;
+        border-radius: 20px;
+        padding: 8px 12px;
+      }
+
       .nav-pill .desktop-links {
         display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 4px;
+        padding: 8px 0;
+      }
+
+      .nav-pill .desktop-links a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
       }
 
       .nav-menu-btn {
         display: block;
+        text-align: center;
+        width: 100%;
       }
 
       /* Hero */
@@ -1775,7 +1845,7 @@
           <span class="impact-label">CGPA / 4.00</span>
         </div>
         <div class="impact-item reveal reveal-delay-1">
-          <span class="impact-number" data-count="8">8+</span>
+          <span class="impact-number" data-count="10">10+</span>
           <span class="impact-label">Accepted Papers</span>
         </div>
         <div class="impact-item reveal reveal-delay-2">
@@ -1824,6 +1894,23 @@
             <span class="tag">Computer Vision</span>
             <span class="tag">LLMs &amp; GenAI</span>
           </div>
+          <div class="figure-wrap reveal reveal-delay-3" style="max-width:520px;margin-top:32px;">
+            <p class="figure-label">Fig. 0 — Research Methodology Framework</p>
+            <div class="figure-svg-container">
+              <svg width="440" height="150" class="figure-svg" viewBox="0 0 440 150" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="55" width="80" height="36" class="svg-box"/><text x="50" y="67" class="svg-text" style="font-size:9px">BEHAVIOR /</text><text x="50" y="80" class="svg-text" style="font-size:9px">SIGNAL DATA</text>
+                <path d="M90 73 L140 73" class="svg-line"/>
+                <rect x="140" y="45" width="90" height="54" class="svg-box"/><text x="185" y="65" class="svg-text" style="font-size:10px">INTERPRET.</text><text x="185" y="80" class="svg-text" style="font-size:10px">ML LAYER</text>
+                <path d="M230 73 L270 73" class="svg-line"/>
+                <path d="M270 73 L300 32" class="svg-line"/>
+                <path d="M270 73 L300 73" class="svg-line"/>
+                <path d="M270 73 L300 114" class="svg-line"/>
+                <rect x="300" y="18" width="100" height="26" class="svg-box"/><text x="350" y="31" class="svg-text" style="font-size:8.5px">FRAUD / RISK</text>
+                <rect x="300" y="60" width="100" height="26" class="svg-box"/><text x="350" y="73" class="svg-text" style="font-size:8.5px">RETENTION</text>
+                <rect x="300" y="101" width="100" height="26" class="svg-box"/><text x="350" y="114" class="svg-text" style="font-size:8.5px">GEO / ORBITAL</text>
+              </svg>
+            </div>
+          </div>
 
           <!-- Education -->
           <div style="margin-top:48px;" class="reveal">
@@ -1859,7 +1946,7 @@
                 <span class="stat-mini-label">CGPA</span>
               </div>
               <div class="stat-mini">
-                <span class="stat-mini-num">8+</span>
+                <span class="stat-mini-num">10+</span>
                 <span class="stat-mini-label">Papers</span>
               </div>
               <div class="stat-mini" style="grid-column:span 2;">
@@ -1991,7 +2078,7 @@
           <div class="pub-content">
             <div class="pub-meta">
               <span class="pub-badge accepted">Accepted</span>
-              <span class="pub-venue">EFAST 2026</span>
+              <span class="pub-venue">IUB Journal of Science and Engineering (AJSE)</span>
             </div>
             <h3 class="pub-title">Student-YOLOv8: A YOLO-Based Deep Learning Approach for Real-Time Student Detection
               and Face Recognition in Classroom Attendance Monitoring Systems</h3>
@@ -2012,6 +2099,34 @@
             <p class="pub-authors">Rion, A. M., Pallob, M. M. I., Rakib, R., Molla, M. A., <span class="me">Hasan, M.
                 M.</span></p>
             <button class="pub-cite-btn" onclick="copyBib('rion2026suicidal')" aria-label="Copy BibTeX citation">⧉ Cite
+              (BibTeX)</button>
+          </div>
+        </article>
+        <!-- Pub 9 -->
+        <article class="pub-card reveal">
+          <div class="pub-index">09</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-badge accepted">Accepted</span>
+              <span class="pub-venue">Venue pending</span>
+            </div>
+            <h3 class="pub-title">A Hybrid Explainable AI Framework for Concurrent Earthquake Magnitude Estimation and Severity Classification</h3>
+            <p class="pub-authors">Molla, M. A., Rakib, R., <span class="me">Hasan, M. M.</span>, Pallob, M. I., Rion, A. M., Based, M. A.</p>
+            <button class="pub-cite-btn" onclick="copyBib('molla2026hybrid')" aria-label="Copy BibTeX citation">⧉ Cite
+              (BibTeX)</button>
+          </div>
+        </article>
+        <!-- Pub 10 -->
+        <article class="pub-card reveal">
+          <div class="pub-index">10</div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-badge accepted">Accepted</span>
+              <span class="pub-venue">Venue pending</span>
+            </div>
+            <h3 class="pub-title">FairCF: Fair Counterfactual Explanations for Student Academic Performance Prediction</h3>
+            <p class="pub-authors">Molla, M. A., Rakib, R., Pallob, M. I., <span class="me">Hasan, M. M.</span>, Rion, A. M.</p>
+            <button class="pub-cite-btn" onclick="copyBib('molla2026faircf')" aria-label="Copy BibTeX citation">⧉ Cite
               (BibTeX)</button>
           </div>
         </article>
@@ -2192,6 +2307,20 @@
             <span class="bento-tag">Open Access</span>
             <span class="bento-tag">Methodology</span>
           </div>
+          <div class="figure-wrap">
+            <p class="figure-label">Fig. 4 — Academic Lifecycle</p>
+            <div class="figure-svg-container">
+              <svg width="280" height="80" class="figure-svg" viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="25" width="55" height="30" class="svg-box"/><text x="32.5" y="40" class="svg-text" style="font-size:8px">HYPOTHESIS</text>
+                <path d="M60 40 L85 40" class="svg-line"/>
+                <rect x="85" y="25" width="55" height="30" class="svg-box"/><text x="112.5" y="40" class="svg-text" style="font-size:8px">EXPERIMENT</text>
+                <path d="M140 40 L165 40" class="svg-line"/>
+                <rect x="165" y="25" width="50" height="30" class="svg-box"/><text x="190" y="40" class="svg-text" style="font-size:8.5px">DRAFT</text>
+                <path d="M215 40 L235 40" class="svg-line"/>
+                <circle cx="250" cy="40" r="15" class="svg-box"/><text x="250" y="40" class="svg-text" style="font-size:8px">REVIEW</text>
+              </svg>
+            </div>
+          </div>
         </a>
 
         <!-- MeteorShield - featured (2 cols) -->
@@ -2209,6 +2338,20 @@
             <span class="bento-tag">Machine Learning</span>
             <span class="bento-tag">3D Visualization</span>
           </div>
+          <div class="figure-wrap">
+            <p class="figure-label">Fig. 3 — MeteorShield Pipeline</p>
+            <div class="figure-svg-container">
+              <svg width="300" height="130" class="figure-svg" viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="30,65 52,44 74,65 52,86" class="svg-box"/><text x="52" y="65" class="svg-text" style="font-size:9px">API</text>
+                <path d="M74 65 L115 65" class="svg-line"/>
+                <circle cx="145" cy="65" r="28" class="svg-box"/>
+                <ellipse cx="145" cy="65" rx="36" ry="10" fill="none" stroke="var(--text-3)" stroke-width="1.2" transform="rotate(20 145 65)"/>
+                <text x="145" y="65" class="svg-text" style="font-size:8.5px">3D VIS</text>
+                <path d="M176 65 L215 65" class="svg-line"/>
+                <rect x="215" y="42" width="65" height="46" class="svg-box"/><text x="247" y="58" class="svg-text" style="font-size:8.5px">DASH</text><text x="247" y="74" class="svg-text" style="font-size:8.5px">BOARD</text>
+              </svg>
+            </div>
+          </div>
         </a>
 
         <!-- SocialAI -->
@@ -2224,6 +2367,19 @@
             <span class="bento-tag">Python</span>
             <span class="bento-tag">Automation</span>
           </div>
+          <div class="figure-wrap">
+            <p class="figure-label">Fig. 5 — Distributed LLM Pipeline</p>
+            <div class="figure-svg-container">
+              <svg width="220" height="130" class="figure-svg" viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="15" width="60" height="30" class="svg-box"/><text x="40" y="30" class="svg-text" style="font-size:8px">LLM AGENTS</text>
+                <path d="M40 45 L40 85" class="svg-line"/>
+                <rect x="10" y="85" width="60" height="30" class="svg-box"/><text x="40" y="100" class="svg-text" style="font-size:8px">PROXY POOL</text>
+                <path d="M70 30 L130 65" class="svg-line"/>
+                <path d="M70 100 L130 65" class="svg-line"/>
+                <rect x="130" y="45" width="70" height="40" class="svg-box"/><text x="165" y="65" class="svg-text" style="font-size:8.5px">TARGET API</text>
+              </svg>
+            </div>
+          </div>
         </a>
 
         <!-- SaveFood -->
@@ -2237,6 +2393,20 @@
           <div class="bento-tags">
             <span class="bento-tag">XGBoost</span>
             <span class="bento-tag">IoT</span>
+          </div>
+          <div class="figure-wrap">
+            <p class="figure-label">Fig. 6 — Spoilage Prediction Model</p>
+            <div class="figure-svg-container">
+              <svg width="220" height="130" class="figure-svg" viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="20" width="55" height="24" class="svg-box"/><text x="37.5" y="32" class="svg-text" style="font-size:8px">TEMP/HUMID</text>
+                <rect x="10" y="86" width="55" height="24" class="svg-box"/><text x="37.5" y="98" class="svg-text" style="font-size:8px">GAS SENSORS</text>
+                <path d="M65 32 L110 65" class="svg-line"/>
+                <path d="M65 98 L110 65" class="svg-line"/>
+                <rect x="110" y="45" width="60" height="40" class="svg-box"/><text x="140" y="65" class="svg-text" style="font-size:9px">XGBOOST</text>
+                <path d="M170 65 L200 65" class="svg-line"/>
+                <circle cx="205" cy="65" r="8" class="svg-accent"/>
+              </svg>
+            </div>
           </div>
         </a>
 
@@ -2252,6 +2422,18 @@
             <span class="bento-tag">TypeScript</span>
             <span class="bento-tag">Analytics</span>
           </div>
+          <div class="figure-wrap">
+            <p class="figure-label">Fig. 7 — Burnout Telemetry</p>
+            <div class="figure-svg-container">
+              <svg width="220" height="130" class="figure-svg" viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="45" width="60" height="40" class="svg-box"/><text x="40" y="60" class="svg-text" style="font-size:8px">GITHUB</text><text x="40" y="72" class="svg-text" style="font-size:8px">EVENTS</text>
+                <path d="M70 65 L110 65" class="svg-line"/>
+                <rect x="110" y="45" width="60" height="40" class="svg-box"/><text x="140" y="60" class="svg-text" style="font-size:8.5px">TRACKING</text><text x="140" y="72" class="svg-text" style="font-size:8.5px">ALGORITHM</text>
+                <path d="M170 65 L200 65" class="svg-line"/>
+                <polygon points="200,60 215,65 200,70" class="svg-accent"/>
+              </svg>
+            </div>
+          </div>
         </a>
 
         <!-- SafeRoads -->
@@ -2266,6 +2448,20 @@
             <span class="bento-tag">Geospatial ML</span>
             <span class="bento-tag">Ensemble</span>
           </div>
+          <div class="figure-wrap">
+            <p class="figure-label">Fig. 2 — Risk Synthesis</p>
+            <div class="figure-svg-container">
+              <svg width="220" height="130" class="figure-svg" viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="35" r="18" class="svg-box"/><text x="40" y="35" class="svg-text" style="font-size:8px">TRAFFIC</text>
+                <circle cx="40" cy="95" r="18" class="svg-box"/><text x="40" y="95" class="svg-text" style="font-size:8px">HISTORY</text>
+                <path d="M58 35 L110 65" class="svg-line"/>
+                <path d="M58 95 L110 65" class="svg-line"/>
+                <rect x="110" y="45" width="60" height="40" class="svg-box"/><text x="140" y="58" class="svg-text" style="font-size:9px">RISK</text><text x="140" y="72" class="svg-text" style="font-size:9px">MODEL</text>
+                <path d="M170 65 L200 65" class="svg-line"/>
+                <polygon points="200,60 215,65 200,70" class="svg-accent"/>
+              </svg>
+            </div>
+          </div>
         </a>
 
         <!-- STSPF -->
@@ -2279,6 +2475,21 @@
           <div class="bento-tags">
             <span class="bento-tag">Deep Learning</span>
             <span class="bento-tag">Spatial-Temporal</span>
+          </div>
+          <div class="figure-wrap">
+            <p class="figure-label">Fig. 1 — Hierarchical Fusion</p>
+            <div class="figure-svg-container">
+              <svg width="220" height="130" class="figure-svg" viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="20" width="55" height="24" class="svg-box"/><text x="37.5" y="32" class="svg-text" style="font-size:8px">TIME IN</text>
+                <rect x="10" y="86" width="55" height="24" class="svg-box"/><text x="37.5" y="98" class="svg-text" style="font-size:8px">SPACE IN</text>
+                <path d="M65 32 L100 32 L100 55 L120 55" class="svg-line"/>
+                <path d="M65 98 L100 98 L100 75 L120 75" class="svg-line"/>
+                <rect x="120" y="40" width="60" height="50" class="svg-box"/>
+                <text x="150" y="58" class="svg-text" style="font-size:9px">HIER.</text><text x="150" y="72" class="svg-text" style="font-size:9px">FUSION</text>
+                <path d="M180 65 L200 65" class="svg-line"/>
+                <circle cx="205" cy="65" r="8" class="svg-box"/>
+              </svg>
+            </div>
           </div>
         </a>
 
@@ -2295,6 +2506,19 @@
             <span class="bento-tag">EdTech</span>
             <span class="bento-tag">AI</span>
           </div>
+          <div class="figure-wrap">
+            <p class="figure-label">Fig. 8 — Educational Assistant Loop</p>
+            <div class="figure-svg-container">
+              <svg width="220" height="130" class="figure-svg" viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="15" width="65" height="30" class="svg-box"/><text x="42.5" y="30" class="svg-text" style="font-size:8.5px">SYLLABUS IN</text>
+                <path d="M42.5 45 L42.5 85" class="svg-line"/>
+                <rect x="10" y="85" width="65" height="30" class="svg-box"/><text x="42.5" y="100" class="svg-text" style="font-size:8.5px">STUDENT LOG</text>
+                <path d="M75 30 L130 65" class="svg-line"/>
+                <path d="M75 100 L130 65" class="svg-line"/>
+                <rect x="130" y="50" width="60" height="30" class="svg-box"/><text x="160" y="65" class="svg-text" style="font-size:9px">AI ASSIST</text>
+              </svg>
+            </div>
+          </div>
         </a>
 
         <!-- CryptoTracker -->
@@ -2309,6 +2533,18 @@
             <span class="bento-tag">Web</span>
             <span class="bento-tag">API</span>
             <span class="bento-tag">Finance</span>
+          </div>
+          <div class="figure-wrap">
+            <p class="figure-label">Fig. 9 — Market API Stream</p>
+            <div class="figure-svg-container">
+              <svg width="220" height="130" class="figure-svg" viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="30,65 52,44 74,65 52,86" class="svg-box"/><text x="52" y="65" class="svg-text" style="font-size:9px">LIVE API</text>
+                <path d="M74 65 L110 65" class="svg-line"/>
+                <rect x="110" y="45" width="60" height="40" class="svg-box"/><text x="140" y="60" class="svg-text" style="font-size:8.5px">PORTFOLIO</text><text x="140" y="72" class="svg-text" style="font-size:8.5px">TRACKER</text>
+                <path d="M170 65 L200 65" class="svg-line"/>
+                <circle cx="205" cy="65" r="8" class="svg-box"/>
+              </svg>
+            </div>
           </div>
         </a>
       </div>
@@ -2715,7 +2951,7 @@
       hasan2026student: `@inproceedings{hasan2026student,
   title={Student-YOLOv8: A YOLO-Based Deep Learning Approach for Real-Time Student Detection and Face Recognition in Classroom Attendance Monitoring Systems},
   author={Hasan, M. M. and Hossain, M. A. and Mahin, A. A. and Khatun, F.},
-  booktitle={International Conference on Emerging Frontiers in Advanced Sciences and Technologies (EFAST 2026)},
+  booktitle={IUB Journal of Science and Engineering (AJSE)},
   year={2026}
 }`,
       rion2026suicidal: `@inproceedings{rion2026suicidal,
@@ -2723,6 +2959,18 @@
   author={Rion, A. M. and Pallob, M. M. I. and Rakib, R. and Molla, M. A. and Hasan, M. M.},
   booktitle={IEEE TENCON 2026},
   year={2026}
+}`,
+      molla2026hybrid: `@unpublished{molla2026hybrid,
+  title={A Hybrid Explainable AI Framework for Concurrent Earthquake Magnitude Estimation and Severity Classification},
+  author={Molla, Md. Asraful and Rakib, Rasheduzzaman and Hasan, Md. Mehedi and Pallob, Mursalatul Islam and Rion, Adil Mahmoud and Based, Md. Abdul},
+  year={2026},
+  note={Venue pending}
+}`,
+      molla2026faircf: `@unpublished{molla2026faircf,
+  title={FairCF: Fair Counterfactual Explanations for Student Academic Performance Prediction},
+  author={Molla, Md. Asraful and Rakib, Rasheduzzaman and Pallob, Mursalatul Islam and Hasan, Md. Mehedi and Rion, Adil Mahmoud},
+  year={2026},
+  note={Venue pending}
 }`
     };
 
