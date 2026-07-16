@@ -253,7 +253,7 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 100;
-      opacity: 0;
+      opacity: 1;
       transition: opacity 0.5s var(--ease-out), top 0.4s var(--ease-out);
     }
 
@@ -276,6 +276,11 @@
       -webkit-backdrop-filter: blur(24px) saturate(180%);
       border: 1px solid var(--border);
       border-radius: 100px;
+    }
+
+    .nav-header {
+      display: flex;
+      align-items: center;
     }
 
     .nav-pill a {
@@ -347,14 +352,14 @@
     [data-theme="light"] {
       --bg: #f5f5f7;
       --surface: #ffffff;
-      --surface-2: #f0f0f5;
-      --surface-3: #e8e8ef;
-      --border: rgba(0,0,0,0.08);
-      --border-hover: rgba(0,0,0,0.2);
+      --surface-2: #eaeaea;
+      --surface-3: #e0e0e0;
+      --border: rgba(0,0,0,0.12);
+      --border-hover: rgba(0,0,0,0.25);
       --text-1: #1d1d1f;
-      --text-2: #555555;
-      --text-3: #999999;
-      --accent: #5150d9;
+      --text-2: #48484a;
+      --text-3: #8e8e93;
+      --accent: #4338ca;
       --accent-light: #6366f1;
       --accent-glow: rgba(99,102,241,0.12);
     }
@@ -363,22 +368,41 @@
       color: var(--text-1);
     }
     [data-theme="light"] .nav-pill {
-      background: rgba(255,255,255,0.88);
+      background: rgba(255, 255, 255, 0.9);
+      border-color: rgba(0, 0, 0, 0.1);
     }
     [data-theme="light"] #cursor-ring {
       border-color: var(--accent);
     }
     [data-theme="light"] .bento-cell {
       background: var(--surface);
+      border-color: rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
     }
     [data-theme="light"] .bento-cell:hover {
-      background: var(--surface-2);
+      background: var(--surface);
+      border-color: var(--accent);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+    }
+    [data-theme="light"] .bento-cell.handbook {
+      background: linear-gradient(135deg, #ffffff, #f9f9fb);
+      border-color: rgba(99, 102, 241, 0.25);
     }
     [data-theme="light"] .pub-card {
       background: var(--surface);
+      border-color: rgba(0, 0, 0, 0.08);
     }
     [data-theme="light"] .stat-card {
       background: var(--surface);
+      border-color: rgba(0, 0, 0, 0.08);
+    }
+    [data-theme="light"] .leader-card {
+      background: var(--surface);
+      border-color: rgba(0, 0, 0, 0.08);
+    }
+    [data-theme="light"] .leader-card.featured {
+      background: linear-gradient(135deg, #ffffff, #f9f9fb);
+      border-color: rgba(99, 102, 241, 0.25);
     }
     [data-theme="light"] .hero-name span {
       background: linear-gradient(135deg, #1d1d1f 0%, var(--accent) 100%);
@@ -387,18 +411,20 @@
       background-clip: text;
     }
     [data-theme="light"] #scroll-progress { background: var(--accent); }
-    [data-theme="light"] canvas#particle-canvas { opacity: 0.3; }
+    [data-theme="light"] canvas#particle-canvas { opacity: 0.15; }
     [data-theme="light"] .skill-pill {
-      background: var(--surface-2);
+      background: var(--surface);
       color: var(--text-2);
-      border-color: var(--border);
+      border-color: rgba(0, 0, 0, 0.1);
     }
     [data-theme="light"] .skill-pill.hl {
       color: var(--accent);
-      background: rgba(99,102,241,0.08);
+      background: rgba(99, 102, 241, 0.08);
+      border-color: rgba(99, 102, 241, 0.2);
     }
     [data-theme="light"] .figure-wrap {
       background: var(--surface-2);
+      border-color: rgba(0, 0, 0, 0.12);
     }
     [data-theme="light"] .svg-text { fill: var(--text-1); }
     [data-theme="light"] .svg-box { stroke: var(--text-2); }
@@ -410,7 +436,10 @@
     }
     [data-theme="light"] .accent-tag { color: var(--accent); }
     [data-theme="light"] .hero-sub, [data-theme="light"] .hero-tagline { color: var(--text-2); }
-    * { transition: background-color 0.3s ease, color 0.2s ease, border-color 0.2s ease; }
+    
+    body, .bento-cell, .pub-card, .stat-card, .leader-card, .nav-pill, .skill-pill, .figure-wrap, .theme-toggle, .toggle-icon {
+      transition: background-color 0.3s ease, background 0.3s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
 
     /* ══════════════════════════════════════════
        HERO SECTION
@@ -959,7 +988,12 @@
     }
 
     .pub-authors .me {
-      color: var(--text-2);
+      color: var(--accent-light);
+      font-weight: 600;
+    }
+    [data-theme="light"] .pub-authors .me {
+      color: var(--accent);
+      font-weight: 600;
     }
 
     .pub-cite-btn {
@@ -1580,31 +1614,52 @@
       .nav-pill {
         flex-direction: column;
         align-items: stretch;
-        width: 90%;
-        max-width: 320px;
-        border-radius: 20px;
-        padding: 8px 12px;
+        width: 92%;
+        max-width: 340px;
+        border-radius: 24px;
+        padding: 10px 14px;
+      }
+
+      .nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        order: 1;
       }
 
       .nav-pill .desktop-links {
         display: none;
         width: 100%;
         flex-direction: column;
-        gap: 4px;
-        padding: 8px 0;
+        gap: 6px;
+        padding: 12px 0 4px;
+        order: 2;
+        border-top: 1px solid var(--border);
+        margin-top: 8px;
       }
 
       .nav-pill .desktop-links a {
         display: block;
         text-align: center;
-        padding: 10px 0;
+        padding: 12px 0;
         width: 100%;
+        border-radius: 12px;
       }
 
       .nav-menu-btn {
         display: block;
-        text-align: center;
-        width: 100%;
+        width: auto;
+        padding: 6px 12px;
+        text-align: left;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border);
+        border-radius: 100px;
+        cursor: none;
+      }
+      
+      [data-theme="light"] .nav-menu-btn {
+        background: rgba(0, 0, 0, 0.03);
       }
 
       /* Hero */
@@ -1939,18 +1994,20 @@
   <!-- ══ NAVIGATION ══ -->
   <nav id="nav" aria-label="Main navigation">
     <div class="nav-pill">
-      <span class="desktop-links" style="display:flex;gap:4px;align-items:center;">
+      <span class="desktop-links">
         <a href="#about" class="nav-link">About</a>
         <a href="#publications" class="nav-link">Research</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#leadership" class="nav-link">Awards</a>
         <a href="#contact" class="nav-link" style="color:var(--accent-light);">Contact</a>
       </span>
-      <button class="nav-menu-btn" id="menuToggle" aria-label="Toggle navigation">☰ Menu</button>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
-        <span class="toggle-icon" id="iconSun" title="Light mode">☀️</span>
-        <span class="toggle-icon" id="iconMoon" title="Dark mode">🌙</span>
-      </button>
+      <div class="nav-header">
+        <button class="nav-menu-btn" id="menuToggle" aria-label="Toggle navigation">☰ Menu</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+          <span class="toggle-icon" id="iconSun" title="Light mode">☀️</span>
+          <span class="toggle-icon" id="iconMoon" title="Dark mode">🌙</span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -2936,12 +2993,9 @@
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section[id]');
     let lastScrollY = 0;
-    let navVisible = false;
 
     function updateNav() {
       const sy = window.scrollY;
-      if (sy > 120 && !navVisible) { nav.classList.add('visible'); navVisible = true; }
-      else if (sy <= 120 && navVisible) { nav.classList.remove('visible'); navVisible = false; }
       if (sy > lastScrollY + 5 && sy > 300) { nav.classList.add('hide'); }
       else if (sy < lastScrollY - 5) { nav.classList.remove('hide'); }
       lastScrollY = sy;
@@ -3021,9 +3075,11 @@
         if (p.a <= 0.05 || p.a >= 0.85) p.da *= -1;
         if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
         if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+        const theme = document.documentElement.getAttribute('data-theme') || 'dark';
+        const colorVal = theme === 'light' ? '0,0,0' : '255,255,255';
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255,255,255,${p.a})`;
+        ctx.fillStyle = `rgba(${colorVal},${p.a * 0.3})`;
         ctx.fill();
       });
       // Draw subtle connecting lines between close particles
