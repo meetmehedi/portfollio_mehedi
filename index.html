@@ -543,12 +543,20 @@
     .nav-menu-btn {
       display: none;
       background: none;
-      border: none;
+      border: 1px solid rgba(67,255,160,0.3);
+      border-radius: 4px;
       color: var(--green);
       font-size: 12px;
       font-family: var(--font);
       cursor: pointer;
-      padding: 6px 10px;
+      padding: 8px 14px;
+      min-width: 48px;
+      min-height: 36px;
+      transition: background .2s, border-color .2s;
+    }
+    .nav-menu-btn:hover, .nav-menu-btn:active {
+      background: rgba(67,255,160,0.1);
+      border-color: rgba(67,255,160,0.6);
     }
 
     /* ══════════════════════════════════════════
@@ -4670,8 +4678,24 @@
     // ── mobile menu ──
     const menuToggle = document.getElementById('menuToggle');
     const navLinksEl = document.getElementById('navLinks');
-    menuToggle.addEventListener('click', () => navLinksEl.classList.toggle('open'));
-    document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', () => navLinksEl.classList.remove('open')));
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navLinksEl.classList.toggle('open');
+        menuToggle.textContent = navLinksEl.classList.contains('open') ? 'close' : 'menu';
+      });
+      document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', () => {
+        navLinksEl.classList.remove('open');
+        menuToggle.textContent = 'menu';
+      }));
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.term-titlebar') && !e.target.closest('.nav-links')) {
+          navLinksEl.classList.remove('open');
+          menuToggle.textContent = 'menu';
+        }
+      });
+    }
 
     // ── theme toggle ──
     const themeToggle = document.getElementById('themeToggle');
