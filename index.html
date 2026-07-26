@@ -2188,17 +2188,13 @@
 
       .nav-links {
         display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
+        position: static;
         width: 100%;
-        background: var(--bg);
+        background: transparent;
         flex-direction: column;
-        padding: 12px 0;
-        border-bottom: 1px solid var(--border);
-        z-index: 9998;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        padding: 6px 0 10px;
+        border-top: 1px solid var(--border);
+        box-shadow: none;
       }
 
       .nav-links.open {
@@ -2206,11 +2202,11 @@
       }
 
       .nav-links a {
-        padding: 12px 24px;
+        padding: 10px 16px;
         width: 100%;
         box-sizing: border-box;
-        border-bottom: 1px solid var(--border);
-        font-size: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        font-size: 13.5px;
       }
 
       .nav-links a:last-child {
@@ -2223,21 +2219,23 @@
 
       .term-titlebar {
         justify-content: space-between;
-        padding: 12px 16px;
+        padding: 10px 14px;
       }
 
       .hero-stats {
-        flex-wrap: wrap;
-        gap: 16px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 12px;
       }
 
       .hero-stat {
-        flex: 1 1 40%;
+        flex: none;
+        padding-right: 0;
       }
 
       .hero-inner {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 32px;
         display: flex;
         flex-direction: column-reverse;
       }
@@ -2246,26 +2244,50 @@
       .hero-photo-col {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         position: relative;
-        height: 420px;
+        height: auto;
+        min-height: 300px;
         flex-shrink: 0;
-        padding-right: 180px;
+        padding-right: 0;
+        margin: 0 auto;
+        width: 100%;
       }
 
       .hero-photo-wrap,
       .hero-photo-frame {
         width: 220px;
         height: 290px;
+        margin: 0 auto;
       }
 
       .skill-tag-float {
         display: none;
       }
 
+      .mini-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .mini-stat {
+        padding: 10px 8px;
+      }
+
+      .mini-stat-num {
+        font-size: 16px;
+      }
+
+      .mini-stat-label {
+        font-size: 9px;
+        letter-spacing: .04em;
+        word-break: break-word;
+      }
+
       .terminal-window {
         font-size: 13px;
-        margin: 0 -10px;
+        margin: 0;
         border-radius: 8px;
       }
 
@@ -2338,8 +2360,22 @@
       /* Ensure long paths break */
       .hero-photo-wrap,
       .hero-photo-frame {
-        width: 180px;
-        height: 240px;
+        width: 200px;
+        height: 265px;
+        margin: 0 auto;
+      }
+
+      .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px 8px;
+      }
+
+      .hero-stat-num {
+        font-size: 18px;
+      }
+
+      .hero-stat-label {
+        font-size: 9.5px;
       }
 
       .bento-cell {
@@ -4691,7 +4727,7 @@
       }));
       // Close menu when clicking outside
       document.addEventListener('click', (e) => {
-        if (!e.target.closest('.term-titlebar') && !e.target.closest('.nav-links')) {
+        if (!e.target.closest('#nav')) {
           navLinksEl.classList.remove('open');
           menuToggle.textContent = 'menu';
         }
