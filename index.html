@@ -543,20 +543,12 @@
     .nav-menu-btn {
       display: none;
       background: none;
-      border: 1px solid rgba(67,255,160,0.3);
-      border-radius: 4px;
+      border: none;
       color: var(--green);
       font-size: 12px;
       font-family: var(--font);
       cursor: pointer;
-      padding: 8px 14px;
-      min-width: 48px;
-      min-height: 36px;
-      transition: background .2s, border-color .2s;
-    }
-    .nav-menu-btn:hover, .nav-menu-btn:active {
-      background: rgba(67,255,160,0.1);
-      border-color: rgba(67,255,160,0.6);
+      padding: 6px 10px;
     }
 
     /* ══════════════════════════════════════════
@@ -2199,11 +2191,14 @@
         position: absolute;
         top: 100%;
         left: 0;
+        right: 0;
         width: 100%;
         background: var(--bg);
         flex-direction: column;
-        padding: 20px 0;
+        padding: 12px 0;
         border-bottom: 1px solid var(--border);
+        z-index: 9998;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
       }
 
       .nav-links.open {
@@ -2211,9 +2206,15 @@
       }
 
       .nav-links a {
-        padding: 10px 24px;
+        padding: 12px 24px;
         width: 100%;
         box-sizing: border-box;
+        border-bottom: 1px solid var(--border);
+        font-size: 14px;
+      }
+
+      .nav-links a:last-child {
+        border-bottom: none;
       }
 
       .nav-menu-btn {
