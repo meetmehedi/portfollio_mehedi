@@ -2149,6 +2149,18 @@
       overflow-x: hidden;
     }
 
+    /* Ambient background SVGs - prevent text overlap on mobile/tablet/desktop-mode mobile devices */
+    svg[style*="position:absolute"] {
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @media (max-width: 1150px) {
+      svg[style*="position:absolute"] {
+        display: none !important;
+      }
+    }
+
     @media (max-width: 1024px) {
       .container {
         padding: 0 24px;
