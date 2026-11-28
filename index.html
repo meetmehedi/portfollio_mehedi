@@ -264,8 +264,7 @@
       height: 210vh;
       z-index: 2;
       background:
-        radial-gradient(ellipse 70% 50% at 50% 30%, rgba(168, 85, 247, 0.1), transparent 70%),
-        var(--bg);
+        radial-gradient(ellipse 70% 50% at 50% 30%, rgba(168, 85, 247, 0.12), transparent 70%);
     }
 
     .hero-sticky {
@@ -1810,7 +1809,7 @@
       inset: 0;
       pointer-events: none;
       z-index: 1;
-      opacity: 0.72;
+      opacity: 0.88;
     }
 
     .hero-research-bg {
@@ -1818,7 +1817,7 @@
       inset: 0;
       pointer-events: none;
       z-index: 1;
-      opacity: 0.16;
+      opacity: 0.36;
       overflow: hidden;
     }
   </style>
@@ -1896,6 +1895,27 @@
             <line x1="76" y1="17" x2="139" y2="48" stroke="#a855f7" />
             <line x1="76" y1="92" x2="139" y2="60" stroke="#f5f3ef" stroke-opacity="0.5" />
           </g>
+
+          <!-- SHAP Feature Attribution Bars (Bottom Right) -->
+          <g transform="translate(1110, 610)">
+            <text x="0" y="-10" fill="#f5f3ef" stroke="none" font-family="JetBrains Mono, monospace" font-size="10">SHAP |ϕᵢ| ATTRIBUTION</text>
+            <line x1="0" y1="0" x2="0" y2="108" stroke="#f5f3ef" stroke-opacity="0.45" />
+            <rect x="2" y="10" width="168" height="14" rx="2" fill="#a855f7" opacity="0.65" stroke="none" />
+            <text x="176" y="21" fill="#f5f3ef" stroke="none" font-family="JetBrains Mono, monospace" font-size="9">+0.42 seq_entropy</text>
+            <rect x="2" y="34" width="132" height="14" rx="2" fill="#a855f7" opacity="0.48" stroke="none" />
+            <text x="140" y="45" fill="#f5f3ef" stroke="none" font-family="JetBrains Mono, monospace" font-size="9">+0.31 urgency</text>
+            <rect x="2" y="58" width="96" height="14" rx="2" fill="#f5f3ef" opacity="0.32" stroke="none" />
+            <text x="104" y="69" fill="#f5f3ef" stroke="none" font-family="JetBrains Mono, monospace" font-size="9">+0.22 trust_gap</text>
+            <rect x="2" y="82" width="64" height="14" rx="2" fill="#a855f7" opacity="0.32" stroke="none" />
+            <text x="72" y="93" fill="#f5f3ef" stroke="none" font-family="JetBrains Mono, monospace" font-size="9">+0.14 latency</text>
+          </g>
+
+          <!-- Subtle Coordinate Grid & Telemetry Ticks -->
+          <g stroke="#f5f3ef" stroke-opacity="0.14" stroke-dasharray="3 6">
+            <line x1="360" y1="0" x2="360" y2="900" />
+            <line x1="1080" y1="0" x2="1080" y2="900" />
+            <line x1="0" y1="450" x2="1440" y2="450" />
+          </g>
         </g>
       </svg>
 
@@ -1923,7 +1943,7 @@
       <div class="intro-layer" id="about">
         <div class="intro-left" id="intro-left">
           <h2>Hi, I’m<br>Md. Mehedi Hasan.</h2>
-          <div class="intro-role">AI &amp; ML Researcher &amp; President, DIU CPC.</div>
+          <div class="intro-role">Research Assistant · AI &amp; ML Researcher · President, DIU CPC.</div>
           <div class="intro-meta-label">Currently at</div>
           <div class="intro-meta-val">Dhaka International University</div>
           <div class="intro-meta-sub">BSc CSE (CGPA 3.76 / 4.00 · Dec 2027) · IEEE &amp; IEEE CS Member</div>
@@ -2288,11 +2308,11 @@
 
         <div class="timeline-nodes">
           <div class="tl-item">
-            <div class="tl-date">APR 2026 – PRESENT</div>
-            <div class="tl-role">President &amp; AI/ML Researcher</div>
-            <div class="tl-org">DIU Computer Programming Club &amp; Independent Research</div>
-            <div class="tl-desc">Leading DIU CPC and advancing research in behavioral modeling, loss functions
-              (InfoNCE, Focal Loss), DistilBERT, and XAI with 11 accepted papers.</div>
+            <div class="tl-date">2024 – PRESENT</div>
+            <div class="tl-role">Research Assistant &amp; Independent Researcher</div>
+            <div class="tl-org">Under Prof. Md. Abdul Based · Head, Dept. of CSE, DIU</div>
+            <div class="tl-desc">Conducting supervised research under Prof. Md. Abdul Based (Vice President of Finance,
+              Bangladesh Computer Society) on behavioral ML, loss functions, SEM, and XAI — 11 accepted papers.</div>
           </div>
 
           <div class="tl-item">
