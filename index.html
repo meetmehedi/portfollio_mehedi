@@ -18,7 +18,7 @@
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Md. Mehedi Hasan — AI & ML Researcher" />
   <meta property="og:description"
-    content="AI & ML Researcher specializing in loss functions, SEM path modeling, DistilBERT transformers, and explainable AI. NASA Space Apps 2025 Global Finalist (Honorable Mention) · IEEE Member." />
+    content="AI & ML Researcher specializing in loss functions, SEM path modeling, DistilBERT transformers, and explainable AI. NASA International Space Apps 2025 Global Finalist (Honorable Mention) · IEEE Member." />
   <meta property="og:url" content="https://www.mdmehedihasan.us/" />
   <meta property="og:image" content="https://www.mdmehedihasan.us/images/mee.jpg" />
 
@@ -389,11 +389,12 @@
       object-fit: cover;
       object-position: center top;
       filter: grayscale(100%) contrast(1.12);
-      transition: filter 0.45s var(--ease);
     }
 
-    .morph-portrait:hover img {
-      filter: grayscale(10%) contrast(1.04);
+    @media (max-width: 1024px) {
+      .morph-portrait img {
+        filter: none;
+      }
     }
 
     /* Layer 2: Intro Split Columns */
@@ -1219,18 +1220,35 @@
     }
 
     @keyframes stepBob {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-3px); }
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-3px);
+      }
     }
 
     @keyframes walkLeft {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
     }
 
     @keyframes walkRight {
-      from { transform: translateX(-50%); }
-      to { transform: translateX(0); }
+      from {
+        transform: translateX(-50%);
+      }
+
+      to {
+        transform: translateX(0);
+      }
     }
 
     .mehedi-center {
@@ -1828,7 +1846,8 @@
         </div>
         <div class="hero-corners" id="hero-corners">
           <div class="hero-year">©2026</div>
-          <div class="hero-tag">{{ <span>NASA Space Apps ’25 ·</span> Regional Winner · IEEE Member }}</div>
+          <div class="hero-tag">{{ <span>NASA International Space Apps Challenge’25 ·</span> Honorable Mention · IEEE
+            Member }}</div>
         </div>
       </div>
 
@@ -1847,7 +1866,7 @@
           <div class="intro-meta-sub">BSc CSE · President, DIU CPC</div>
           <div class="intro-badge">
             <span class="intro-badge-dot"></span>
-            <span>NASA Space Apps ’25 · Global Finalist (Honorable Mention)</span>
+            <span>NASA International Space Apps Challenge ’25 · Global Finalist (Honorable Mention)</span>
           </div>
         </div>
 
@@ -2044,78 +2063,114 @@
           <div style="border-top:1px solid var(--border);">
             <div class="modal-list-item">
               <div>
-                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">01.</span>A Socio-Economic Machine Learning Framework for Predicting Programmer Retention</strong>
-                <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Rakib, R., Molla, M. A., Borhan, R., Based, M. A.</span>
+                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">01.</span>A
+                  Socio-Economic Machine Learning Framework for Predicting Programmer Retention</strong>
+                <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Rakib, R., Molla, M. A.,
+                  Borhan, R., Based, M. A.</span>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">BIM 2025 · Taylor &amp; Francis</span>
             </div>
             <div class="modal-list-item">
               <div>
-                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">02.</span>Fraud Detection with DistilBERT: A Transformer-Based Approach to Behavioral Banking Sequences</strong>
-                <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Mahin, A. A., Chakraborty, S., Afrose, M., Mia, M. A., Based, M. A.</span>
+                <strong><span
+                    style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">02.</span>Fraud
+                  Detection with DistilBERT: A Transformer-Based Approach to Behavioral Banking Sequences</strong>
+                <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Mahin, A. A.,
+                  Chakraborty, S., Afrose, M., Mia, M. A., Based, M. A.</span>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">BIM 2025 · Taylor &amp; Francis</span>
             </div>
             <div class="modal-list-item">
               <div>
-                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">03.</span>MEWC-RL++: A Modular and Adaptive Continual Reinforcement Learning Framework for Automation Systems</strong>
-                <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Mahin, A. A., Afrose, M., Based, M. A.</span>
+                <strong><span
+                    style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">03.</span>MEWC-RL++: A
+                  Modular and Adaptive Continual Reinforcement Learning Framework for Automation Systems</strong>
+                <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Mahin, A. A., Afrose,
+                  M., Based, M. A.</span>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">ECCT 2026 · Taylor &amp; Francis</span>
             </div>
             <div class="modal-list-item">
               <div>
-                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">04.</span>Impact of Social Media Usage on Academic Performance: A Hybrid Machine Learning and SEM Approach</strong>
-                <span>Mrida, M. A. R., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Ausaf, S. M. N., Ray, P. C., Based, M. A.</span>
+                <strong><span
+                    style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">04.</span>Impact of
+                  Social Media Usage on Academic Performance: A Hybrid Machine Learning and SEM Approach</strong>
+                <span>Mrida, M. A. R., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Ausaf,
+                  S. M. N., Ray, P. C., Based, M. A.</span>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">ECCT 2026 · Taylor &amp; Francis</span>
             </div>
             <div class="modal-list-item">
               <div>
-                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">05.</span>Lightweight Deep Learning for Urban Traffic Intelligence: A MobileNetV2-YOLOv8 Pipeline with Adaptive Resolution Processing</strong>
-                <span>Biswas, S., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Rakib, R., Mahin, A. A., Afrose, M., Based, M. A.</span>
+                <strong><span
+                    style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">05.</span>Lightweight
+                  Deep Learning for Urban Traffic Intelligence: A MobileNetV2-YOLOv8 Pipeline with Adaptive Resolution
+                  Processing</strong>
+                <span>Biswas, S., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Rakib, R.,
+                  Mahin, A. A., Afrose, M., Based, M. A.</span>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">ECCT 2026 · ACSR, Springer Nature</span>
             </div>
             <div class="modal-list-item">
               <div>
-                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">06.</span>Federated and Explainable Machine Learning Framework for Cyber Attack Detection in Smart Grids</strong>
-                <span>Asif, M., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Based, M. A.</span>
+                <strong><span
+                    style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">06.</span>Federated and
+                  Explainable Machine Learning Framework for Cyber Attack Detection in Smart Grids</strong>
+                <span>Asif, M., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Based, M.
+                  A.</span>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">ECCT 2026 · Taylor &amp; Francis</span>
             </div>
             <div class="modal-list-item">
               <div>
-                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">07.</span>Student-YOLOv8: A YOLO-Based Deep Learning Approach for Real-Time Student Detection and Face Recognition in Classroom Attendance Monitoring Systems</strong>
-                <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Hossain, M. A., Mahin, A. A., Khatun, F.</span>
+                <strong><span
+                    style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">07.</span>Student-YOLOv8:
+                  A YOLO-Based Deep Learning Approach for Real-Time Student Detection and Face Recognition in Classroom
+                  Attendance Monitoring Systems</strong>
+                <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Hossain, M. A., Mahin,
+                  A. A., Khatun, F.</span>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">IUB AJSE</span>
             </div>
             <div class="modal-list-item">
               <div>
-                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">08.</span>Cross-Cultural Early Detection of Suicidal Ideation in Adolescents: An Ensemble Machine Learning Approach Using GSHS Data</strong>
-                <span>Rion, A. M., Pallob, M. M. I., Rakib, R., Molla, M. A., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong></span>
+                <strong><span
+                    style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">08.</span>Cross-Cultural
+                  Early Detection of Suicidal Ideation in Adolescents: An Ensemble Machine Learning Approach Using GSHS
+                  Data</strong>
+                <span>Rion, A. M., Pallob, M. M. I., Rakib, R., Molla, M. A., <strong
+                    style="display:inline; color:var(--text);">Hasan, M. M.</strong></span>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">TENCON 2026 · IEEE</span>
             </div>
             <div class="modal-list-item">
               <div>
-                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">09.</span>A Hybrid Explainable AI Framework for Concurrent Earthquake Magnitude Estimation and Severity Classification</strong>
-                <span>Molla, M. A., Rakib, R., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Pallob, M. I., Rion, A. M., Based, M. A.</span>
+                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">09.</span>A
+                  Hybrid Explainable AI Framework for Concurrent Earthquake Magnitude Estimation and Severity
+                  Classification</strong>
+                <span>Molla, M. A., Rakib, R., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>,
+                  Pallob, M. I., Rion, A. M., Based, M. A.</span>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">MIET 2026 · Springer Nature LNNS</span>
             </div>
             <div class="modal-list-item">
               <div>
-                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">10.</span>FairCF: Fair Counterfactual Explanations for Student Academic Performance Prediction</strong>
-                <span>Molla, M. A., Rakib, R., Pallob, M. I., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Rion, A. M.</span>
+                <strong><span
+                    style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">10.</span>FairCF: Fair
+                  Counterfactual Explanations for Student Academic Performance Prediction</strong>
+                <span>Molla, M. A., Rakib, R., Pallob, M. I., <strong style="display:inline; color:var(--text);">Hasan,
+                    M. M.</strong>, Rion, A. M.</span>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">ICAIMS 2026 · Malaysia · IEEE</span>
             </div>
             <div class="modal-list-item" style="padding-bottom:2px;">
               <div>
-                <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">11.</span>Digital Transformation for Sustainable Universities: Modeling the Convergence of MIS, IoT, and Governance</strong>
-                <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Pallob, M. M. I., Based, M. A.</span>
+                <strong><span
+                    style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">11.</span>Digital
+                  Transformation for Sustainable Universities: Modeling the Convergence of MIS, IoT, and
+                  Governance</strong>
+                <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Pallob, M. M. I., Based,
+                  M. A.</span>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">Journal</span>
             </div>
@@ -2158,7 +2213,7 @@
 
           <div class="tl-item">
             <div class="tl-date">OCT 2025</div>
-            <div class="tl-role">Global Finalist &amp; Regional Winner</div>
+            <div class="tl-role">Global Finalist (Honorable Mention) &amp; Regional Winner</div>
             <div class="tl-org">NASA International Space Apps Challenge</div>
             <div class="tl-desc">Team Polaris · Regional Winner (Barisal), Global Nominee, and Honorable Mention among
               global finalists for MeteorShield.</div>
@@ -2377,6 +2432,14 @@
         introRight.style.opacity = introIn;
         introRight.style.transform = `translateX(${42 * (1 - introIn)}px)`;
         introRight.style.pointerEvents = introIn > 0.5 ? "auto" : "none";
+
+        // Portrait: B&W in hero, full colour once the About section is shown
+        const portraitImg = portrait.querySelector("img");
+        if (portraitImg) {
+          const g = 100 * (1 - introIn);
+          const c = 1 + 0.12 * (1 - introIn);
+          portraitImg.style.filter = `grayscale(${g}%) contrast(${c})`;
+        }
       }
 
       // Footer watermark subtle horizontal parallax on scroll
