@@ -649,7 +649,7 @@
     /* ── FEATURED PROJECTS (3D INTERACTIVE FOLDER CARDS) ── */
     .folders-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
       gap: 22px;
       perspective: 1200px;
     }
@@ -2150,6 +2150,27 @@
             <span class="folder-link">View project →</span>
           </div>
         </div>
+
+        <div class="folder-card" onclick="openProjectModal(4)">
+          <div class="folder-visual">
+            <div class="folder-sheets">
+              <div class="sheet sheet-back"></div>
+              <div class="sheet sheet-mid"></div>
+              <div class="sheet sheet-front">
+                <span>NASA SPACE APPS ’26</span>
+                <span>76 Real NASA Missions · EdTech</span>
+              </div>
+            </div>
+            <div class="folder-front-plate">
+              <div class="folder-title">Jr_AstroCamp</div>
+              <div class="folder-arrow">→</div>
+            </div>
+          </div>
+          <div class="folder-meta">
+            <span class="folder-desc">EdTech flight sim · Team Mysterio</span>
+            <span class="folder-link">Live demo ↗</span>
+          </div>
+        </div>
       </div>
 
       <div class="pub-bar reveal" id="research">
@@ -2714,6 +2735,13 @@
         desc: "IoT sensor-driven food spoilage prediction system powered by XGBoost, achieving an F1 score of 0.89 for real-time supply-chain waste reduction.",
         stack: ["IoT Sensors", "XGBoost", "Python", "F1 0.89"],
         url: "https://github.com/meetmehedi/SaveFood"
+      },
+      {
+        tag: "NASA SPACE APPS ’26 · TEAM MYSTERIO",
+        title: "Jr_AstroCamp",
+        desc: "EdTech flight simulator and multi-modal learning platform where students fly 76 real NASA missions and explore aerospace science in the way that suits them best. Built by Team Mysterio for NASA Space Apps Challenge 2026.",
+        stack: ["EdTech", "Flight Simulator", "76 NASA Missions", "Interactive Web"],
+        url: "https://meetmehedi.github.io/Jr_AstroCamp_NASAC2026/"
       }
     ];
 
@@ -2740,6 +2768,7 @@
 
     const ALL_REPOS = [
       { name: "The AI Researcher's Handbook (ResearchGate)", url: "https://www.researchgate.net/publication/407049194_The_AI_Researcher%27s_Handbook" },
+      { name: "Jr_AstroCamp (NASA Space Apps ’26 · Live)", url: "https://meetmehedi.github.io/Jr_AstroCamp_NASAC2026/" },
       { name: "MeteorShield (NASA Space Apps ’25)", url: "https://github.com/meetmehedi/meteor-madness" },
       { name: "Tactic Detector (Live Demo)", url: "https://meetmehedi.github.io/Tactic-Detector/" },
       { name: "SocialAI", url: "https://github.com/meetmehedi/For-final-deploy-bot-version-2.0" },
@@ -2850,7 +2879,7 @@
         return `<strong>Education</strong><br><br>• <strong>B.Sc. in Computer Science &amp; Engineering</strong> — Dhaka International University (Sep 2023 – Dec 2027) · <strong>CGPA: 3.74 / 4.00</strong><br>• <strong>HSC</strong> — BAF Shaheen College Jashore (GPA: 4.75 / 5.00)`;
       }
       if (s.includes("project") || s.includes("build") || s.includes("work") || s.includes("framework") || s.includes("handbook") || s.includes("github")) {
-        return `<strong>Featured Projects &amp; Frameworks</strong><br><br>• <strong>MeteorShield</strong> — NASA NEO API 3D planetary defense dashboard (Three.js)<br>• <strong>Tactic Detector</strong> — DistilBERT + SHAP social engineering detector (<a href="https://meetmehedi.github.io/Tactic-Detector/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Live Demo ↗</a>)<br>• <strong>SafeRoads</strong> — Geospatial ML road risk synthesis (84% precision)<br>• <strong>SaveFood</strong> — IoT + XGBoost spoilage prediction (F1 0.89)<br>• <strong>The AI Researcher’s Handbook</strong> — Published on <a href="https://www.researchgate.net/publication/407049194_The_AI_Researcher%27s_Handbook" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">ResearchGate ↗</a><br>• Original architectures: <em>MEWC-RL++, MEWC-LLM, MEWC-Flow, HTSPF, Student-YOLOv8</em>.`;
+        return `<strong>Featured Projects &amp; Frameworks</strong><br><br>• <strong>Jr_AstroCamp</strong> — EdTech flight simulator for 76 real NASA missions (<a href="https://meetmehedi.github.io/Jr_AstroCamp_NASAC2026/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Live Demo ↗</a>)<br>• <strong>MeteorShield</strong> — NASA NEO API 3D planetary defense dashboard (Three.js)<br>• <strong>Tactic Detector</strong> — DistilBERT + SHAP social engineering detector (<a href="https://meetmehedi.github.io/Tactic-Detector/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Live Demo ↗</a>)<br>• <strong>SafeRoads</strong> — Geospatial ML road risk synthesis (84% precision)<br>• <strong>SaveFood</strong> — IoT + XGBoost spoilage prediction (F1 0.89)<br>• <strong>The AI Researcher’s Handbook</strong> — Published on <a href="https://www.researchgate.net/publication/407049194_The_AI_Researcher%27s_Handbook" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">ResearchGate ↗</a><br>• Original architectures: <em>MEWC-RL++, MEWC-LLM, MEWC-Flow, HTSPF, Student-YOLOv8</em>.`;
       }
       if (s.includes("skill") || s.includes("stack") || s.includes("tech") || s.includes("tool") || s.includes("language")) {
         return `<strong>Technical Stack</strong><br><br>• <strong>AI / ML:</strong> PyTorch, TensorFlow, scikit-learn, XGBoost, HuggingFace, DistilBERT, YOLOv8, OpenCV, SHAP, PLS-SEM<br>• <strong>Languages:</strong> Python, C/C++, TypeScript, JavaScript, SQL, R, LaTeX<br>• <strong>Infra &amp; Automation:</strong> Git/GitHub Actions, Docker, Linux, PostgreSQL, n8n, Playwright, Colab.`;
