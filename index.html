@@ -1201,9 +1201,9 @@
     .crowd-marquee.back {
       z-index: 2;
       opacity: 0.28;
-      height: 74%;
+      height: 70%;
       filter: grayscale(100%) contrast(0.85);
-      animation: walkLeft 36s linear infinite;
+      animation: walkLeft 38s linear infinite;
     }
 
     .crowd-marquee.back img {
@@ -1212,11 +1212,35 @@
 
     .crowd-marquee.front {
       z-index: 3;
-      animation: walkRight 24s linear infinite;
+      height: 84%;
+      opacity: 0.92;
+      animation: walkRight 25s linear infinite;
     }
 
     .crowd-marquee.front img {
-      animation: stepBob 0.75s ease-in-out infinite;
+      animation: stepBob 0.78s ease-in-out infinite;
+    }
+
+    .crowd-marquee.foreground {
+      z-index: 5;
+      height: 64%;
+      bottom: -4%;
+      gap: 110px;
+      animation: walkLeft 17s linear infinite;
+    }
+
+    .crowd-marquee.foreground img {
+      transform: scaleX(-1);
+      animation: stepBobFlip 0.65s ease-in-out infinite;
+    }
+
+    @keyframes stepBobFlip {
+      0%, 100% {
+        transform: scaleX(-1) translateY(0px);
+      }
+      50% {
+        transform: scaleX(-1) translateY(-3px);
+      }
     }
 
     @keyframes stepBob {
@@ -1567,6 +1591,45 @@
       color: var(--text-muted);
     }
 
+    .domain-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .domain-tab {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--bg-elevated);
+      color: var(--text-muted);
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+    }
+
+    .domain-tab:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    .domain-tab.active {
+      background: var(--text);
+      color: var(--bg);
+      border-color: var(--text);
+      font-weight: 600;
+    }
+
+    .paper-domain-tag {
+      display: inline-block;
+      margin-top: 5px;
+      font-family: var(--font-mono);
+      font-size: 0.68rem !important;
+      color: var(--accent) !important;
+      letter-spacing: 0.02em;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
       .hero-stage {
@@ -1863,7 +1926,7 @@
           <div class="intro-role">AI &amp; ML Researcher &amp; President, DIU CPC.</div>
           <div class="intro-meta-label">Currently at</div>
           <div class="intro-meta-val">Dhaka International University</div>
-          <div class="intro-meta-sub">BSc CSE · President, DIU CPC</div>
+          <div class="intro-meta-sub">BSc CSE (CGPA 3.76 / 4.00 · Dec 2027) · IEEE &amp; IEEE CS Member</div>
           <div class="intro-badge">
             <span class="intro-badge-dot"></span>
             <span>NASA International Space Apps Challenge ’25 · Global Finalist (Honorable Mention)</span>
@@ -2060,47 +2123,61 @@
             </div>
           </div>
 
-          <div style="border-top:1px solid var(--border);">
-            <div class="modal-list-item">
+          <div class="domain-tabs" role="tablist" aria-label="Filter accepted papers by research domain">
+            <button type="button" class="domain-tab active" onclick="filterPapers('all', this)">All (11)</button>
+            <button type="button" class="domain-tab" onclick="filterPapers('cyber', this)">Cybersecurity &amp; Fraud (2)</button>
+            <button type="button" class="domain-tab" onclick="filterPapers('rl', this)">Reinforcement &amp; Continual Learning (1)</button>
+            <button type="button" class="domain-tab" onclick="filterPapers('socio', this)">Socio-Economic &amp; Education (3)</button>
+            <button type="button" class="domain-tab" onclick="filterPapers('cv', this)">Computer Vision &amp; Edge (2)</button>
+            <button type="button" class="domain-tab" onclick="filterPapers('health', this)">Health &amp; Wellbeing AI (2)</button>
+            <button type="button" class="domain-tab" onclick="filterPapers('disaster', this)">Disaster &amp; Risk (1)</button>
+          </div>
+
+          <div id="paper-list" style="border-top:1px solid var(--border);">
+            <div class="modal-list-item" data-domain="socio">
               <div>
                 <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">01.</span>A
                   Socio-Economic Machine Learning Framework for Predicting Programmer Retention</strong>
                 <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Rakib, R., Molla, M. A.,
                   Borhan, R., Based, M. A.</span>
+                <div><span class="paper-domain-tag">Socio-Economic &amp; Education Analytics</span></div>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">BIM 2025 · Taylor &amp; Francis</span>
             </div>
-            <div class="modal-list-item">
+            <div class="modal-list-item" data-domain="cyber">
               <div>
                 <strong><span
                     style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">02.</span>Fraud
                   Detection with DistilBERT: A Transformer-Based Approach to Behavioral Banking Sequences</strong>
                 <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Mahin, A. A.,
                   Chakraborty, S., Afrose, M., Mia, M. A., Based, M. A.</span>
+                <div><span class="paper-domain-tag">Cybersecurity, Fraud &amp; Behavioral Anomaly Detection</span></div>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">BIM 2025 · Taylor &amp; Francis</span>
             </div>
-            <div class="modal-list-item">
+            <div class="modal-list-item" data-domain="rl">
               <div>
                 <strong><span
                     style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">03.</span>MEWC-RL++: A
                   Modular and Adaptive Continual Reinforcement Learning Framework for Automation Systems</strong>
                 <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Mahin, A. A., Afrose,
                   M., Based, M. A.</span>
+                <div><span class="paper-domain-tag">Reinforcement &amp; Continual Learning</span></div>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">ECCT 2026 · Taylor &amp; Francis</span>
             </div>
-            <div class="modal-list-item">
+            <div class="modal-list-item" data-domain="socio">
               <div>
                 <strong><span
                     style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">04.</span>Impact of
                   Social Media Usage on Academic Performance: A Hybrid Machine Learning and SEM Approach</strong>
                 <span>Mrida, M. A. R., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Ausaf,
                   S. M. N., Ray, P. C., Based, M. A.</span>
+                <div><span class="paper-domain-tag">Socio-Economic &amp; Education Analytics</span></div>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">ECCT 2026 · Taylor &amp; Francis</span>
             </div>
-            <div class="modal-list-item">
+            <div class="modal-list-item" data-domain="cv">
               <div>
                 <strong><span
                     style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">05.</span>Lightweight
@@ -2108,20 +2185,22 @@
                   Processing</strong>
                 <span>Biswas, S., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Rakib, R.,
                   Mahin, A. A., Afrose, M., Based, M. A.</span>
+                <div><span class="paper-domain-tag">Computer Vision &amp; Edge Intelligence</span></div>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">ECCT 2026 · ACSR, Springer Nature</span>
             </div>
-            <div class="modal-list-item">
+            <div class="modal-list-item" data-domain="cyber">
               <div>
                 <strong><span
                     style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">06.</span>Federated and
                   Explainable Machine Learning Framework for Cyber Attack Detection in Smart Grids</strong>
                 <span>Asif, M., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Based, M.
                   A.</span>
+                <div><span class="paper-domain-tag">Cybersecurity, Fraud &amp; Behavioral Anomaly Detection</span></div>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">ECCT 2026 · Taylor &amp; Francis</span>
             </div>
-            <div class="modal-list-item">
+            <div class="modal-list-item" data-domain="cv">
               <div>
                 <strong><span
                     style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">07.</span>Student-YOLOv8:
@@ -2129,10 +2208,11 @@
                   Attendance Monitoring Systems</strong>
                 <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Hossain, M. A., Mahin,
                   A. A., Khatun, F.</span>
+                <div><span class="paper-domain-tag">Computer Vision &amp; Edge Intelligence</span></div>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">IUB AJSE</span>
             </div>
-            <div class="modal-list-item">
+            <div class="modal-list-item" data-domain="health">
               <div>
                 <strong><span
                     style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">08.</span>Cross-Cultural
@@ -2140,39 +2220,43 @@
                   Data</strong>
                 <span>Rion, A. M., Pallob, M. M. I., Rakib, R., Molla, M. A., <strong
                     style="display:inline; color:var(--text);">Hasan, M. M.</strong></span>
+                <div><span class="paper-domain-tag">Health &amp; Wellbeing AI</span></div>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">TENCON 2026 · IEEE</span>
             </div>
-            <div class="modal-list-item">
+            <div class="modal-list-item" data-domain="disaster">
               <div>
                 <strong><span style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">09.</span>A
                   Hybrid Explainable AI Framework for Concurrent Earthquake Magnitude Estimation and Severity
                   Classification</strong>
                 <span>Molla, M. A., Rakib, R., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>,
                   Pallob, M. I., Rion, A. M., Based, M. A.</span>
+                <div><span class="paper-domain-tag">Disaster &amp; Risk Modeling</span></div>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">MIET 2026 · Springer Nature LNNS</span>
             </div>
-            <div class="modal-list-item">
+            <div class="modal-list-item" data-domain="socio">
               <div>
                 <strong><span
                     style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">10.</span>FairCF: Fair
                   Counterfactual Explanations for Student Academic Performance Prediction</strong>
                 <span>Molla, M. A., Rakib, R., Pallob, M. I., <strong style="display:inline; color:var(--text);">Hasan,
                     M. M.</strong>, Rion, A. M.</span>
+                <div><span class="paper-domain-tag">Socio-Economic &amp; Education Analytics</span></div>
               </div>
               <span class="tech-pill" style="flex-shrink:0;">ICAIMS 2026 · Malaysia · IEEE</span>
             </div>
-            <div class="modal-list-item" style="padding-bottom:2px;">
+            <div class="modal-list-item" data-domain="health" style="padding-bottom:2px;">
               <div>
                 <strong><span
-                    style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">11.</span>Digital
-                  Transformation for Sustainable Universities: Modeling the Convergence of MIS, IoT, and
-                  Governance</strong>
-                <span><strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Pallob, M. M. I., Based,
-                  M. A.</span>
+                    style="color:var(--accent); font-family:var(--font-mono); margin-right:8px;">11.</span>Toward an
+                  AI-Assisted Dyslexia Detection Framework for Bangla-Speaking Children: A Cross-Linguistic Conceptual
+                  Model Integrating Analytically Transparent Bayesian Attribution and Orthographic Complexity</strong>
+                <span>Ray, D. D., <strong style="display:inline; color:var(--text);">Hasan, M. M.</strong>, Ausaf, S. M.
+                  N., Based, M. A., Rahman, M. M.</span>
+                <div><span class="paper-domain-tag">Health &amp; Wellbeing AI</span></div>
               </div>
-              <span class="tech-pill" style="flex-shrink:0;">Journal</span>
+              <span class="tech-pill" style="flex-shrink:0;">IEEE BECITHCON 2026 · IEEE</span>
             </div>
           </div>
         </div>
@@ -2204,35 +2288,67 @@
 
         <div class="timeline-nodes">
           <div class="tl-item">
-            <div class="tl-date">2024 – PRESENT</div>
-            <div class="tl-role">AI &amp; ML Researcher</div>
-            <div class="tl-org">Dhaka International University &amp; Independent</div>
-            <div class="tl-desc">Leading research on behavioral modeling, loss functions (InfoNCE, Focal Loss),
-              DistilBERT, and XAI with 10+ accepted papers.</div>
+            <div class="tl-date">APR 2026 – PRESENT</div>
+            <div class="tl-role">President &amp; AI/ML Researcher</div>
+            <div class="tl-org">DIU Computer Programming Club &amp; Independent Research</div>
+            <div class="tl-desc">Leading DIU CPC and advancing research in behavioral modeling, loss functions
+              (InfoNCE, Focal Loss), DistilBERT, and XAI with 11 accepted papers.</div>
           </div>
 
           <div class="tl-item">
             <div class="tl-date">OCT 2025</div>
             <div class="tl-role">Global Finalist (Honorable Mention) &amp; Regional Winner</div>
             <div class="tl-org">NASA International Space Apps Challenge</div>
-            <div class="tl-desc">Team Polaris · Regional Winner (Barisal), Global Nominee, and Honorable Mention among
-              global finalists for MeteorShield.</div>
+            <div class="tl-desc">Led Team Polaris to Regional Winner (Barisal), Global Nominee, and Honorable Mention
+              among global finalists for MeteorShield.</div>
           </div>
 
           <div class="tl-item">
-            <div class="tl-date">2024 – PRESENT</div>
-            <div class="tl-role">IEEE Member</div>
-            <div class="tl-org">Institute of Electrical and Electronics Engineers</div>
-            <div class="tl-desc">Active researcher contributing to peer-reviewed AI, cybersecurity, healthcare ML, and
-              computer vision literature.</div>
+            <div class="tl-date">2025</div>
+            <div class="tl-role">Finalist · 8th Place (Line Following Robot)</div>
+            <div class="tl-org">Team DIU_Rocket Squad · 10th Among Universities</div>
+            <div class="tl-desc">Served as ML Engineer contributing sensor data analysis, decision-logic tuning, and
+              system optimization among 51 competing teams.</div>
           </div>
 
           <div class="tl-item">
-            <div class="tl-date">2023 – 2027</div>
-            <div class="tl-role">B.Sc. in Computer Science</div>
-            <div class="tl-org">Dhaka International University</div>
-            <div class="tl-desc">Undergraduate studies focused on machine learning theory, algorithms, data engineering,
-              and statistical modeling.</div>
+            <div class="tl-date">2023 – DEC 2027</div>
+            <div class="tl-role">B.Sc. in Computer Science &amp; Engineering</div>
+            <div class="tl-org">Dhaka International University · CGPA 3.76 / 4.00</div>
+            <div class="tl-desc">IEEE &amp; IEEE Computer Society Member focusing on machine learning theory, SEM path
+              modeling, and explainable AI.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership & Published Handbook Strip -->
+      <div class="pub-bar reveal" style="margin-top:36px;">
+        <div style="width:100%;">
+          <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:16px; flex-wrap:wrap; margin-bottom:16px;">
+            <div>
+              <div class="footer-col-label" style="margin-bottom:6px;">Leadership &amp; Authored Handbook</div>
+              <strong style="font-size:1.2rem; letter-spacing:-0.02em;">Community Leadership &amp; Publications</strong>
+            </div>
+            <a href="https://www.researchgate.net/publication/407049194_The_AI_Researcher%27s_Handbook" target="_blank"
+              rel="noopener" class="btn-outline">The AI Researcher’s Handbook (ResearchGate) ↗</a>
+          </div>
+          <div style="border-top:1px solid var(--border);">
+            <div class="modal-list-item">
+              <div><strong>President</strong><span>DIU Computer Programming Club</span></div>
+              <span class="tech-pill" style="flex-shrink:0;">Apr 2026 – Present</span>
+            </div>
+            <div class="modal-list-item">
+              <div><strong>General Secretary</strong><span>DIU CSE Speakers Club</span></div>
+              <span class="tech-pill" style="flex-shrink:0;">May 2025 – Mar 2026</span>
+            </div>
+            <div class="modal-list-item">
+              <div><strong>Head, Research &amp; Training Wing</strong><span>DIU Career Development Club</span></div>
+              <span class="tech-pill" style="flex-shrink:0;">Aug – Dec 2025</span>
+            </div>
+            <div class="modal-list-item" style="padding-bottom:2px;">
+              <div><strong>Executive Member</strong><span>BASIS Students’ Forum (DIU)</span></div>
+              <span class="tech-pill" style="flex-shrink:0;">Sep 2024 – Oct 2025</span>
+            </div>
           </div>
         </div>
       </div>
@@ -2253,10 +2369,15 @@
           <a href="https://www.linkedin.com/in/meetmehedi" target="_blank" rel="noopener"
             class="social-pill">LinkedIn</a>
           <a href="https://github.com/meetmehedi" target="_blank" rel="noopener" class="social-pill">GitHub</a>
-          <a href="https://www.kaggle.com/meetmehedi" target="_blank" rel="noopener" class="social-pill">Kaggle</a>
-          <a href="https://orcid.org/0009-0006-1427-8769" target="_blank" rel="noopener" class="social-pill">ORCID</a>
           <a href="https://scholar.google.com/citations?user=xeVGjNsAAAAJ" target="_blank" rel="noopener"
             class="social-pill">Google Scholar</a>
+          <a href="https://www.researchgate.net/publication/407049194_The_AI_Researcher%27s_Handbook" target="_blank"
+            rel="noopener" class="social-pill">ResearchGate</a>
+          <a href="https://www.kaggle.com/meetmehedi" target="_blank" rel="noopener" class="social-pill">Kaggle</a>
+          <a href="https://orcid.org/0009-0006-1427-8769" target="_blank" rel="noopener" class="social-pill">ORCID</a>
+          <a href="https://www.facebook.com/meetmehedi1/" target="_blank" rel="noopener"
+            class="social-pill">Facebook</a>
+          <a href="Md_Mehedi_Hasan_CV.pdf" target="_blank" rel="noopener" class="social-pill">Resume / CV</a>
         </div>
       </div>
 
@@ -2338,6 +2459,14 @@
       <!-- Stationary Main Character (Mehedi) -->
       <img class="mehedi-center" src="images/mehedi-center.png"
         alt="Md. Mehedi Hasan standing still in the center while the crowd passes by" />
+
+      <!-- Foreground passersby walking IN FRONT of Mehedi (lower plane so face stays clear) -->
+      <div class="crowd-marquee foreground" aria-hidden="true">
+        <img src="images/crowd-walkers.png" alt="" />
+        <img src="images/crowd-walkers.png" alt="" />
+        <img src="images/crowd-walkers.png" alt="" />
+        <img src="images/crowd-walkers.png" alt="" />
+      </div>
     </div>
   </footer>
 
@@ -2547,22 +2676,31 @@
     ];
 
     const ALL_PAPERS = [
-      "Fraud Detection with DistilBERT: A Transformer-Based Approach to Behavioral Banking Sequences",
-      "MEWC-RL++: A Modular and Adaptive Continual Reinforcement Learning Framework for Automation Systems",
-      "Impact of Social Media Usage on Academic Performance: A Hybrid Machine Learning and SEM Approach",
-      "Lightweight Deep Learning for Urban Traffic Intelligence: A MobileNetV2-YOLOv8 Pipeline",
-      "Federated and Explainable Machine Learning Framework for Cyber Attack Detection in Smart Grids",
-      "Student-YOLOv8: Real-Time Student Detection and Face Recognition in Classroom Attendance Systems",
-      "Cross-Cultural Early Detection of Suicidal Ideation in Adolescents Using GSHS Data",
-      "A Hybrid Explainable AI Framework for Concurrent Earthquake Magnitude Estimation and Severity Classification",
-      "FairCF: Fair Counterfactual Explanations for Student Academic Performance Prediction",
-      "A Socio-Economic Machine Learning Framework for Predicting Programmer Retention",
-      "MEWC-LLM: Memory-Efficient Weight Consolidation for Large Language Models"
+      "Digital Transformation for Sustainable Universities: Modeling the Convergence of MIS, IoT, and Governance (Under Review)",
+      "War, Media Bias, and Socio-Economic Consequences: A Centennial Analysis of the Narrative-Reality Index (1914–2026) (Under Review)",
+      "A Hybrid Explainable Machine Learning Framework for Customer Lifetime Value Prediction and Its Socio-Economic Implications (Under Review)",
+      "A Relational Database-Driven Real-Time Cryptocurrency Portfolio Management System with Automated ETL Integration (Under Review)",
+      "SafeRoads: AI-Driven Proactive Risk Synthesis and Data-Centric Infrastructure Audits for Road Safety (Under Review)",
+      "Bridging the Urban-Rural Digital Divide in Bangladeshi CS Education: Counterfactual XGBoost & Geography-Moderated SEM (Under Review)",
+      "Early Identification of High Risk CS Dropout Students in Bangladesh: Pseudo Survival XGBoost & SHAP (Under Review)",
+      "Quantifying Intrinsic Motivation in Computer Science Career Intent: Multi-Method XAI & Full-Mediation SEM (Under Review)",
+      "Fairness-Aware HIV Risk Prediction in Bangladesh Using Behavioral and Explainable AI (Under Review)",
+      "A Modular Framework for Continual Reinforcement Learning in Dynamic Robotic Environments (Under Review)",
+      "Interpretable Machine Learning for Depression Risk Classification Among Bangladeshi University Students (Under Review)",
+      "Gender Based Predictive Persistence in Computer Science Education: Disaggregated SHAP & Moderated SEM (Under Review)",
+      "Uncovering Socioeconomic Archetypes in Bangladeshi CS Undergraduates: K-Modes & Latent Class SEM (Under Review)",
+      "Urban–Rural Inequality in Tech Career Intention: A Machine Learning Perspective (Under Review)",
+      "Women's Psychology and Its Socioeconomic Impact on Male Partners and Relationships (Ongoing)",
+      "THE DUAL PARADOX: AI Investment and Workforce Displacement in Global Corporations (Ongoing)",
+      "MEWC-LLM: Memory-Efficient Weight Consolidation for Large Language Models (Ongoing)",
+      "The Use of AI and Its Negative Impacts on Students and Socioeconomic Development (Ongoing)"
     ];
 
     const ALL_REPOS = [
-      { name: "MeteorShield", url: "https://github.com/meetmehedi/meteor-madness" },
-      { name: "Tactic Detector", url: "https://meetmehedi.github.io/Tactic-Detector/" },
+      { name: "The AI Researcher's Handbook (ResearchGate)", url: "https://www.researchgate.net/publication/407049194_The_AI_Researcher%27s_Handbook" },
+      { name: "MeteorShield (NASA Space Apps ’25)", url: "https://github.com/meetmehedi/meteor-madness" },
+      { name: "Tactic Detector (Live Demo)", url: "https://meetmehedi.github.io/Tactic-Detector/" },
+      { name: "SocialAI", url: "https://github.com/meetmehedi/For-final-deploy-bot-version-2.0" },
       { name: "HTSPF", url: "https://github.com/meetmehedi/HTSPF-Hierarchical-Temporal-Spatial-Pattern-Fusion" },
       { name: "SafeRoads", url: "https://github.com/meetmehedi/SafeRoads" },
       { name: "SaveFood", url: "https://github.com/meetmehedi/SaveFood" },
@@ -2592,7 +2730,7 @@
       document.getElementById("modal-title").textContent = "Publications & Repositories";
       document.getElementById("modal-content").innerHTML = `
         <div style="margin-bottom:20px;">
-          <div class="footer-col-label" style="margin-bottom:10px;">Selected Research Papers (10+ Accepted)</div>
+          <div class="footer-col-label" style="margin-bottom:10px;">Under Review (14) &amp; Ongoing Manuscripts (4)</div>
           ${ALL_PAPERS.map(t => `
             <div class="modal-list-item">
               <div><strong>${t}</strong><span>Md. Mehedi Hasan · AI / ML Research</span></div>
@@ -2614,6 +2752,14 @@
 
     function closeModal() {
       document.getElementById("modal").classList.remove("open");
+    }
+
+    function filterPapers(domain, btn) {
+      document.querySelectorAll(".domain-tab").forEach((b) => b.classList.remove("active"));
+      if (btn) btn.classList.add("active");
+      document.querySelectorAll("#paper-list .modal-list-item").forEach((item) => {
+        item.style.display = (domain === "all" || item.dataset.domain === domain) ? "flex" : "none";
+      });
     }
 
     function copyEmail() {
