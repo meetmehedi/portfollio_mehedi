@@ -2815,19 +2815,31 @@
 
     function replyFor(q) {
       const s = q.toLowerCase();
-      if (s.includes("nasa") || s.includes("award") || s.includes("space")) {
-        return "Mehedi (Team Polaris) won Regional Winner (Barisal), Global Nominee, and Honorable Mention (Global Finalist) at the NASA International Space Apps Challenge 2025 with MeteorShield.";
+      if (s.includes("nasa") || s.includes("award") || s.includes("space") || s.includes("robot") || s.includes("achiev") || s.includes("win")) {
+        return `<strong>Key Awards &amp; Honors</strong><br><br>• <strong>NASA International Space Apps Challenge ’25</strong> — Led <em>Team Polaris</em> to <strong>Regional Winner (Barisal)</strong>, <strong>Global Nominee</strong>, and <strong>Honorable Mention (Global Finalist)</strong> for <em>MeteorShield</em>.<br>• <strong>Line Following Robot Competition</strong> — <strong>Finalist · 8th Place</strong> (10th among universities out of 51 teams) as ML Engineer for <em>Team DIU_Rocket Squad</em>.`;
       }
-      if (s.includes("research") || s.includes("paper") || s.includes("topic")) {
-        return "His research spans behavioral modeling, social engineering detection, loss functions (InfoNCE, Focal Loss, Cross-Entropy), Structural Equation Modeling (SEM), DistilBERT, Student-YOLOv8, and Explainable AI (SHAP) — with 10+ accepted papers.";
+      if (s.includes("research") || s.includes("paper") || s.includes("publish") || s.includes("topic") || s.includes("domain") || s.includes("dyslexia") || s.includes("sem") || s.includes("scholar")) {
+        return `<strong>Research Record: 11 Accepted · 14 Under Review · 4 Ongoing</strong><br><br>His 11 accepted papers span 6 core domains:<br>• <strong>Cybersecurity &amp; Fraud:</strong> DistilBERT banking sequences (BIM 2025), Smart Grid XAI (ECCT 2026)<br>• <strong>Continual RL:</strong> MEWC-RL++ (ECCT 2026)<br>• <strong>Socio-Econ &amp; Education:</strong> Programmer retention, SEM academic impact, FairCF (ICAIMS 2026)<br>• <strong>CV &amp; Edge:</strong> MobileNetV2-YOLOv8 traffic, Student-YOLOv8 (IUB AJSE)<br>• <strong>Health &amp; Wellbeing AI:</strong> Adolescent mental health (TENCON 2026), Bangla Dyslexia Detection (IEEE BECITHCON 2026)<br>• <strong>Disaster Risk:</strong> Earthquake XAI (MIET 2026)<br><br><a href="https://scholar.google.com/citations?user=xeVGjNsAAAAJ" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">View full Google Scholar profile ↗</a>`;
       }
-      if (s.includes("project") || s.includes("build") || s.includes("work")) {
-        return "Featured projects include MeteorShield (NASA Space Apps), Tactic Detector (DistilBERT + SHAP), HTSPF (Temporal-Spatial Fusion), SafeRoads, SmartHealthAI, and MEWC-RL++.";
+      if (s.includes("assistant") || s.includes("supervisor") || s.includes("based") || s.includes("experience") || s.includes("role")) {
+        return `<strong>Research &amp; Academic Experience</strong><br><br>• <strong>Research Assistant &amp; Independent Researcher</strong> under <strong>Prof. Md. Abdul Based</strong> (Head, Dept. of CSE, Dhaka International University &amp; VP of Finance, Bangladesh Computer Society).<br>• Focuses on behavioral ML, social engineering detection, loss functions (InfoNCE, Focal Loss), SEM, and explainable AI.`;
       }
-      if (s.includes("contact") || s.includes("email") || s.includes("hire")) {
-        return "You can reach Mehedi at meetmehedi1@gmail.com, or connect via LinkedIn (/in/meetmehedi), GitHub (@meetmehedi), and ORCID (0009-0006-1427-8769).";
+      if (s.includes("leader") || s.includes("club") || s.includes("president") || s.includes("cpc") || s.includes("ieee")) {
+        return `<strong>Leadership &amp; Community</strong><br><br>• <strong>President</strong> — DIU Computer Programming Club (Apr 2026 – Present)<br>• <strong>General Secretary</strong> — DIU CSE Speakers Club (May 2025 – Mar 2026)<br>• <strong>Head, Research &amp; Training Wing</strong> — DIU Career Development Club (Aug – Dec 2025)<br>• <strong>Executive Member</strong> — BASIS Students’ Forum, DIU (Sep 2024 – Oct 2025)<br>• Active <strong>IEEE &amp; IEEE Computer Society Member</strong>.`;
       }
-      return "Md. Mehedi Hasan is an AI & ML Researcher at Dhaka International University and an IEEE Member. Ask about his NASA Space Apps award, research papers, or projects!";
+      if (s.includes("edu") || s.includes("cgpa") || s.includes("gpa") || s.includes("university") || s.includes("study") || s.includes("degree")) {
+        return `<strong>Education</strong><br><br>• <strong>B.Sc. in Computer Science &amp; Engineering</strong> — Dhaka International University (Sep 2023 – Dec 2027) · <strong>CGPA: 3.74 / 4.00</strong><br>• <strong>HSC</strong> — BAF Shaheen College Jashore (GPA: 4.75 / 5.00)`;
+      }
+      if (s.includes("project") || s.includes("build") || s.includes("work") || s.includes("framework") || s.includes("handbook") || s.includes("github")) {
+        return `<strong>Featured Projects &amp; Frameworks</strong><br><br>• <strong>MeteorShield</strong> — NASA NEO API 3D planetary defense dashboard (Three.js)<br>• <strong>Tactic Detector</strong> — DistilBERT + SHAP social engineering detector (<a href="https://meetmehedi.github.io/Tactic-Detector/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Live Demo ↗</a>)<br>• <strong>SafeRoads</strong> — Geospatial ML road risk synthesis (84% precision)<br>• <strong>SaveFood</strong> — IoT + XGBoost spoilage prediction (F1 0.89)<br>• <strong>The AI Researcher’s Handbook</strong> — Published on <a href="https://www.researchgate.net/publication/407049194_The_AI_Researcher%27s_Handbook" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">ResearchGate ↗</a><br>• Original architectures: <em>MEWC-RL++, MEWC-LLM, HTSPF, Student-YOLOv8</em>.`;
+      }
+      if (s.includes("skill") || s.includes("stack") || s.includes("tech") || s.includes("tool") || s.includes("language")) {
+        return `<strong>Technical Stack</strong><br><br>• <strong>AI / ML:</strong> PyTorch, TensorFlow, scikit-learn, XGBoost, HuggingFace, DistilBERT, YOLOv8, OpenCV, SHAP, PLS-SEM<br>• <strong>Languages:</strong> Python, C/C++, TypeScript, JavaScript, SQL, R, LaTeX<br>• <strong>Infra &amp; Automation:</strong> Git/GitHub Actions, Docker, Linux, PostgreSQL, n8n, Playwright, Colab.`;
+      }
+      if (s.includes("contact") || s.includes("email") || s.includes("hire") || s.includes("collab") || s.includes("cv") || s.includes("resume") || s.includes("vcard") || s.includes("phone")) {
+        return `<strong>Get in Touch with Mehedi</strong><br><br>• <strong>Email:</strong> <a href="mailto:meetmehedi1@gmail.com" style="color:var(--accent);text-decoration:underline;">meetmehedi1@gmail.com</a><br>• <strong>Profiles:</strong> <a href="https://www.linkedin.com/in/meetmehedi" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">LinkedIn</a> · <a href="https://github.com/meetmehedi" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">GitHub</a> · <a href="https://scholar.google.com/citations?user=xeVGjNsAAAAJ" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Scholar</a> · <a href="https://orcid.org/0009-0006-1427-8769" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">ORCID</a><br>• <strong>Quick Downloads:</strong> <a href="Md_Mehedi_Hasan_CV.pdf" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline;">Resume / CV (PDF)</a> · <a href="mehedi-contact.vcf" download="Md_Mehedi_Hasan.vcf" style="color:var(--accent);text-decoration:underline;">Save vCard ↓</a>`;
+      }
+      return `<strong>Md. Mehedi Hasan</strong> is an AI &amp; ML Researcher, Research Assistant under Prof. Md. Abdul Based (DIU), President of DIU CPC, and a <strong>NASA Space Apps ’25 Global Finalist (Honorable Mention)</strong> with <strong>11 accepted papers</strong>.<br><br>Try asking about his <em>research domains</em>, <em>NASA award</em>, <em>projects</em>, <em>leadership</em>, <em>education</em>, or <em>contact details</em>.`;
     }
 
     function handleAISubmit(e) {
@@ -2846,22 +2858,25 @@
 
       const b = document.createElement("div");
       b.className = "msg bot";
-      b.textContent = "Thinking...";
+      b.innerHTML = `<span style="opacity:0.65; letter-spacing:2px;">•••</span>`;
       body.appendChild(b);
       input.value = "";
       body.scrollTop = body.scrollHeight;
 
-      const fullText = replyFor(q);
-      const words = fullText.split(" ");
+      const htmlReply = replyFor(q);
+      // Stream smoothly by HTML tokens so formatting & links never break
+      const tokens = htmlReply.match(/(<[^>]+>|[^<\s]+\s*)/g) || [htmlReply];
       let i = 0;
+      let acc = "";
       setTimeout(() => {
-        b.textContent = "";
+        b.innerHTML = "";
         const timer = setInterval(() => {
-          b.textContent += (i > 0 ? " " : "") + words[i++];
+          acc += tokens[i++];
+          b.innerHTML = acc;
           body.scrollTop = body.scrollHeight;
-          if (i >= words.length) clearInterval(timer);
-        }, 28);
-      }, 260);
+          if (i >= tokens.length) clearInterval(timer);
+        }, 22);
+      }, 280);
     }
 
     document.addEventListener("keydown", (e) => {
